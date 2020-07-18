@@ -9,8 +9,8 @@
 .. type: text
 
 
-¿Querés aprender a programar?
-===============================
+¡Hola! ¿Querés aprender a programar?
+=========================================
 Entonces este curso es para vos. Vas a aprender a escribir programas que hagan las cosas que vos quieras, aunque no sepas nada aun de programación.
 Vas a entender cómo funciona una computadora, cómo la información viaja de un lado a otro, y vas a poder ser vos mismo quien escriba programas que hagan esas cosas.
 

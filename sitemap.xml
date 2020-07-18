@@ -7,83 +7,76 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://programando-python.github.io/</loc>
-  <lastmod>2020-07-17T22:58:00Z</lastmod>
+  <lastmod>2020-07-18T14:54:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/2020/</loc>
-  <lastmod>2020-07-17T22:15:00Z</lastmod>
+  <lastmod>2020-07-18T14:54:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/archive.html</loc>
-  <lastmod>2020-07-18T02:03:00Z</lastmod>
+  <lastmod>2020-07-18T14:54:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/categories/</loc>
-  <lastmod>2020-07-17T22:58:00Z</lastmod>
+  <lastmod>2020-07-18T14:54:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/categories/curso/</loc>
-  <lastmod>2020-07-17T22:30:00Z</lastmod>
+  <lastmod>2020-07-18T14:54:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/categories/programar/</loc>
-  <lastmod>2020-07-17T22:30:00Z</lastmod>
+  <lastmod>2020-07-18T14:54:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/categories/python/</loc>
-  <lastmod>2020-07-17T20:14:00Z</lastmod>
+  <lastmod>2020-07-18T14:54:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/en/</loc>
-  <lastmod>2020-07-17T22:58:00Z</lastmod>
+  <lastmod>2020-07-18T14:54:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/en/2020/</loc>
-  <lastmod>2020-07-17T22:15:00Z</lastmod>
+  <lastmod>2020-07-18T14:54:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/en/archive.html</loc>
-  <lastmod>2020-07-18T02:03:00Z</lastmod>
+  <lastmod>2020-07-18T14:54:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/en/categories/</loc>
-  <lastmod>2020-07-17T22:58:00Z</lastmod>
+  <lastmod>2020-07-18T14:54:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/en/categories/curso/</loc>
-  <lastmod>2020-07-17T22:30:00Z</lastmod>
+  <lastmod>2020-07-18T14:54:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/en/categories/programar/</loc>
-  <lastmod>2020-07-17T22:30:00Z</lastmod>
+  <lastmod>2020-07-18T14:54:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/en/categories/python/</loc>
-  <lastmod>2020-07-17T20:14:00Z</lastmod>
+  <lastmod>2020-07-18T14:54:00Z</lastmod>
  </url>
  <url>
-  <loc>https://programando-python.github.io/en/galleries/</loc>
-  <lastmod>2020-07-17T22:58:00Z</lastmod>
+  <loc>https://programando-python.github.io/en/pages/curso-aprender-a-programar/</loc>
+  <lastmod>2020-07-18T14:54:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="es" href="https://programando-python.github.io/pages/curso-aprender-a-programar/" />
  </url>
  <url>
   <loc>https://programando-python.github.io/en/posts/curso-aprender-a-programar/</loc>
-  <lastmod>2020-07-17T22:15:00Z</lastmod>
+  <lastmod>2020-07-18T14:54:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="es" href="https://programando-python.github.io/posts/curso-aprender-a-programar/" />
  </url>
  <url>
-  <loc>https://programando-python.github.io/galleries/</loc>
-  <lastmod>2020-07-17T22:58:00Z</lastmod>
- </url>
- <url>
-  <loc>https://programando-python.github.io/listings/</loc>
-  <lastmod>2020-07-17T22:58:00Z</lastmod>
- </url>
- <url>
-  <loc>https://programando-python.github.io/listings/__pycache__/</loc>
-  <lastmod>2020-07-17T20:14:00Z</lastmod>
+  <loc>https://programando-python.github.io/pages/curso-aprender-a-programar/</loc>
+  <lastmod>2020-07-18T14:54:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/posts/curso-aprender-a-programar/</loc>
-  <lastmod>2020-07-17T22:15:00Z</lastmod>
+  <lastmod>2020-07-18T14:54:00Z</lastmod>
  </url>
 </urlset>
