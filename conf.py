@@ -138,6 +138,7 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
+        ("/posts/curso-aprender-a-programar/", "Curso"),
         ("/archive.html", "Archivo"),
         ("/categories/", "Etiquetas"),
         ("/rss.xml", "Canal RSS"),
@@ -161,7 +162,7 @@ NAVIGATION_ALT_LINKS = {
 THEME = "lanyon"
 
 GLOBAL_CONTEXT = {
-    "lanyon_subtheme": "theme-base-08"
+    "lanyon_subtheme": "theme-base-0b"
 }
 
 # POSTS and PAGES contains (wildcard, destination, template) tuples.
@@ -893,7 +894,7 @@ IMAGE_FOLDERS = {'images': 'images'}
 # )
 
 # Show teasers (instead of full posts) in indexes? Defaults to False.
-# INDEX_TEASERS = False
+INDEX_TEASERS = True
 
 # HTML fragments with the Read more... links.
 # The following tags exist and are replaced for you:
@@ -936,7 +937,7 @@ LICENSE = ""
 
 # A small copyright notice for the page footer (in HTML).
 # (translatable)
-CONTENT_FOOTER = 'Contents &copy; {date}         <a href="mailto:{email}">{author}</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         {license}'
+CONTENT_FOOTER = 'Contenido &copy; {date}         <a href="mailto:{email}">{author}</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         {license}'
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
 # for translatability, as dicts are not formattable.  Nikola will
