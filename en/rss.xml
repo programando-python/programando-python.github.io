@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Programando Python</title><link>https://example.com/</link><description>Aprendiendo a programar</description><atom:link href="https://example.com/en/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2020 &lt;a href="mailto:nahueltori@gmail.com"&gt;Nahuel Tori&lt;/a&gt; </copyright><lastBuildDate>Fri, 17 Jul 2020 23:27:28 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Curso Aprender a Programar</title><link>https://example.com/en/posts/curso-aprender-a-programar/</link><dc:creator>Nahuel Tori</dc:creator><description>&lt;div&gt;&lt;div class="section" id="queres-aprender-a-programar"&gt;
+&lt;h2&gt;¿Querés aprender a programar?&lt;/h2&gt;
+&lt;p&gt;Entonces este curso es para vos. Vas a aprender a escribir programas que hagan las cosas que vos quieras, aunque no sepas nada aun de programación.
+Vas a entender cómo funciona una computadora, cómo la información viaja de un lado a otro, y vas a poder ser vos mismo quien escriba programas que hagan esas cosas.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="como-es-el-curso-cuando-empieza"&gt;
+&lt;h2&gt;¿Cómo es el curso? ¿Cuándo empieza?&lt;/h2&gt;
+&lt;p&gt;Las clases serán reuniones virtuales en las que se explicará el tema del día, se mostrará en práctica lo aprendido y luego se darán ejercicios para resolver en clase.
+También habrá ejercicios para seguir practicando luego de la clase.&lt;/p&gt;
+&lt;p&gt;El curso se dictará todos los jueves a las 19:00 horas, comenzando el 20 de agosto, y tendrá una duración de 18 clases de 1 hora cada una.
+También estará la posibilidad de contactar al profesor para consultar dudas durante la semana.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="puedo-anotarme-si-no-se-nada-sobre-programacion"&gt;
+&lt;h2&gt;¿Puedo anotarme si no sé nada sobre programación?&lt;/h2&gt;
+&lt;p&gt;Por supuesto, la idea de este curso es aprender a programar desde cero, sin ningún conocimiento previo requerido.
+Lo que sí es indispensable, además de una computadora a tu disposición, es tener ganas de aprender y hacer cosas nuevas.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="temas-que-vamos-a-ver-en-el-curso"&gt;
+&lt;h2&gt;Temas que vamos a ver en el curso&lt;/h2&gt;
+&lt;p&gt;Cada clase vamos a aprender un tema nuevo, y también lo vamos a ejercitar. Además, habrá un par de clases adicionales que las dedicaremos completamente a un ejercicio práctico integrador, creando un programa que unifique todo lo que aprendimos hasta el momento.
+A grandes rasgos, estos son los temas que vamos a ver:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Por qué aprender a programar.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Instrucciones básicas, variables y expresiones.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Control de ejecución: Alternativa, repeticiones, funciones.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Estructuras de datos: Listas y Diccionarios.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Manejo de archivos, librerías externas y uso de APIs.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Introducción a la creación de sitios web con Flask.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="como-te-podes-anotar-en-el-curso"&gt;
+&lt;h2&gt;¿Cómo te podés anotar en el curso?&lt;/h2&gt;
+&lt;p&gt;Para anotarse en el curso, tenés que mandar un mail con tu nombre y apellido a la dirección &lt;a class="reference external" href="mailto:curso.programando.python@gmail.com"&gt;curso.programando.python@gmail.com&lt;/a&gt;.
+También deberás realizar el pago del curso, ya sea completo o de la cuota inicial según prefieras.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="pago-del-curso"&gt;
+&lt;h2&gt;Pago del curso&lt;/h2&gt;
+&lt;p&gt;Tenés dos formas de pagar el curso:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Por adelantado el curso completo, el total es de $4000. Podés hacer el pago acá con Mercadopago:&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=46241058-b0ff796c-63b6-44bf-9fbc-49281771e869"&gt;&lt;img alt="/images/pagar.png" class="thumbnail" src="https://example.com/images/pagar.png"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;En cuotas mensuales, debiendo abonar la primera ahora para reservar tu lugar en el curso. En este caso serían 5 cuotas de $1000 cada una. El pago de la cuota inicial de inscripción lo podés hacer también con Mercadopago acá:&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="figure"&gt;
+&lt;a class="reference external image-reference" href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=46241058-7734a127-8241-438a-b34b-d5039c997cc3"&gt;&lt;img alt="/images/pagar.png" class="thumbnail" src="https://example.com/images/pagar.png"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="quien-va-a-dar-el-curso"&gt;
+&lt;h2&gt;¿Quién va a dar el curso?&lt;/h2&gt;
+&lt;p&gt;Mi nombre es Nahuel Tori, trabajo como desarrollador de software en una empresa y también soy docente.
+Podés ver mi perfil completo en &lt;a class="reference external" href="https://www.linkedin.com/in/nahueltori/es"&gt;LinkedIn&lt;/a&gt;, y también seguirme en &lt;a class="reference external" href="https://twitter.com/nahueltori"&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="queres-hacer-alguna-consulta"&gt;
+&lt;h2&gt;¿Querés hacer alguna consulta?&lt;/h2&gt;
+&lt;p&gt;Por cualquier duda que tengas sobre el curso, podés escribirme un email a: &lt;a class="reference external" href="mailto:curso.programando.python@gmail.com"&gt;curso.programando.python@gmail.com&lt;/a&gt;
+¡Gracias!&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;</description><guid>https://example.com/en/posts/curso-aprender-a-programar/</guid><pubDate>Fri, 17 Jul 2020 20:23:51 GMT</pubDate></item></channel></rss>
