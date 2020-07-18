@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Programando Python</title><link>https://example.com/</link><description>Aprendiendo a programar</description><atom:link href="https://example.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>es</language><copyright>Contents © 2020 &lt;a href="mailto:nahueltori@gmail.com"&gt;Nahuel Tori&lt;/a&gt; </copyright><lastBuildDate>Fri, 17 Jul 2020 23:27:28 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Curso Aprender a Programar</title><link>https://example.com/posts/curso-aprender-a-programar/</link><dc:creator>Nahuel Tori</dc:creator><description>&lt;div&gt;&lt;div class="section" id="queres-aprender-a-programar"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Programando Python</title><link>https://programando-python.github.io/</link><description>Aprendiendo a programar</description><atom:link href="https://programando-python.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>es</language><copyright>Contents © 2020 &lt;a href="mailto:nahueltori@gmail.com"&gt;Nahuel Tori&lt;/a&gt; </copyright><lastBuildDate>Sat, 18 Jul 2020 02:03:02 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Curso Aprender a Programar</title><link>https://programando-python.github.io/posts/curso-aprender-a-programar/</link><dc:creator>Nahuel Tori</dc:creator><description>&lt;div&gt;&lt;div class="section" id="queres-aprender-a-programar"&gt;
 &lt;h2&gt;¿Querés aprender a programar?&lt;/h2&gt;
 &lt;p&gt;Entonces este curso es para vos. Vas a aprender a escribir programas que hagan las cosas que vos quieras, aunque no sepas nada aun de programación.
 Vas a entender cómo funciona una computadora, cómo la información viaja de un lado a otro, y vas a poder ser vos mismo quien escriba programas que hagan esas cosas.&lt;/p&gt;
@@ -41,13 +41,13 @@ También deberás realizar el pago del curso, ya sea completo o de la cuota inic
 &lt;li&gt;&lt;p&gt;Por adelantado el curso completo, el total es de $4000. Podés hacer el pago acá con Mercadopago:&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class="figure"&gt;
-&lt;a class="reference external image-reference" href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=46241058-b0ff796c-63b6-44bf-9fbc-49281771e869"&gt;&lt;img alt="/images/pagar.png" class="thumbnail" src="https://example.com/images/pagar.png"&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=46241058-b0ff796c-63b6-44bf-9fbc-49281771e869"&gt;&lt;img alt="/images/pagar.png" class="thumbnail" src="https://programando-python.github.io/images/pagar.png"&gt;&lt;/a&gt;
 &lt;/div&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;p&gt;En cuotas mensuales, debiendo abonar la primera ahora para reservar tu lugar en el curso. En este caso serían 5 cuotas de $1000 cada una. El pago de la cuota inicial de inscripción lo podés hacer también con Mercadopago acá:&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class="figure"&gt;
-&lt;a class="reference external image-reference" href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=46241058-7734a127-8241-438a-b34b-d5039c997cc3"&gt;&lt;img alt="/images/pagar.png" class="thumbnail" src="https://example.com/images/pagar.png"&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=46241058-7734a127-8241-438a-b34b-d5039c997cc3"&gt;&lt;img alt="/images/pagar.png" class="thumbnail" src="https://programando-python.github.io/images/pagar.png"&gt;&lt;/a&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="quien-va-a-dar-el-curso"&gt;
@@ -59,4 +59,4 @@ Podés ver mi perfil completo en &lt;a class="reference external" href="https://
 &lt;h2&gt;¿Querés hacer alguna consulta?&lt;/h2&gt;
 &lt;p&gt;Por cualquier duda que tengas sobre el curso, podés escribirme un email a: &lt;a class="reference external" href="mailto:curso.programando.python@gmail.com"&gt;curso.programando.python@gmail.com&lt;/a&gt;
 ¡Gracias!&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>curso</category><category>programar</category><category>python</category><guid>https://example.com/posts/curso-aprender-a-programar/</guid><pubDate>Fri, 17 Jul 2020 20:23:51 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;&lt;/div&gt;</description><category>curso</category><category>programar</category><category>python</category><guid>https://programando-python.github.io/posts/curso-aprender-a-programar/</guid><pubDate>Fri, 17 Jul 2020 20:23:51 GMT</pubDate></item></channel></rss>

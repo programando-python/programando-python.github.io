@@ -6,47 +6,47 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
-  <loc>https://example.com/categories/curso.xml</loc>
-  <lastmod>2020-07-17T22:58:00Z</lastmod>
+  <loc>https://programando-python.github.io/categories/curso.xml</loc>
+  <lastmod>2020-07-18T02:03:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>https://example.com/categories/programar.xml</loc>
-  <lastmod>2020-07-17T22:58:00Z</lastmod>
+  <loc>https://programando-python.github.io/categories/programar.xml</loc>
+  <lastmod>2020-07-18T02:03:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>https://example.com/categories/python.xml</loc>
-  <lastmod>2020-07-17T22:58:00Z</lastmod>
+  <loc>https://programando-python.github.io/categories/python.xml</loc>
+  <lastmod>2020-07-18T02:03:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>https://example.com/en/categories/curso.xml</loc>
-  <lastmod>2020-07-17T22:58:00Z</lastmod>
+  <loc>https://programando-python.github.io/en/categories/curso.xml</loc>
+  <lastmod>2020-07-18T02:03:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>https://example.com/en/categories/programar.xml</loc>
-  <lastmod>2020-07-17T22:58:00Z</lastmod>
+  <loc>https://programando-python.github.io/en/categories/programar.xml</loc>
+  <lastmod>2020-07-18T02:03:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>https://example.com/en/categories/python.xml</loc>
-  <lastmod>2020-07-17T22:58:00Z</lastmod>
+  <loc>https://programando-python.github.io/en/categories/python.xml</loc>
+  <lastmod>2020-07-18T02:03:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>https://example.com/en/galleries/rss.xml</loc>
-  <lastmod>2020-07-17T22:58:00Z</lastmod>
+  <loc>https://programando-python.github.io/en/galleries/rss.xml</loc>
+  <lastmod>2020-07-18T02:03:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>https://example.com/en/rss.xml</loc>
-  <lastmod>2020-07-17T22:58:00Z</lastmod>
+  <loc>https://programando-python.github.io/en/rss.xml</loc>
+  <lastmod>2020-07-18T02:03:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>https://example.com/galleries/rss.xml</loc>
-  <lastmod>2020-07-17T22:58:00Z</lastmod>
+  <loc>https://programando-python.github.io/galleries/rss.xml</loc>
+  <lastmod>2020-07-18T02:03:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>https://example.com/rss.xml</loc>
-  <lastmod>2020-07-17T22:58:00Z</lastmod>
+  <loc>https://programando-python.github.io/rss.xml</loc>
+  <lastmod>2020-07-18T02:03:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>https://example.com/sitemap.xml</loc>
-  <lastmod>2020-07-17T22:58:00Z</lastmod>
+  <loc>https://programando-python.github.io/sitemap.xml</loc>
+  <lastmod>2020-07-18T02:03:00Z</lastmod>
  </sitemap>
 </sitemapindex>

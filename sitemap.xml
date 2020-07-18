@@ -6,84 +6,84 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
-  <loc>https://example.com/</loc>
+  <loc>https://programando-python.github.io/</loc>
   <lastmod>2020-07-17T22:58:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/2020/</loc>
+  <loc>https://programando-python.github.io/2020/</loc>
   <lastmod>2020-07-17T22:15:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/archive.html</loc>
+  <loc>https://programando-python.github.io/archive.html</loc>
+  <lastmod>2020-07-18T02:03:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://programando-python.github.io/categories/</loc>
   <lastmod>2020-07-17T22:58:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/categories/</loc>
-  <lastmod>2020-07-17T22:58:00Z</lastmod>
- </url>
- <url>
-  <loc>https://example.com/categories/curso/</loc>
+  <loc>https://programando-python.github.io/categories/curso/</loc>
   <lastmod>2020-07-17T22:30:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/categories/programar/</loc>
+  <loc>https://programando-python.github.io/categories/programar/</loc>
   <lastmod>2020-07-17T22:30:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/categories/python/</loc>
+  <loc>https://programando-python.github.io/categories/python/</loc>
   <lastmod>2020-07-17T20:14:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/en/</loc>
+  <loc>https://programando-python.github.io/en/</loc>
   <lastmod>2020-07-17T22:58:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/en/2020/</loc>
+  <loc>https://programando-python.github.io/en/2020/</loc>
   <lastmod>2020-07-17T22:15:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/en/archive.html</loc>
+  <loc>https://programando-python.github.io/en/archive.html</loc>
+  <lastmod>2020-07-18T02:03:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://programando-python.github.io/en/categories/</loc>
   <lastmod>2020-07-17T22:58:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/en/categories/</loc>
-  <lastmod>2020-07-17T22:58:00Z</lastmod>
- </url>
- <url>
-  <loc>https://example.com/en/categories/curso/</loc>
+  <loc>https://programando-python.github.io/en/categories/curso/</loc>
   <lastmod>2020-07-17T22:30:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/en/categories/programar/</loc>
+  <loc>https://programando-python.github.io/en/categories/programar/</loc>
   <lastmod>2020-07-17T22:30:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/en/categories/python/</loc>
+  <loc>https://programando-python.github.io/en/categories/python/</loc>
   <lastmod>2020-07-17T20:14:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/en/galleries/</loc>
+  <loc>https://programando-python.github.io/en/galleries/</loc>
   <lastmod>2020-07-17T22:58:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/en/posts/curso-aprender-a-programar/</loc>
+  <loc>https://programando-python.github.io/en/posts/curso-aprender-a-programar/</loc>
   <lastmod>2020-07-17T22:15:00Z</lastmod>
-  <xhtml:link rel="alternate" hreflang="es" href="https://example.com/posts/curso-aprender-a-programar/" />
+  <xhtml:link rel="alternate" hreflang="es" href="https://programando-python.github.io/posts/curso-aprender-a-programar/" />
  </url>
  <url>
-  <loc>https://example.com/galleries/</loc>
+  <loc>https://programando-python.github.io/galleries/</loc>
   <lastmod>2020-07-17T22:58:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/listings/</loc>
+  <loc>https://programando-python.github.io/listings/</loc>
   <lastmod>2020-07-17T22:58:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/listings/__pycache__/</loc>
+  <loc>https://programando-python.github.io/listings/__pycache__/</loc>
   <lastmod>2020-07-17T20:14:00Z</lastmod>
  </url>
  <url>
-  <loc>https://example.com/posts/curso-aprender-a-programar/</loc>
+  <loc>https://programando-python.github.io/posts/curso-aprender-a-programar/</loc>
   <lastmod>2020-07-17T22:15:00Z</lastmod>
  </url>
 </urlset>
