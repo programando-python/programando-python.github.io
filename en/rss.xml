@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Programando Python</title><link>https://programando-python.github.io/</link><description>Aprendiendo a programar</description><atom:link href="https://programando-python.github.io/en/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2020 &lt;a href="mailto:nahueltori@gmail.com"&gt;Nahuel Tori&lt;/a&gt; </copyright><lastBuildDate>Sat, 18 Jul 2020 14:54:58 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Curso Aprender a Programar</title><link>https://programando-python.github.io/en/posts/curso-aprender-a-programar/</link><dc:creator>Nahuel Tori</dc:creator><description>&lt;div&gt;&lt;div class="section" id="queres-aprender-a-programar"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Programando Python</title><link>https://programando-python.github.io/</link><description>Aprendiendo a programar</description><atom:link href="https://programando-python.github.io/en/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2020 &lt;a href="mailto:nahueltori@gmail.com"&gt;Nahuel Tori&lt;/a&gt; </copyright><lastBuildDate>Sat, 18 Jul 2020 16:25:41 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Curso Aprender a Programar</title><link>https://programando-python.github.io/en/posts/curso-aprender-a-programar/</link><dc:creator>Nahuel Tori</dc:creator><description>&lt;div&gt;&lt;div class="section" id="queres-aprender-a-programar"&gt;
 &lt;h2&gt;¿Querés aprender a programar?&lt;/h2&gt;
 &lt;p&gt;Entonces este curso es para vos. Vas a aprender a escribir programas que hagan las cosas que vos quieras, aunque no sepas nada aun de programación.
 Vas a entender cómo funciona una computadora, cómo la información viaja de un lado a otro, y vas a poder ser vos mismo quien escriba programas que hagan esas cosas.&lt;/p&gt;
@@ -55,4 +55,22 @@ Podés ver mi perfil completo en &lt;a class="reference external" href="https://
 &lt;h2&gt;¿Querés hacer alguna otra consulta?&lt;/h2&gt;
 &lt;p&gt;Por cualquier duda que tengas sobre el curso, podés escribirme un email a: &lt;a class="reference external" href="mailto:curso.programando.python@gmail.com"&gt;curso.programando.python@gmail.com&lt;/a&gt;
 ¡Gracias!&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;</description><guid>https://programando-python.github.io/en/posts/curso-aprender-a-programar/</guid><pubDate>Fri, 17 Jul 2020 20:23:51 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;&lt;/div&gt;</description><guid>https://programando-python.github.io/en/posts/curso-aprender-a-programar/</guid><pubDate>Sat, 18 Jul 2020 15:00:11 GMT</pubDate></item><item><title>Instalando lo necesario</title><link>https://programando-python.github.io/en/posts/instalando-lo-necesario/</link><dc:creator>Nahuel Tori</dc:creator><description>&lt;div&gt;&lt;p&gt;Para poder trabajar cómodamente, lo mejor es tener acceso a una computadora personal en la cual escribir tus programas, guardarlos, probarlos y reutilizarlos.
+Para eso, necesitamos que tenga instalado cierto software que repasaremos a continuación.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://programando-python.github.io/en/posts/instalando-lo-necesario/"&gt;Read more…&lt;/a&gt; (2 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><guid>https://programando-python.github.io/en/posts/instalando-lo-necesario/</guid><pubDate>Sat, 18 Jul 2020 14:59:11 GMT</pubDate></item><item><title>Bienvenidos</title><link>https://programando-python.github.io/en/posts/bienvenidos/</link><dc:creator>Nahuel Tori</dc:creator><description>&lt;div class="section" id="bienvenidos-a-programando-con-python"&gt;
+&lt;h2&gt;Bienvenidos a Programando con Python&lt;/h2&gt;
+&lt;p&gt;Si estás leyendo estas líneas, entonces quiere decir que vas a aprender a programar, utilizando un lenguaje simple y fácil de aprender.&lt;/p&gt;
+&lt;div class="section" id="a-quienes-esta-dirigido"&gt;
+&lt;h3&gt;¿A quiénes está dirigido?&lt;/h3&gt;
+&lt;p&gt;Todos pueden aprender a programar, por lo que si tenés ganas y la motivación suficiente, podrás aprender a decirle a la computadora que haga todo lo que desees.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="que-necesitas-para-empezar"&gt;
+&lt;h3&gt;Qué necesitás para empezar:&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Una computadora, cualquiera sirve, mientras tenga conexión a internet.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Instalar el software necesario, &lt;a class="reference external" href="https://programando-python.github.io/posts/instalando-lo-necesario/"&gt;acá&lt;/a&gt; lo tenés bien explicado.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Practicar y estudiar regularmente. Ya sea un rato todos los días o 2-3 horas todas las semanas, hacerte una rutina te ayudará a ir ganando conocimiento y cimentarlo con la práctica.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;¡Suerte!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><guid>https://programando-python.github.io/en/posts/bienvenidos/</guid><pubDate>Sat, 18 Jul 2020 14:54:57 GMT</pubDate></item></channel></rss>

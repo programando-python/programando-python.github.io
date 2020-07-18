@@ -1,16 +1,18 @@
 .. title: Curso Aprender a Programar
 .. slug: curso-aprender-a-programar
-.. date: 2020-07-17 17:23:51 UTC-03:00
+.. date: 2020-07-18 12:00:11 UTC-03:00
 .. tags: curso, python, programar
 .. author: Nahuel Tori
+.. status: featured
 .. category: 
 .. link: 
 .. description: 
 .. type: text
+.. nocomments: True
 
 
 ¿Querés aprender a programar?
-===============================
+====================================
 Entonces este curso es para vos. Vas a aprender a escribir programas que hagan las cosas que vos quieras, aunque no sepas nada aun de programación.
 Vas a entender cómo funciona una computadora, cómo la información viaja de un lado a otro, y vas a poder ser vos mismo quien escriba programas que hagan esas cosas.
 
