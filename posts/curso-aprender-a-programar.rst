@@ -17,16 +17,16 @@ Vas a entender cómo funciona una computadora, cómo la información viaja de un
 
 ¿Cómo es el curso? ¿Cuándo empieza?
 =======================================
-Las clases serán reuniones virtuales en las que se explicará el tema del día, se mostrará en práctica lo aprendido y luego se darán ejercicios para resolver en clase.
-También habrá ejercicios para seguir practicando luego de la clase.
+Las clases serán reuniones virtuales en las que se explicará el tema del día, se mostrará en práctica lo aprendido y luego se darán ejercicios para practicar lo visto en clase.
 
-El curso se dictará todos los jueves a las 19:00 horas, comenzando el 20 de agosto, y tendrá una duración de 18 clases de 1 hora cada una.
-También estará la posibilidad de contactar al profesor para consultar dudas durante la semana.
+La práctica es lo más importante; es lo que te va a ayudar a entender cada concepto y poder construir sobre el anterior.
+
+El curso se dictará cada dos semanas, los días jueves a las 19:00 horas, comenzando el 20 de agosto. Tendrá una duración de 9 clases de 2 horas cada una. También estará la posibilidad de contactar al profesor para consultar dudas entre cada clase.
 
 
 ¿Puedo anotarme si no sé nada sobre programación?
 =====================================================
-Por supuesto, la idea de este curso es aprender a programar desde cero, sin ningún conocimiento previo requerido.
+¡Por supuesto!, la idea de este curso es aprender a programar desde cero, sin ningún conocimiento previo requerido.
 Lo que sí es indispensable, además de una computadora a tu disposición, es tener ganas de aprender y hacer cosas nuevas.
 
 
@@ -46,24 +46,20 @@ A grandes rasgos, estos son los temas que vamos a ver:
 ¿Cómo te podés anotar en el curso?
 =====================================
 Para anotarse en el curso, tenés que mandar un mail con tu nombre y apellido a la dirección curso.programando.python@gmail.com.
-También deberás realizar el pago del curso, ya sea completo o de la cuota inicial según prefieras.
+También deberás realizar el pago de la cuota inicial del curso. Una vez realizados ambos pasos, te llegará un email confirmando la inscripción.
 
+Las vacantes para el curso **son limitadas**; no dejes la inscripción para el último día. De la misma manera, el curso comenzará solamente si se inscriben la cantidad mínima de participantes.
 
 Pago del curso
 ==============
-Tenés dos formas de pagar el curso:
 
-* Por adelantado el curso completo, el total es de $4000. Podés hacer el pago acá con Mercadopago:
-
-.. figure:: /images/pagar.png
-    :target: https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=46241058-b0ff796c-63b6-44bf-9fbc-49281771e869
-    :class: thumbnail
-
-* En cuotas mensuales, debiendo abonar la primera ahora para reservar tu lugar en el curso. En este caso serían 5 cuotas de $1000 cada una. El pago de la cuota inicial de inscripción lo podés hacer también con Mercadopago acá:
+* El pago se realizará en cuotas mensuales, debiendo abonar la primera ahora para reservar tu lugar en el curso. Serán 5 cuotas de $1500 cada una. El pago de la cuota inicial de inscripción lo podés hacer con Mercadopago acá:
 
 .. figure:: /images/pagar.png
     :target: https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=46241058-7734a127-8241-438a-b34b-d5039c997cc3
     :class: thumbnail
+
+* Si te anotás entre 3 o más amigos, entonces cada uno obtendrá un 20% de descuento en cada cuota. Para hacerlo, enviá un mail a curso.programando.python@gmail.com con los nombres y emails de cada uno, así les podemos mandar el link de pago con el descuento. La inscripción quedará confirmada una vez que todos realicen su pago.
 
 
 ¿Quién va a dar el curso?
@@ -72,8 +68,8 @@ Mi nombre es Nahuel Tori, trabajo como desarrollador de software en una empresa 
 Podés ver mi perfil completo en LinkedIn_, y también seguirme en Twitter_.
 
 
-¿Querés hacer alguna consulta?
-=================================
+¿Querés hacer alguna otra consulta?
+=======================================
 Por cualquier duda que tengas sobre el curso, podés escribirme un email a: curso.programando.python@gmail.com
 ¡Gracias!
 

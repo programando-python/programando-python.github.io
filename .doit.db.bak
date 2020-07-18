@@ -159,7 +159,7 @@
 'render_sources:output\\pages\\theming\\index.rst', (328192, 244)
 'render_taxonomies:output\\archive.html', (550400, 2383)
 'create_bundles:output\\assets\\css\\all.css', (564224, 1169)
-'sitemap:output\\sitemap.xml', (483840, 10687)
+'sitemap:output\\sitemap.xml', (483840, 10691)
 'create_bundles:output\\assets\\js\\all-nocdn.js', (342016, 788)
 'render_pages:output\\en\\pages\\quickref\\index.html', (343040, 6471)
 'render_listings:output\\listings\\hello.py', (349696, 161)
