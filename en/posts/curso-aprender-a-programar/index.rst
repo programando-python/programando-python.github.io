@@ -1,6 +1,6 @@
 .. title: Curso Aprender a Programar
 .. slug: curso-aprender-a-programar
-.. date: 2020-07-18 12:00:11 UTC-03:00
+.. date: 2020-08-09 19:00:11 UTC-03:00
 .. tags: curso, python, programar
 .. author: Nahuel Tori
 .. status: featured

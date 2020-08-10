@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html prefix="" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>2-Instrucciones básicas y variables | Programando Python</title>
+<link href="../../../assets/css/all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+<link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../rss.xml">
+<link rel="canonical" href="https://programando-python.github.io/en/pages/2-instrucciones-basicas-y-variables/">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Nahuel Tori">
+<meta property="og:site_name" content="Programando Python">
+<meta property="og:title" content="2-Instrucciones básicas y variables">
+<meta property="og:url" content="https://programando-python.github.io/en/pages/2-instrucciones-basicas-y-variables/">
+<meta property="og:description" content='Unidad 2
+Vamos con el primer programa que todo programador hace al aprender un nuevo lenguaje:
+print("Hola mundo!")
+Esta instrucción "print" muestra en pantalla lo que sea que le pongamos dentro de lo'>
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2020-08-09T20:22:42-03:00">
+<link rel="alternate" hreflang="es" href="../../../pages/2-instrucciones-basicas-y-variables/">
+</head>
+<body>
+    <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+            styles, `#sidebar-checkbox` for behavior. -->
+    <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"><!-- Toggleable sidebar --><div class="sidebar" id="sidebar">
+        
+    <nav id="menu" role="navigation" class="sidebar-nav"><a class="sidebar-nav-item" href="../../archive.html">Archive</a>
+        <a class="sidebar-nav-item" href="../../categories/">Tags</a>
+        <a class="sidebar-nav-item" href="../../rss.xml">RSS feed</a>
+    
+    
+    </nav>
+</div>
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          
+    <h3 id="brand" class="masthead-title">
+      <a href="https://programando-python.github.io/en/" title="Programando Python" rel="home">Programando Python</a>
+    </h3>
+
+        </div>
+      </div>
+
+      <div class="container content" id="content">
+        
+<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="post-title p-name entry-title" itemprop="headline name"><a href="." class="u-url">2-Instrucciones básicas y variables</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div class="section" id="unidad-2">
+<h2>Unidad 2</h2>
+<p>Vamos con el primer programa que todo programador hace al aprender un nuevo lenguaje:</p>
+<pre class="code python"><a name="rest_code_2b8545afaa7b44e8990e053b4f80d7ff-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Hola mundo!"</span><span class="p">)</span>
+</pre>
+<p>Esta instrucción "print" muestra en pantalla lo que sea que le pongamos dentro de los paréntesis.</p>
+<p>Todo lo que está entre comillas "Texto" es un texto literal.</p>
+<p>Vamos a crear una variable, definiendo su nombre y asignándole un valor.</p>
+<pre class="code python"><a name="rest_code_557015d07901405e98f30794ae43e0cd-1"></a><span class="n">nombre</span> <span class="o">=</span> <span class="s2">"Nahuel Tori"</span>
+<a name="rest_code_557015d07901405e98f30794ae43e0cd-2"></a>
+<a name="rest_code_557015d07901405e98f30794ae43e0cd-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">nombre</span><span class="p">)</span>
+</pre>
+<p>En este último caso imprimimos en pantalla el contenido de nuestra variable, no el nombre, ya que no está entre comillas.</p>
+<pre class="code python"><a name="rest_code_a69381178d2e4a2f85da7bc4e9c88813-1"></a><span class="n">nombre</span> <span class="o">=</span> <span class="s2">"Nahuel Tori"</span>
+<a name="rest_code_a69381178d2e4a2f85da7bc4e9c88813-2"></a>
+<a name="rest_code_a69381178d2e4a2f85da7bc4e9c88813-3"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Hola, "</span> <span class="o">+</span> <span class="n">nombre</span><span class="p">)</span>
+</pre>
+<p>Acá combinamos la impresión de un texto literal, con el contenido de una variable, mediante el uso del operador "+".</p>
+<pre class="code python"><a name="rest_code_5f9d7a8865a1468b814c56f650162ef1-1"></a><span class="n">nombre</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Decime, ¿cuál es tu nombre?"</span><span class="p">)</span>
+</pre>
+<p>Esta es una nueva instrucción: sirve para que el programa pida información al usuario a través del teclado.</p>
+<p>Estas instrucciones son funciones que ya vienen creadas en Python. La función "input" primero imprime en pantalla el mensaje que se le envía en los paréntesis, al igual que "print". Pero luego de eso, quedará el cursor esperando que el usuario escriba en el teclado lo que quiera, hasta apretar "Enter".</p>
+<p>La información que el usuario haya ingresado, será lo que la función devuelva, y en este caso será el valor que se le asigne a la variable "nombre".</p>
+<p>Podemos comprobarlo, si mostramos en pantalla el contenido de "nombre".</p>
+<pre class="code python"><a name="rest_code_7c68b23995c44479a76adfef7027c552-1"></a><span class="n">nombre</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Decime, ¿cuál es tu nombre?"</span><span class="p">)</span>
+<a name="rest_code_7c68b23995c44479a76adfef7027c552-2"></a>
+<a name="rest_code_7c68b23995c44479a76adfef7027c552-3"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Hola, "</span> <span class="o">+</span> <span class="n">nombre</span><span class="p">)</span>
+</pre>
+<p>Veamos algunos ejemplos más:</p>
+<pre class="code python"><a name="rest_code_beef38ceee2e4d2d91b3f61460acab85-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"¡Buenos días!"</span><span class="p">)</span>
+<a name="rest_code_beef38ceee2e4d2d91b3f61460acab85-2"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"¿Cómo estás hoy?"</span><span class="p">)</span>
+<a name="rest_code_beef38ceee2e4d2d91b3f61460acab85-3"></a>
+<a name="rest_code_beef38ceee2e4d2d91b3f61460acab85-4"></a><span class="n">edad</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"¿Cuántos años tenés?"</span><span class="p">)</span>
+<a name="rest_code_beef38ceee2e4d2d91b3f61460acab85-5"></a><span class="n">vacaciones</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"¿A dónde te pensás ir de vacaciones?"</span><span class="p">)</span>
+</pre>
+<p>Importante:</p>
+<ul class="simple">
+<li><p><strong>Sintaxis</strong>: Cada línea de código debe estar escrita correctamene, sin erroes, siguiendo la sintaxis del lenguaje. Sino, al intentar ejecutarlo se mostrará un error.</p></li>
+<li><p><strong>Intérprete</strong>: Como aprendimos anteriormente, al ejecutar nuestro programa, el intérprete de Python lee nuestro código y lo transforma en instrucciones que la computadora pueda entender. Siempre realizará exactamente lo que escribimos, no más, no menos.</p></li>
+</ul>
+<div class="section" id="ejercicios">
+<h3>Ejercicios</h3>
+<ol class="arabic simple">
+<li><p>Escribir un programa en Python que muestre, en diferentes líneas, la siguiente información: nombre y apellido, ciudad y país donde vivo, cantidad de integrantes de mi familia.</p></li>
+<li><p>Escribir un programa que pregunte al usuario cuál es el clima en ese momento, y luego muestre en pantalla el estado del clima actual.</p></li>
+<li><p>Agregar al programa anterior, que también pregunte cuál es la ciudad en la que se encuentra el usuario, y que a la información que se muestra en pantalla también se indique cuál es la ciudad.</p></li>
+<li><p>Imaginemos que nos encontramos con el siguiente problema: Debemos enviar 50 emails a destinatarios diferentes, avisándole el estado en que se encuentra su pedido. Escribir un programa que pregunte la siguiente información y la guarde en diferentes variables: Nombre del destinatario, código de envío, estado del envío. Luego, el programa debe mostrar en pantalla un texto como el siguiente, pero incluyendo la información consultada previamente en las partes indicadas entre llaves {}: "Hola {nombre del destinatario}, muchas gracias por tu compra. Te queremos avisar que el pedido que nos realizaste tiene el código {códgio de envío}, y se encuentra actualmente {estado del envío}. Muchas gracias."</p></li>
+</ol>
+</div>
+</div>
+    </div>
+    
+
+</article><footer id="footer"><p>Contenido © 2020         <a href="mailto:nahueltori@gmail.com">Nahuel Tori</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+            
+        </footer>
+</div>
+    </div>
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    
+    
+    
+            <script src="../../../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>
