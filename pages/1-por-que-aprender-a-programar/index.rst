@@ -27,9 +27,18 @@ Programar es comunicar la solución a un problema utilizando un lenguaje que pue
 Para programar, es necesario una combinación de conocimiento técnico, creatividad y capacidad de abstracción.
 
 
+Algoritmo
+~~~~~~~~~~~~~
+`Algoritmo en Wikipedia <https://es.wikipedia.org/wiki/Algoritmo>`__
+
+Un algoritmo es un conjunto de instrucciones o reglas definidas y no ambiguas, ordenadas y finitas, que permiten resolver un problema.
+
+Específicamente refiriéndonos a programación, es una secuencia de pasos lógicos que permiten solucionar un problema.
+
 
 ¿Cómo funciona un programa de la computadora?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+`Programa Informático en Wikipedia <https://es.wikipedia.org/wiki/Programa_inform%C3%A1tico>`__
 
 - Los circuitos internos de una computadora, funcionan mediante electricidad, la cual es representada por 0 y 1.
 - Reciben información de entrada, la procesan, la almacenan y la devuelven como salida.

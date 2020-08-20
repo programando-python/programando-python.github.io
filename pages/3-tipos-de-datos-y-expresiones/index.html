@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html prefix="" lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>3-Tipos de datos y expresiones | Programando Python</title>
+<link href="../../assets/css/all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+<link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../en/rss.xml">
+<link rel="canonical" href="https://programando-python.github.io/pages/3-tipos-de-datos-y-expresiones/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Nahuel Tori">
+<meta property="og:site_name" content="Programando Python">
+<meta property="og:title" content="3-Tipos de datos y expresiones">
+<meta property="og:url" content="https://programando-python.github.io/pages/3-tipos-de-datos-y-expresiones/">
+<meta property="og:description" content="Unidad 3
+Tipos de datos en Real Python
+En Python, aprendimos que para definir una variable debemos nombrarla y asignarle un valor. El valor que le asignamos a la variable define su tipo de dato. El ti">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2020-08-16T17:47:55-03:00">
+<link rel="alternate" hreflang="en" href="../../en/pages/3-tipos-de-datos-y-expresiones/">
+</head>
+<body>
+    <a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+            styles, `#sidebar-checkbox` for behavior. -->
+    <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"><!-- Toggleable sidebar --><div class="sidebar" id="sidebar">
+        
+    <nav id="menu" role="navigation" class="sidebar-nav"><a class="sidebar-nav-item" href="../../posts/curso-aprender-a-programar/">Curso</a>
+        <a class="sidebar-nav-item" href="../../archive.html">Archivo</a>
+        <a class="sidebar-nav-item" href="../../categories/">Etiquetas</a>
+        <a class="sidebar-nav-item" href="../../rss.xml">Canal RSS</a>
+    
+    
+    </nav>
+</div>
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          
+    <h3 id="brand" class="masthead-title">
+      <a href="https://programando-python.github.io/" title="Programando Python" rel="home">Programando Python</a>
+    </h3>
+
+        </div>
+      </div>
+
+      <div class="container content" id="content">
+        
+<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="post-title p-name entry-title" itemprop="headline name"><a href="." class="u-url">3-Tipos de datos y expresiones</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div class="section" id="unidad-3">
+<h2>Unidad 3</h2>
+<p><a class="reference external" href="https://realpython.com/python-data-types">Tipos de datos en Real Python</a></p>
+<p>En Python, aprendimos que para definir una variable debemos nombrarla y asignarle un valor. El valor que le asignamos a la variable define su tipo de dato. El tipo de dato se refiere a qué forma tiene su contenido: ¿es un número? ¿es texto? ¿hay otros tipos de datos?</p>
+<p>Hasta el momento, solamente vimos y usamos un tipo de dato: cadena de caracteres o comunmente llamado "string". Hay varios tipos más de datos en Python, y vamos a ver los más usados.</p>
+<div class="section" id="enteros">
+<h3>Enteros</h3>
+<p>Un número entero puede ser del largo que sea necesario, no tiene límite.</p>
+<pre class="code python"><a name="rest_code_8a71cde89cd940988d4ee92c82452602-1"></a><span class="n">numero</span> <span class="o">=</span> <span class="mi">123456</span>
+<a name="rest_code_8a71cde89cd940988d4ee92c82452602-2"></a><span class="n">largo</span> <span class="o">=</span> <span class="mi">98765432101234567890987654321012345678909876543210</span>
+<a name="rest_code_8a71cde89cd940988d4ee92c82452602-3"></a>
+<a name="rest_code_8a71cde89cd940988d4ee92c82452602-4"></a><span class="nb">type</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span>
+<a name="rest_code_8a71cde89cd940988d4ee92c82452602-5"></a><span class="nb">type</span><span class="p">(</span><span class="n">largo</span><span class="p">)</span>
+</pre>
+<p>Si ejecutamos el código anterior, podemos ver que la función "type" devuelve 'int', que significa 'integer'.</p>
+</div>
+<div class="section" id="decimales">
+<h3>Decimales</h3>
+<p>Los números de punto flotante, comunmente llamados decimales, se especifican utilizando un punto dentro del número.</p>
+<pre class="code python"><a name="rest_code_824066df26e64c8796eca2ce3a94af9f-1"></a><span class="n">decimal</span> <span class="o">=</span> <span class="mf">1.8</span>
+<a name="rest_code_824066df26e64c8796eca2ce3a94af9f-2"></a><span class="n">medio</span> <span class="o">=</span> <span class="o">.</span><span class="mi">5</span>
+<a name="rest_code_824066df26e64c8796eca2ce3a94af9f-3"></a>
+<a name="rest_code_824066df26e64c8796eca2ce3a94af9f-4"></a><span class="nb">type</span><span class="p">(</span><span class="n">decimal</span><span class="p">)</span>
+</pre>
+<p>También se puede utlilizar notación científica, agregando una 'e' o 'E' seguido de un número positivo o negativo:</p>
+<pre class="code python"><a name="rest_code_6191556b9f6e41dda88b443e9ab73076-1"></a><span class="n">pequeño</span> <span class="o">=</span> <span class="mf">523e-6</span>
+<a name="rest_code_6191556b9f6e41dda88b443e9ab73076-2"></a><span class="n">enorme</span> <span class="o">=</span> <span class="mf">8e15</span>
+<a name="rest_code_6191556b9f6e41dda88b443e9ab73076-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">pequeño</span><span class="p">)</span>
+<a name="rest_code_6191556b9f6e41dda88b443e9ab73076-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">enorme</span><span class="p">)</span>
+</pre>
+</div>
+<div class="section" id="cadenas-de-caracteres">
+<h3>Cadenas de caracteres</h3>
+<p>Las cadenas o "strings" son secuencias de caracteres. Para especificar un string, lo hacemos encerrando el texto con comillas simples o dobles, ' o ".</p>
+<pre class="code python"><a name="rest_code_a519ba90ead8402cb9bb0d3f06681d5f-1"></a><span class="n">texto1</span> <span class="o">=</span> <span class="s2">"Esto es un string"</span>
+<a name="rest_code_a519ba90ead8402cb9bb0d3f06681d5f-2"></a><span class="n">texto2</span> <span class="o">=</span> <span class="s1">'Esto también'</span>
+<a name="rest_code_a519ba90ead8402cb9bb0d3f06681d5f-3"></a>
+<a name="rest_code_a519ba90ead8402cb9bb0d3f06681d5f-4"></a><span class="n">texto3</span> <span class="o">=</span> <span class="s2">"Un string no puede contener el delimitador de comillas "</span> <span class="n">dentro</span> <span class="n">así</span> <span class="n">nomás</span><span class="s2">"</span>
+</pre>
+<p>Podemos escribir un texto que contenga comillas, usando las otras como delimitador:</p>
+<pre class="code python"><a name="rest_code_66e7fd27c2f0449f82834966543a2374-1"></a><span class="n">texto1</span> <span class="o">=</span> <span class="s2">"Este string tiene una ' comilla"</span>
+<a name="rest_code_66e7fd27c2f0449f82834966543a2374-2"></a><span class="n">texto2</span> <span class="o">=</span> <span class="s1">'Este string tiene " comillas dobles'</span>
+</pre>
+<p>Caracter de escape: . Utilizando una barra invertida, podemos saltear el error de un caracter especial, como las comillas:</p>
+<pre class="code python"><a name="rest_code_634067946211443597d615785f496f9a-1"></a><span class="n">texto1</span> <span class="o">=</span> <span class="s2">"Este string tiene unas </span><span class="se">\"</span><span class="s2"> comillas dobles"</span>
+</pre>
+<p>De esta forma, hay determinados caracteres especiales que podemos utilizar:</p>
+<ul class="simple">
+<li><p>n  --&gt; Nueva línea</p></li>
+<li><p>t  --&gt; Tabulación horizontal</p></li>
+<li><p>b  --&gt; Backspace o vuelta atrás</p></li>
+</ul>
+<pre class="code python"><a name="rest_code_daab91037848450ebfad534cb8a6b852-1"></a><span class="n">texto1</span> <span class="o">=</span> <span class="s2">"Este texto </span><span class="se">\n</span><span class="s2"> tiene dos líneas"</span>
+<a name="rest_code_daab91037848450ebfad534cb8a6b852-2"></a><span class="n">texto2</span> <span class="o">=</span> <span class="s2">"Este texto está </span><span class="se">\t</span><span class="s2"> tabulado"</span>
+</pre>
+</div>
+<div class="section" id="booleanos">
+<h3>Booleanos</h3>
+<p>Los tipos de datos booleanos tienen dos posibles valores: True o False, verdadero o falso. Los utilizamos para determinar condiciones e interpretar expresiones, como veremos en breve.</p>
+<pre class="code python"><a name="rest_code_e84b4ded5a3c4d7bbbfb89ac39f626b5-1"></a><span class="n">verdadero</span> <span class="o">=</span> <span class="kc">True</span>
+<a name="rest_code_e84b4ded5a3c4d7bbbfb89ac39f626b5-2"></a><span class="n">falso</span> <span class="o">=</span> <span class="kc">False</span>
+<a name="rest_code_e84b4ded5a3c4d7bbbfb89ac39f626b5-3"></a>
+<a name="rest_code_e84b4ded5a3c4d7bbbfb89ac39f626b5-4"></a><span class="nb">type</span><span class="p">(</span><span class="n">verdadero</span><span class="p">)</span>
+<a name="rest_code_e84b4ded5a3c4d7bbbfb89ac39f626b5-5"></a><span class="nb">type</span><span class="p">(</span><span class="n">falso</span><span class="p">)</span>
+</pre>
+</div>
+<div class="section" id="casteos-de-datos">
+<h3>Casteos de datos</h3>
+<p>Castear una variable se refiere a transformar su tipo de dato en otro. Por ejemplo, un número en un texto, o un decimal a entero.</p>
+<pre class="code python"><a name="rest_code_cf4b813973304ef8a1926d4b84f353ec-1"></a><span class="n">entero_desde_texto</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="s2">"10"</span><span class="p">)</span>
+<a name="rest_code_cf4b813973304ef8a1926d4b84f353ec-2"></a><span class="n">texto_desde_float</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="mf">1.25</span><span class="p">)</span>
+<a name="rest_code_cf4b813973304ef8a1926d4b84f353ec-3"></a><span class="n">float_desde_texto</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="s2">"2.5"</span><span class="p">)</span>
+<a name="rest_code_cf4b813973304ef8a1926d4b84f353ec-4"></a><span class="n">entero_desde_float</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="mf">10.8</span><span class="p">)</span>
+</pre>
+<p>Estas funciones incluidas en Python nos ayudan a transformar el tipo de dato de una variable cuando lo necesitemos.</p>
+</div>
+<div class="section" id="expresiones">
+<h3>Expresiones</h3>
+<p>Las expresiones están formadas mediante datos o variables y diferentes operadores. Cada operador funciona de una determinada manera según el tipo de dato.</p>
+<p><a class="reference external" href="https://www.w3schools.com/python/python_operators.asp">Operadores en w3schools</a></p>
+<ul class="simple">
+<li><p>Operadores aritméticos:</p></li>
+</ul>
+<pre class="code python"><a name="rest_code_48d3449bd86e4b9a9dc328abfbbe7b5d-1"></a><span class="n">suma</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span>
+<a name="rest_code_48d3449bd86e4b9a9dc328abfbbe7b5d-2"></a><span class="n">resta</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">-</span> <span class="mi">8</span>
+<a name="rest_code_48d3449bd86e4b9a9dc328abfbbe7b5d-3"></a><span class="n">multiplicacion</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="mi">4</span>
+<a name="rest_code_48d3449bd86e4b9a9dc328abfbbe7b5d-4"></a><span class="n">division</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">/</span> <span class="mi">2</span>
+<a name="rest_code_48d3449bd86e4b9a9dc328abfbbe7b5d-5"></a>
+<a name="rest_code_48d3449bd86e4b9a9dc328abfbbe7b5d-6"></a><span class="n">concatenacion</span> <span class="o">=</span> <span class="s2">"Hola"</span> <span class="o">+</span> <span class="s2">", cómo te va?"</span>
+<a name="rest_code_48d3449bd86e4b9a9dc328abfbbe7b5d-7"></a><span class="n">copiado</span> <span class="o">=</span> <span class="s2">"Hola "</span> <span class="o">*</span> <span class="mi">4</span>
+</pre>
+<ul class="simple">
+<li><p>Operadores de comparación:</p></li>
+</ul>
+<pre class="code python"><a name="rest_code_707449cda9f34ba787c240ded8460b59-1"></a><span class="mi">5</span> <span class="o">==</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span>
+<a name="rest_code_707449cda9f34ba787c240ded8460b59-2"></a><span class="s2">"Hola"</span> <span class="o">!=</span> <span class="s2">"Chau"</span>
+<a name="rest_code_707449cda9f34ba787c240ded8460b59-3"></a><span class="mi">10</span> <span class="o">&lt;</span> <span class="mi">10</span> <span class="o">+</span> <span class="mi">5</span>
+<a name="rest_code_707449cda9f34ba787c240ded8460b59-4"></a><span class="mi">1</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span>
+</pre>
+<ul class="simple">
+<li><p>Operadores lógicos:</p></li>
+</ul>
+<pre class="code python"><a name="rest_code_7e937b45b2444a7e8d8b00f93434b97d-1"></a><span class="n">operador_y</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">5</span> <span class="ow">and</span> <span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">10</span>
+<a name="rest_code_7e937b45b2444a7e8d8b00f93434b97d-2"></a><span class="n">operador_o</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">4</span> <span class="ow">or</span> <span class="mi">10</span> <span class="o">&gt;</span> <span class="mi">20</span>
+<a name="rest_code_7e937b45b2444a7e8d8b00f93434b97d-3"></a><span class="n">operador_no</span> <span class="o">=</span> <span class="ow">not</span><span class="p">(</span><span class="mi">5</span> <span class="o">==</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span>
+<a name="rest_code_7e937b45b2444a7e8d8b00f93434b97d-4"></a>
+<a name="rest_code_7e937b45b2444a7e8d8b00f93434b97d-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">operador_y</span><span class="p">)</span>
+<a name="rest_code_7e937b45b2444a7e8d8b00f93434b97d-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">operador_o</span><span class="p">)</span>
+<a name="rest_code_7e937b45b2444a7e8d8b00f93434b97d-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">operador_no</span><span class="p">)</span>
+</pre>
+<p>El resultado de la expresión es lo que Python devuelve luego de evaluarla. Entonces, el resultado de la expresión 1 + 3 es 4, y el de 1 + 3 == 5 es False.
+Las expresiones de comparación, en las cuales el resultado es un booleano verdadero o falso, nos van a servir cuando veamos alternativa condicional (o if), el tema que viene.</p>
+</div>
+<div class="section" id="ejercicios">
+<h3>Ejercicios</h3>
+<p>1- Escribir un programa que pregunte dos números diferentes al usuario, luego los sume y finalmente muestre el resultado en pantalla.
+2- Ídem al programa anterior, pero que reste el segundo número al primero.
+3- Escribir un programa que pida al usuario el ingreso de un texto cualquiera, y luego un cantidad de veces a repetirlo. Mostrar en pantalla el texto ingresado, repetido tantas veces como haya solicitado el usuario.
+4- Ídem al programa anterior, pero entre cada repetición de texto, agregar un separador de nueva línea.
+5- Pedir al usuario que ingrese por pantalla dos números. Luego evaluar si la suma de ellos es mayor que su multiplicación, y mostrar un mensaje en pantalla indicando eso. El mensaje a mostrar puede ser algo como: "La suma de los números &lt;X&gt; y &lt;Y&gt; es mayor que la multiplicación de &lt;X&gt; y &lt;Y&gt;: &lt;True/False&gt;"</p>
+</div>
+</div>
+    </div>
+    
+
+</article><footer id="footer"><p>Contenido © 2020         <a href="mailto:nahueltori@gmail.com">Nahuel Tori</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+            
+        </footer>
+</div>
+    </div>
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    
+    
+    
+            <script src="../../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
+    moment.locale("es");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>
