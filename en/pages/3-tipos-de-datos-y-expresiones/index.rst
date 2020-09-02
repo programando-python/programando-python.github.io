@@ -174,8 +174,8 @@ Las expresiones de comparación, en las cuales el resultado es un booleano verda
 
 Ejercicios
 ~~~~~~~~~~~~
-1- Escribir un programa que pregunte dos números diferentes al usuario, luego los sume y finalmente muestre el resultado en pantalla.
-2- Ídem al programa anterior, pero que reste el segundo número al primero.
-3- Escribir un programa que pida al usuario el ingreso de un texto cualquiera, y luego un cantidad de veces a repetirlo. Mostrar en pantalla el texto ingresado, repetido tantas veces como haya solicitado el usuario.
-4- Ídem al programa anterior, pero entre cada repetición de texto, agregar un separador de nueva línea.
-5- Pedir al usuario que ingrese por pantalla dos números. Luego evaluar si la suma de ellos es mayor que su multiplicación, y mostrar un mensaje en pantalla indicando eso. El mensaje a mostrar puede ser algo como: "La suma de los números <X> y <Y> es mayor que la multiplicación de <X> y <Y>: <True/False>"
+1. Escribir un programa que pregunte dos números diferentes al usuario, luego los sume y finalmente muestre el resultado en pantalla.
+2. Ídem al programa anterior, pero que reste el segundo número al primero.
+3. Escribir un programa que pida al usuario el ingreso de un texto cualquiera, y luego un cantidad de veces a repetirlo. Mostrar en pantalla el texto ingresado, repetido tantas veces como haya solicitado el usuario.
+4. Ídem al programa anterior, pero entre cada repetición de texto, agregar un separador de nueva línea.
+5. Pedir al usuario que ingrese por pantalla dos números. Luego evaluar si la suma de ellos es mayor que su multiplicación, y mostrar un mensaje en pantalla indicando eso. El mensaje a mostrar puede ser algo como: "La suma de los números <X> y <Y> es mayor que la multiplicación de <X> y <Y>: <True/False>"

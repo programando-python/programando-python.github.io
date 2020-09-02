@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html prefix="" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>4- Alternativa condicional: if | Programando Python</title>
+<link href="../../../assets/css/all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+<link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../rss.xml">
+<link rel="canonical" href="https://programando-python.github.io/en/pages/4-alternativa-condicional-if/">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Nahuel Tori">
+<meta property="og:site_name" content="Programando Python">
+<meta property="og:title" content="4- Alternativa condicional: if">
+<meta property="og:url" content="https://programando-python.github.io/en/pages/4-alternativa-condicional-if/">
+<meta property="og:description" content="Unidad 4
+
+Alternativa condicional
+Una de las formas básicas para controlar el flujo de un programa, es la alternativa condicional. Nos permite evaluar una condición, y basado en el resultado, que el p">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2020-09-02T19:53:13-03:00">
+<link rel="alternate" hreflang="es" href="../../../pages/4-alternativa-condicional-if/">
+</head>
+<body>
+    <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+            styles, `#sidebar-checkbox` for behavior. -->
+    <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"><!-- Toggleable sidebar --><div class="sidebar" id="sidebar">
+        
+    <nav id="menu" role="navigation" class="sidebar-nav"><a class="sidebar-nav-item" href="../../archive.html">Archive</a>
+        <a class="sidebar-nav-item" href="../../categories/">Tags</a>
+        <a class="sidebar-nav-item" href="../../rss.xml">RSS feed</a>
+    
+    
+    </nav>
+</div>
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          
+    <h3 id="brand" class="masthead-title">
+      <a href="https://programando-python.github.io/en/" title="Programando Python" rel="home">Programando Python</a>
+    </h3>
+
+        </div>
+      </div>
+
+      <div class="container content" id="content">
+        
+<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="post-title p-name entry-title" itemprop="headline name"><a href="." class="u-url">4- Alternativa condicional: if</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div class="section" id="unidad-4">
+<h2>Unidad 4</h2>
+<div class="section" id="alternativa-condicional">
+<h3>Alternativa condicional</h3>
+<p>Una de las formas básicas para controlar el flujo de un programa, es la alternativa condicional. Nos permite evaluar una condición, y basado en el resultado, que el programa ejecute una porción de código u otra.</p>
+<p>Tiene la siguiente forma:</p>
+<pre class="code python"><a name="rest_code_c3f1927c418e46b88cee0fe591509373-1"></a><span class="k">if</span>  <span class="s2">"&lt;condicion&gt;"</span> <span class="p">:</span>
+<a name="rest_code_c3f1927c418e46b88cee0fe591509373-2"></a>    <span class="s2">"&lt;código a ejecutar&gt;"</span>
+</pre>
+<p>En la condición puede haber cualquier expresión que se resuelva en verdadero (True) o falso (False).
+Por ejemplo:</p>
+<pre class="code python"><a name="rest_code_fc304cbfa4f24842be1d60b66be47e47-1"></a><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
+<a name="rest_code_fc304cbfa4f24842be1d60b66be47e47-2"></a><span class="k">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+<a name="rest_code_fc304cbfa4f24842be1d60b66be47e47-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"La variable a es menor a 10"</span><span class="p">)</span>
+</pre>
+<p>También podemos tener:</p>
+<pre class="code python"><a name="rest_code_64df9916fe334c349a764e33b6b11cfd-1"></a><span class="n">salir</span> <span class="o">=</span> <span class="kc">False</span>
+<a name="rest_code_64df9916fe334c349a764e33b6b11cfd-2"></a><span class="k">if</span> <span class="n">salir</span><span class="p">:</span>
+<a name="rest_code_64df9916fe334c349a764e33b6b11cfd-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Gracias por usar este programa."</span><span class="p">)</span>
+</pre>
+<p>En este ultimo caso, la linea con el print no se ejecutará, porque la condición es falsa.</p>
+</div>
+<div class="section" id="indentacion">
+<h3>Indentación</h3>
+<p>Es lo que controla la porción de código que está dentro del if. Cada línea de código debe estar indentada de igual manera.</p>
+<pre class="code python"><a name="rest_code_6936432c51504cfea93bffdc5986143c-1"></a><span class="n">salir</span> <span class="o">=</span> <span class="kc">False</span>
+<a name="rest_code_6936432c51504cfea93bffdc5986143c-2"></a><span class="k">if</span> <span class="n">salir</span><span class="p">:</span>
+<a name="rest_code_6936432c51504cfea93bffdc5986143c-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Gracias por usar este programa."</span><span class="p">)</span>
+<a name="rest_code_6936432c51504cfea93bffdc5986143c-4"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Esta línea se imprime siempre."</span><span class="p">)</span>
+</pre>
+<p>En este último ejemplo, el anuncio de agradecimiento no se imprimirá, pero la línea siguiente si, ya que al no estar indentada no pertenece al bloque de código del if, sino al resto del programa.</p>
+</div>
+<div class="section" id="sino">
+<h3>Sino</h3>
+<p>Cuando la condición no se cumple, no se ejecuta el código dentro, pero puede establecerse otra porción de código que se ejecutará cuando esto suceda.</p>
+<p>Por ejemplo:</p>
+<pre class="code python"><a name="rest_code_59714adad053490f9a092c3f1cbe465b-1"></a><span class="n">salir</span> <span class="o">=</span> <span class="kc">False</span>
+<a name="rest_code_59714adad053490f9a092c3f1cbe465b-2"></a><span class="k">if</span> <span class="n">salir</span><span class="p">:</span>
+<a name="rest_code_59714adad053490f9a092c3f1cbe465b-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Gracias por usar este programa."</span><span class="p">)</span>
+<a name="rest_code_59714adad053490f9a092c3f1cbe465b-4"></a><span class="k">else</span>
+<a name="rest_code_59714adad053490f9a092c3f1cbe465b-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Seguimos trabajando."</span><span class="p">)</span>
+</pre>
+<p>En este caso, el bloque de código dentro del else se ejecutará ya que la condición es falsa. Cuando la condición es verdadera, se ejecuta el código del if, pero <strong>no</strong> el del else, como acá:</p>
+<pre class="code python"><a name="rest_code_1b7a0b3a8a764b8f8b166ec2e5f016b5-1"></a><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
+<a name="rest_code_1b7a0b3a8a764b8f8b166ec2e5f016b5-2"></a><span class="k">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+<a name="rest_code_1b7a0b3a8a764b8f8b166ec2e5f016b5-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"La variable a es menor a 10"</span><span class="p">)</span>
+<a name="rest_code_1b7a0b3a8a764b8f8b166ec2e5f016b5-4"></a><span class="k">else</span>
+<a name="rest_code_1b7a0b3a8a764b8f8b166ec2e5f016b5-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"La variable a es mayor a 10"</span><span class="p">)</span>
+</pre>
+</div>
+<div class="section" id="operadores">
+<h3>Operadores</h3>
+<p>También podemos tener operadores dentro de nuestras expresiones, como vimos anteriormente:</p>
+<pre class="code python"><a name="rest_code_80e708f83a8e47d484054a1240597cca-1"></a><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
+<a name="rest_code_80e708f83a8e47d484054a1240597cca-2"></a><span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
+<a name="rest_code_80e708f83a8e47d484054a1240597cca-3"></a><span class="k">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">10</span> <span class="ow">and</span> <span class="n">b</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">:</span>
+<a name="rest_code_80e708f83a8e47d484054a1240597cca-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"La variable a es menor a 10"</span><span class="p">)</span>
+</pre>
+</div>
+<div class="section" id="sino-si">
+<h3>Sino, si</h3>
+<p>Hay una instrucción adicional que se llama "elif", y sirve para escribir varias condiciones encadenadas. Cuando la condición del if no se cumple, se puede preguntar por otra condición utilizando un elif, de esta manera:</p>
+<pre class="code python"><a name="rest_code_4710eb35573d47e9a2bbae8ecfced3a5-1"></a><span class="n">a</span> <span class="o">=</span> <span class="mi">20</span>
+<a name="rest_code_4710eb35573d47e9a2bbae8ecfced3a5-2"></a><span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
+<a name="rest_code_4710eb35573d47e9a2bbae8ecfced3a5-3"></a><span class="k">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span><span class="p">:</span>
+<a name="rest_code_4710eb35573d47e9a2bbae8ecfced3a5-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"La variable a es menor a b"</span><span class="p">)</span>
+<a name="rest_code_4710eb35573d47e9a2bbae8ecfced3a5-5"></a><span class="k">elif</span> <span class="n">b</span> <span class="o">&lt;</span> <span class="n">a</span><span class="p">:</span>
+<a name="rest_code_4710eb35573d47e9a2bbae8ecfced3a5-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"La variable a es mayor a b"</span><span class="p">)</span>
+<a name="rest_code_4710eb35573d47e9a2bbae8ecfced3a5-7"></a><span class="k">else</span><span class="p">:</span>
+<a name="rest_code_4710eb35573d47e9a2bbae8ecfced3a5-8"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Las variables son iguales"</span><span class="p">)</span>
+</pre>
+<p>Como pueden ver, al final de la última condición se cierra la estructura con un else, para chequear el resto de las posibilidades si es necesario.</p>
+</div>
+<div class="section" id="ejercicios">
+<h3>Ejercicios</h3>
+<ol class="arabic simple">
+<li><p>Escribir un programa en python que pida dos números al usuario, y que luego muestre en pantalla cuál es el mayor.</p></li>
+<li><p>Escribir un programa que pregunte un nombre al usuario, lo chequee con un nombre de usuario almacenado en una variable del programa, y le responda si es el mismo que el guardado.</p></li>
+<li><p>Escribir un programa que pida dos números al usuario, y también una operación que puede ser suma o resta. Luego, dependiendo del tipo de operación que se haya ingresado, debe sumar o restar los números, y mostrar el resultado en pantalla.</p></li>
+<li><p>Al program anterior, agregar también las operaciones de multiplicación y división.</p></li>
+</ol>
+</div>
+</div>
+    </div>
+    
+
+</article><footer id="footer"><p>Contenido © 2020         <a href="mailto:nahueltori@gmail.com">Nahuel Tori</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+            
+        </footer>
+</div>
+    </div>
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    
+    
+    
+            <script src="../../../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>
