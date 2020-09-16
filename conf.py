@@ -138,7 +138,7 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ("/posts/curso-aprender-a-programar/", "Curso"),
+        ("/pages/curso", "Curso"),
         ("/archive.html", "Archivo"),
         ("/categories/", "Etiquetas"),
         ("/rss.xml", "Canal RSS"),
