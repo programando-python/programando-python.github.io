@@ -8,10 +8,10 @@
 .. type: text
 
 Unidad 4
------------
+===========
 
 Alternativa condicional
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------
 
 Una de las formas básicas para controlar el flujo de un programa, es la alternativa condicional. Nos permite evaluar una condición, y basado en el resultado, que el programa ejecute una porción de código u otra.
 
@@ -71,7 +71,7 @@ Por ejemplo:
     salir = False
     if salir:
         print("Gracias por usar este programa.")
-    else
+    else:
         print("Seguimos trabajando.")
 
 En este caso, el bloque de código dentro del else se ejecutará ya que la condición es falsa. Cuando la condición es verdadera, se ejecuta el código del if, pero **no** el del else, como acá:
@@ -81,7 +81,7 @@ En este caso, el bloque de código dentro del else se ejecutará ya que la condi
     a = 0
     if a < 10:
         print("La variable a es menor a 10")
-    else
+    else:
         print("La variable a es mayor a 10")
 
 
@@ -118,7 +118,8 @@ Hay una instrucción adicional que se llama "elif", y sirve para escribir varias
 Como pueden ver, al final de la última condición se cierra la estructura con un else, para chequear el resto de las posibilidades si es necesario.
 
 Ejercicios
-~~~~~~~~~~~~
+-------------
+
 1. Escribir un programa en python que pida dos números al usuario, y que luego muestre en pantalla cuál es el mayor.
 2. Escribir un programa que pregunte un nombre al usuario, lo chequee con un nombre de usuario almacenado en una variable del programa, y le responda si es el mismo que el guardado.
 3. Escribir un programa que pida dos números al usuario, y también una operación que puede ser suma o resta. Luego, dependiendo del tipo de operación que se haya ingresado, debe sumar o restar los números, y mostrar el resultado en pantalla.
