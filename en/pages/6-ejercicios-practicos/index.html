@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html prefix="" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>6 - Ejercicios prácticos | Programando Python</title>
+<link href="../../../assets/css/all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+<link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../rss.xml">
+<link rel="canonical" href="https://programando-python.github.io/en/pages/6-ejercicios-practicos/">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Nahuel Tori">
+<meta property="og:site_name" content="Programando Python">
+<meta property="og:title" content="6 - Ejercicios prácticos">
+<meta property="og:url" content="https://programando-python.github.io/en/pages/6-ejercicios-practicos/">
+<meta property="og:description" content="Unidad 6
+
+Ejercicios adicionales
+Vamos a hacer algunos ejercicios adicionales, resumiendo todo lo que aprendimos hasta el momento.
+
+Presten atención al siguiente código. Deben decir cuál será el próxi">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2020-09-30T20:06:21-03:00">
+<link rel="alternate" hreflang="es" href="../../../pages/6-ejercicios-practicos/">
+</head>
+<body>
+    <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+            styles, `#sidebar-checkbox` for behavior. -->
+    <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"><!-- Toggleable sidebar --><div class="sidebar" id="sidebar">
+        
+    <nav id="menu" role="navigation" class="sidebar-nav"><a class="sidebar-nav-item" href="../../archive.html">Archive</a>
+        <a class="sidebar-nav-item" href="../../categories/">Tags</a>
+        <a class="sidebar-nav-item" href="../../rss.xml">RSS feed</a>
+    
+    
+    </nav>
+</div>
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          
+    <h3 id="brand" class="masthead-title">
+      <a href="https://programando-python.github.io/en/" title="Programando Python" rel="home">Programando Python</a>
+    </h3>
+
+        </div>
+      </div>
+
+      <div class="container content" id="content">
+        
+<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="post-title p-name entry-title" itemprop="headline name"><a href="." class="u-url">6 - Ejercicios prácticos</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div class="section" id="unidad-6">
+<h2>Unidad 6</h2>
+<div class="section" id="ejercicios-adicionales">
+<h3>Ejercicios adicionales</h3>
+<p>Vamos a hacer algunos ejercicios adicionales, resumiendo todo lo que aprendimos hasta el momento.</p>
+<ol class="arabic simple">
+<li><p>Presten atención al siguiente código. Deben decir cuál será el próximo número que correspondería en la serie que se imprime. El que lo haga más rápido, gana.</p></li>
+</ol>
+<pre class="code python"><a name="rest_code_67e9fa0b5ae441df95b577fb7453c1c6-1"></a><span class="n">cifra</span> <span class="o">=</span> <span class="mi">1</span>
+<a name="rest_code_67e9fa0b5ae441df95b577fb7453c1c6-2"></a><span class="n">diferencia2</span> <span class="o">=</span> <span class="mi">7</span>
+<a name="rest_code_67e9fa0b5ae441df95b577fb7453c1c6-3"></a>
+<a name="rest_code_67e9fa0b5ae441df95b577fb7453c1c6-4"></a><span class="k">for</span> <span class="n">diferencia1</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">12</span><span class="p">):</span>
+<a name="rest_code_67e9fa0b5ae441df95b577fb7453c1c6-5"></a>    <span class="n">cifra</span> <span class="o">=</span> <span class="n">cifra</span> <span class="o">+</span> <span class="n">diferencia1</span>
+<a name="rest_code_67e9fa0b5ae441df95b577fb7453c1c6-6"></a>    <span class="n">cifra</span> <span class="o">=</span> <span class="n">cifra</span> <span class="o">*</span> <span class="n">diferencia2</span>
+<a name="rest_code_67e9fa0b5ae441df95b577fb7453c1c6-7"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">cifra</span><span class="p">)</span>
+</pre>
+<ol class="arabic simple" start="2">
+<li><p>Crear un programa que pida al usuario el ingreso de una frase, y luego por separado una letra. El programa debe recorrer toda la frase, y reemplazar todas las ocurrencias de esa letra, por un espacio.</p></li>
+<li><p>Al programa anterior, agregarle que le pida al usuario una letra de reemplazo, para utilizar en lugar del espacio. Luego el programa debe buscar todas las ocurrencias de la primer letra, y reemplazarlas por la segunda.</p></li>
+<li><p>Crear un programa que dibuje un edificio en pantalla con caracteres ASCII (ascii-art) como el que está debajo. El programa debe estar programado utilizando funciones, de acuerdo a las buenas prácticas de programación: cada función representa conceptualmente una parte de la casa, funciones más abstractas invocan a funciones más concretas, y deben reutilizarse cada vez que sea posible.</p></li>
+</ol>
+<pre class="literal-block">==================
+|                |
+|  ____    ____  |
+|  |  |    |  |  |
+|  ====    ====  |
+|                |
+|  ____    ____  |
+|  |  |    |  |  |
+|  ====    ====  |
+|                |
+|  ____    ____  |
+|  |  |    |  |  |
+|  ====    ====  |
+|     ______     |
+|     |    |     |
+|     |    |     |
+==================</pre>
+<ol class="arabic simple" start="5">
+<li><p>Crear un programa que dado un número que contenga cifras del 0 al 9, lo codifique de cualquier manera elegida por ustedes, y muestre el resultado. También dar la opción de poder ingresar un número codificado, y que devuelva el correcto.</p></li>
+</ol>
+</div>
+</div>
+    </div>
+    
+
+</article><footer id="footer"><p>Contenido © 2020         <a href="mailto:nahueltori@gmail.com">Nahuel Tori</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+            
+        </footer>
+</div>
+    </div>
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    
+    
+    
+            <script src="../../../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>
