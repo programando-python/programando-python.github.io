@@ -7,8 +7,11 @@
 .. description: 
 .. type: text
 
-Unidad 6 - Ejercicios
-=========================
+Unidad 6 
+====================
+
+Ejercicios adicionales
+---------------------------
 
 Vamos a hacer algunos ejercicios adicionales, resumiendo todo lo que aprendimos hasta el momento.
 
