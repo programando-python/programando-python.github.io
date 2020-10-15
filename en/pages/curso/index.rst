@@ -20,7 +20,7 @@ En esta página podrás encontrar los apuntes de todos los temas vistos en el cu
 6. :doc:`Funciones. Reutilización de código. <6-funciones-reutilizacion-de-codigo>`  
    :doc:`Ejercicios adicionales. <6-ejercicios-practicos>`
 7. :doc:`Estructuras de datos: listas. <7-estructuras-de-datos-listas>`
-8. Repetición condicional: while.
+8. :doc:`Repetición condicional: while. <8-repeticion-condicional-while>`
 9. Estructuras de datos: diccionarios.
 10. Proyecto intermedio: juego Ahorcado.
 11. Excepciones y control de errores.
