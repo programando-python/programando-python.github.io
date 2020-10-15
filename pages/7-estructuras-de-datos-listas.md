@@ -9,7 +9,8 @@
 .. type: text
 -->
 
-# Estructuras de datos: Listas
+# Unidad 7
+## Estructuras de datos: Listas
 
 Vamos a conocer una de las formas básicas de organizar la información: las listas. Hasta el momento ya las habíamos usado, pero sin darnos cuenta.  
 Una cadena de caracteres es una lista, y también la función range() nos devuelve una lista de números enteros.
@@ -21,7 +22,7 @@ semana = ["lunes", "martes", "miercoles", "jueves", "viernes"]
 texto = "Este texto también es una lista, de caracteres"
 ```
 
-## Iterar a través de una lista
+### Iterar a través de una lista
 
 Como ya aprendimos, utilizando el `for` podemos recorrer todos los elementos de una lista, uno por uno. Por ejemplo:
 
@@ -30,7 +31,7 @@ for elemento in semana:
     print(elemento)
 ```
 
-## Agregar elementos a una lista
+### Agregar elementos a una lista
 
 Podemos agregarle elementos a una lista usando cualquiera de estas dos funciones: `append()` o `insert()`.
 
@@ -44,7 +45,7 @@ Agregar elementos en una posición determinada:
 semana.insert(5, "sabado")
 ```
 
-## Acceder a elementos de la lista
+### Acceder a elementos de la lista
 
 Podemos utilizar el índice para acceder a un elemento de la lista, o modificarlo. El índice de las listas se utiliza mediante corchetes [].
 
@@ -61,7 +62,7 @@ if "lunes" in semana:
     print(semana.index("lunes"))
 ```
 
-## Eliminar elementos de la lista
+### Eliminar elementos de la lista
 
 Utilizando `remove()` quitamos un elemento puntual. Con `pop()` vamos a remover el último de la lista, y `del` nos permite eliminar utilizando el índice.
 
@@ -78,7 +79,7 @@ if not semana:
     print("La lista semana está vacía")
 ```
 
-## Ejercicios
+### Ejercicios
 
 1. Dado el siguiente programa, completar las partes del código donde se debe agregar un item, modificar un item, eliminarlo, y mostrar la lista entera.
 ``` python
