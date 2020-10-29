@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html prefix="" lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>9. Proyecto: Juego Ahorcado | Programando Python</title>
+<link href="../../assets/css/all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+<link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../en/rss.xml">
+<link rel="canonical" href="https://programando-python.github.io/pages/9-proyecto-juego-ahorcado/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Nahuel Tori">
+<meta property="og:site_name" content="Programando Python">
+<meta property="og:title" content="9. Proyecto: Juego Ahorcado">
+<meta property="og:url" content="https://programando-python.github.io/pages/9-proyecto-juego-ahorcado/">
+<meta property="og:description" content="¡Muy bien!
+Ya llegaste a la mitad del curso. Para esta ocasión, vamos a tomarnos la clase en armar un juego: el Ahorcado.
+El juego tiene las siguientes reglas:
+
+Participan 2 jugadores, uno que propone">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2020-10-29T17:33:09-03:00">
+<link rel="alternate" hreflang="en" href="../../en/pages/9-proyecto-juego-ahorcado/">
+</head>
+<body>
+    <a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+            styles, `#sidebar-checkbox` for behavior. -->
+    <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"><!-- Toggleable sidebar --><div class="sidebar" id="sidebar">
+        
+    <nav id="menu" role="navigation" class="sidebar-nav"><a class="sidebar-nav-item" href="../curso">Curso</a>
+        <a class="sidebar-nav-item" href="../../archive.html">Archivo</a>
+        <a class="sidebar-nav-item" href="../../categories/">Etiquetas</a>
+        <a class="sidebar-nav-item" href="../../rss.xml">Canal RSS</a>
+    
+    
+    </nav>
+</div>
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          
+    <h3 id="brand" class="masthead-title">
+      <a href="https://programando-python.github.io/" title="Programando Python" rel="home">Programando Python</a>
+    </h3>
+
+        </div>
+      </div>
+
+      <div class="container content" id="content">
+        
+<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="post-title p-name entry-title" itemprop="headline name"><a href="." class="u-url">9. Proyecto: Juego Ahorcado</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>¡Muy bien!
+Ya llegaste a la mitad del curso. Para esta ocasión, vamos a tomarnos la clase en armar un juego: el Ahorcado.</p>
+<p>El juego tiene las siguientes reglas:</p>
+<ul>
+<li>Participan 2 jugadores, uno que propone una palabra secreta a adivinar, y otro que intenta adivinarla nombrando letras del abecedario.</li>
+<li>Debe mostrarse un guión por cada letra de la palabra secreta.</li>
+<li>Por cada letra nombrada que esté contenida en la palabra secreta, debe descubrirse su posición.</li>
+<li>Por cada letra nombrada errónea, se debe dibujar una nueva parte de nuestro muñeco ahorcado.</li>
+<li>El ahorcado posee seis partes: cabeza, cuerpo, brazos y piernas. Esto significa que se tienen 5 posibilidades de equivocarse: en la sexta, el juego se termina y el jugador pierde.</li>
+<li>El juego también se termina cuando todas las letras de la palabra secreta son descubiertas.</li>
+</ul>
+<p>Algunos detalles para pensar cuando implementemos el juego:</p>
+<ol>
+<li>¿Cuántas posibilidades de equivocarse hay? Hay que llevar la cuenta.</li>
+<li>¿Cuales son las condiciones bajo las que el juego (su programa) se termina?</li>
+<li>De alguna forma necesitaremos verificar si la letra que el usuario ingresa pertenece a la palabra oculta.</li>
+<li>¿Qué tareas debemos realizar cada vez que el usuario intenta adivinar una letra?</li>
+</ol>
+</div>
+    </div>
+    
+
+</article><footer id="footer"><p>Contenido © 2020         <a href="mailto:nahueltori@gmail.com">Nahuel Tori</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+            
+        </footer>
+</div>
+    </div>
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    
+    
+    
+            <script src="../../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
+    moment.locale("es");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>
