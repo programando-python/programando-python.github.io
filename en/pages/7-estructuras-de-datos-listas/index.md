@@ -81,7 +81,7 @@ if not semana:
 
 ### Ejercicios
 
-1. Dado el siguiente programa, completar las partes del código donde se debe agregar un item, modificar un item, eliminarlo, y mostrar la lista entera.
+1- Dado el siguiente programa, completar las partes del código donde se debe agregar un item, modificar un item, eliminarlo, y mostrar la lista entera.
 ``` python
 print("Lista recordatorio de compras del supermercado")
 print("Elija la función a ejecutar:")
@@ -97,7 +97,7 @@ elif opcion == "2":
 
 elif opcion == "3":
 
-else:
+elif opcion == "4":
 
 ```
-2. Para cada una de las cuatro funciones agregadas anteriormente, crear una función que la realice, y reemplazar su código en el programa por la llamada a esa función.
+2- Para cada una de las cuatro funciones agregadas anteriormente, crear una función que la realice, y reemplazar su código en el programa por la llamada a esa función.
