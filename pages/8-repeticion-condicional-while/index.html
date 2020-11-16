@@ -61,46 +61,51 @@ De esta mane">
 <h3>Repetición condicional: While</h3>
 <p>Así como ya aprendimos sobre la repetición simple con el for, también podemos generar bucles o repeticiones que estén controlados por una condición.</p>
 <p>De esta manera, podremos crear código que se ejecute un número indefinido de veces, y que esto sea controlado mediante una expresión.</p>
-<pre class="code literal-block"><span class="n">dia</span> <span class="o">=</span> <span class="s2">"viernes"</span>
+<pre class="code literal-block"><span></span><code><span class="n">dia</span> <span class="o">=</span> <span class="s2">"viernes"</span>
 <span class="k">while</span> <span class="n">dia</span> <span class="o">!=</span> <span class="s2">"viernes"</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Aun no llega el fin de semana :("</span><span class="p">))</span>
     <span class="n">dia</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Qué día es?"</span><span class="p">)</span>
-</pre>
+</code></pre>
+
 <p>La palabra reservada que nos permite esto es <code>while</code>. Luego aparece la expresión, que mientras sea verdadera permitirá que el bucle se siga ejecutando.</p>
 <h4>La sentencia else</h4>
 <p>Usando <code>else</code>, podemos ejecutar una porción de código cuando la condición ya no se cumpla más. No es de uso obligatorio.</p>
-<pre class="code literal-block"><span class="n">dia</span> <span class="o">=</span> <span class="s2">"viernes"</span>
+<pre class="code literal-block"><span></span><code><span class="n">dia</span> <span class="o">=</span> <span class="s2">"viernes"</span>
 <span class="k">while</span> <span class="n">dia</span> <span class="o">!=</span> <span class="s2">"viernes"</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Aun no llega el fin de semana :("</span><span class="p">))</span>
     <span class="n">dia</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Qué día es?"</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"¡Al fin llegó el fin de semana!"</span><span class="p">)</span>
-</pre>
+</code></pre>
+
 <h4>Las sentencias continue y break</h4>
 <p>Estas dos sentencias funcionan igual que en el <code>for</code>. Recordemos como eran, pero en el contexto de <code>while</code>.</p>
-<pre class="code literal-block"><span class="n">contador</span> <span class="o">=</span> <span class="mi">0</span>
+<pre class="code literal-block"><span></span><code><span class="n">contador</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">while</span> <span class="n">contador</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
     <span class="nb">print</span> <span class="n">contador</span>
     <span class="n">contador</span> <span class="o">+=</span> <span class="mi">1</span>
-</pre>
+</code></pre>
+
 <p>En este bucle, imprimimos los números del 0 al 9.</p>
 <h5>continue</h5>
-<pre class="code literal-block"><span class="n">contador</span> <span class="o">=</span> <span class="mi">0</span>
+<pre class="code literal-block"><span></span><code><span class="n">contador</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">while</span> <span class="n">contador</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">contador</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
         <span class="k">continue</span>
     <span class="nb">print</span> <span class="n">contador</span>
     <span class="n">contador</span> <span class="o">+=</span> <span class="mi">1</span>
-</pre>
+</code></pre>
+
 <p>La instrucción <code>continue</code> genera que ese ciclo sea abortado, no se ejecuten más líneas desde que aparece el continue. El bucle continúa directamente con el próximo.</p>
 <h5>break</h5>
-<pre class="code literal-block"><span class="n">contador</span> <span class="o">=</span> <span class="mi">0</span>
+<pre class="code literal-block"><span></span><code><span class="n">contador</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">while</span> <span class="n">contador</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">contador</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
         <span class="k">break</span>
     <span class="nb">print</span> <span class="n">contador</span>
     <span class="n">contador</span> <span class="o">+=</span> <span class="mi">1</span>
-</pre>
+</code></pre>
+
 <p>La instrucción <code>break</code> genera que se interrumpa por completo el bucle. Nada más se ejecuta, y el programa continúa con la intrucción siguiente al <code>while</code>.</p>
 <h4>Ejercicios</h4>
 <ol>

@@ -60,32 +60,37 @@ El manejo de archivos es una parte importante en la programación, ya que nos pe
 <p>El manejo de archivos es una parte importante en la programación, ya que nos permiten almacenar información. Pueden venir en formato de base de datos, de mensaje de otra aplicación, de tabla, CSV, imágenes, o simplemente un archivo de texto plano. Todos pueden ser utilizados a través de nuestros programas en Python.</p>
 <h4>Leer un archivo</h4>
 <p>Con la sentencia <code>with open</code> abrimos un archivo para procesarlo de alguna manera. En este caso para leerlo completamente:</p>
-<pre class="code literal-block"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"demofile.txt"</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<pre class="code literal-block"><span></span><code><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"demofile.txt"</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">archivo_completo</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">archivo_completo</span><span class="p">)</span>
-</pre>
+</code></pre>
+
 <p>En este caso, leemos las líneas de a una. Una línea termina cuando se encuentra el caracter de nueva línea (\n):</p>
-<pre class="code literal-block"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"demofile.txt"</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<pre class="code literal-block"><span></span><code><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"demofile.txt"</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">linea</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
     <span class="n">otra_linea</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
-</pre>
+</code></pre>
+
 <p>Otra forma de leer todas las líneas de un archivo:</p>
-<pre class="code literal-block"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"demofile.txt"</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<pre class="code literal-block"><span></span><code><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"demofile.txt"</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
-</pre>
+</code></pre>
+
 <h4>Escribir en un archivo</h4>
 <p>Utilizando el parámetro 'a' luego del nombre del archivo al abrirlo, vamos a estar agregando datos al final de éste:</p>
-<pre class="code literal-block"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"demofile.txt"</span><span class="p">,</span> <span class="s2">"a"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<pre class="code literal-block"><span></span><code><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"demofile.txt"</span><span class="p">,</span> <span class="s2">"a"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">"Datos adicionales"</span> <span class="o">+</span> <span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
     <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">"Al final del archivo"</span><span class="p">)</span>
-</pre>
+</code></pre>
+
 <p>Si abrimos el archivo con el parámetro 'w', vamos a estar reemplazando todo su contenido:</p>
-<pre class="code literal-block"><span class="n">datos</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"a"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">"c"</span><span class="p">:</span> <span class="mi">3</span><span class="p">}</span>
+<pre class="code literal-block"><span></span><code><span class="n">datos</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"a"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">"c"</span><span class="p">:</span> <span class="mi">3</span><span class="p">}</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"demo.txt"</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="k">for</span> <span class="n">elemento</span> <span class="ow">in</span> <span class="n">datos</span><span class="p">:</span>
         <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">elemento</span> <span class="o">+</span> <span class="s1">':'</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">datos</span><span class="p">[</span><span class="n">elemento</span><span class="p">])</span> <span class="o">+</span> <span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
-</pre>
+</code></pre>
+
 <h4>Ejercicios:</h4>
 <ol>
 <li>

@@ -61,47 +61,55 @@ Una cadena de c">
 <p>Vamos a conocer una de las formas básicas de organizar la información: las listas. Hasta el momento ya las habíamos usado, pero sin darnos cuenta.<br>
 Una cadena de caracteres es una lista, y también la función range() nos devuelve una lista de números enteros.
 Veamos ejemplos en el código:</p>
-<pre class="code literal-block"><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<pre class="code literal-block"><span></span><code><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
 <span class="n">semana</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"lunes"</span><span class="p">,</span> <span class="s2">"martes"</span><span class="p">,</span> <span class="s2">"miercoles"</span><span class="p">,</span> <span class="s2">"jueves"</span><span class="p">,</span> <span class="s2">"viernes"</span><span class="p">]</span>
 <span class="n">texto</span> <span class="o">=</span> <span class="s2">"Este texto también es una lista, de caracteres"</span>
-</pre>
+</code></pre>
+
 <h4>Iterar a través de una lista</h4>
 <p>Como ya aprendimos, utilizando el <code>for</code> podemos recorrer todos los elementos de una lista, uno por uno. Por ejemplo:</p>
-<pre class="code literal-block"><span class="k">for</span> <span class="n">elemento</span> <span class="ow">in</span> <span class="n">semana</span><span class="p">:</span>
+<pre class="code literal-block"><span></span><code><span class="k">for</span> <span class="n">elemento</span> <span class="ow">in</span> <span class="n">semana</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">elemento</span><span class="p">)</span>
-</pre>
+</code></pre>
+
 <h4>Agregar elementos a una lista</h4>
 <p>Podemos agregarle elementos a una lista usando cualquiera de estas dos funciones: <code>append()</code> o <code>insert()</code>.</p>
 <p>Agregar elementos al final:</p>
-<pre class="code literal-block"><span class="n">semana</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"domingo"</span><span class="p">)</span>
-</pre>
+<pre class="code literal-block"><span></span><code><span class="n">semana</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"domingo"</span><span class="p">)</span>
+</code></pre>
+
 <p>Agregar elementos en una posición determinada:</p>
-<pre class="code literal-block"><span class="n">semana</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="s2">"sabado"</span><span class="p">)</span>
-</pre>
+<pre class="code literal-block"><span></span><code><span class="n">semana</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="s2">"sabado"</span><span class="p">)</span>
+</code></pre>
+
 <h4>Acceder a elementos de la lista</h4>
 <p>Podemos utilizar el índice para acceder a un elemento de la lista, o modificarlo. El índice de las listas se utiliza mediante corchetes [].</p>
-<pre class="code literal-block"><span class="nb">print</span><span class="p">(</span><span class="n">semana</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+<pre class="code literal-block"><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">semana</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
 <span class="n">semana</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"miércoles"</span>
 <span class="n">semana</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"sábado"</span>
-</pre>
+</code></pre>
+
 <p>También podemos chequear si un determinado elemento existe en una lista utilizando el <code>in</code>, y preguntar cuál es su índice mediante la función <code>index()</code>.</p>
-<pre class="code literal-block"><span class="k">if</span> <span class="s2">"lunes"</span> <span class="ow">in</span> <span class="n">semana</span><span class="p">:</span>
+<pre class="code literal-block"><span></span><code><span class="k">if</span> <span class="s2">"lunes"</span> <span class="ow">in</span> <span class="n">semana</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">semana</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">"lunes"</span><span class="p">))</span>
-</pre>
+</code></pre>
+
 <h4>Eliminar elementos de la lista</h4>
 <p>Utilizando <code>remove()</code> quitamos un elemento puntual. Con <code>pop()</code> vamos a remover el último de la lista, y <code>del</code> nos permite eliminar utilizando el índice.</p>
-<pre class="code literal-block"><span class="n">semana</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s2">"miércoles"</span><span class="p">)</span>
+<pre class="code literal-block"><span></span><code><span class="n">semana</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s2">"miércoles"</span><span class="p">)</span>
 <span class="n">semana</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
 <span class="k">del</span> <span class="n">semana</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
 <span class="k">del</span> <span class="n">semana</span>
-</pre>
+</code></pre>
+
 <p>Usando a la lista como condición, vamos a poder verificar si está vacía.</p>
-<pre class="code literal-block"><span class="k">if</span> <span class="ow">not</span> <span class="n">semana</span><span class="p">:</span>
+<pre class="code literal-block"><span></span><code><span class="k">if</span> <span class="ow">not</span> <span class="n">semana</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"La lista semana está vacía"</span><span class="p">)</span>
-</pre>
+</code></pre>
+
 <h4>Ejercicios</h4>
 <p>1- Dado el siguiente programa, completar las partes del código donde se debe agregar un item, modificar un item, eliminarlo, y mostrar la lista entera.</p>
-<pre class="code literal-block"><span class="nb">print</span><span class="p">(</span><span class="s2">"Lista recordatorio de compras del supermercado"</span><span class="p">)</span>
+<pre class="code literal-block"><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">"Lista recordatorio de compras del supermercado"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Elija la función a ejecutar:"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"1: Listar elementos"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"2: Agregar elemento"</span><span class="p">)</span>
@@ -116,7 +124,8 @@ Veamos ejemplos en el código:</p>
 <span class="k">elif</span> <span class="n">opcion</span> <span class="o">==</span> <span class="s2">"3"</span><span class="p">:</span>
 
 <span class="k">elif</span> <span class="n">opcion</span> <span class="o">==</span> <span class="s2">"4"</span><span class="p">:</span>
-</pre>
+</code></pre>
+
 <p>2- Para cada una de las cuatro funciones agregadas anteriormente, crear una función que la realice, y reemplazar su código en el programa por la llamada a esa función.</p>
 </div>
     </div>
