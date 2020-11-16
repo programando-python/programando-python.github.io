@@ -59,37 +59,37 @@ Esta instrucción "print" muestra en pantalla lo que sea que le pongamos dentro 
     <div class="section" id="unidad-2">
 <h2>Unidad 2</h2>
 <p>Vamos con el primer programa que todo programador hace al aprender un nuevo lenguaje:</p>
-<pre class="code python"><a name="rest_code_13f253f7374d40a5b050fea43f51e7be-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Hola mundo!"</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_42b68cb88cc34d8ca3292253ff9a3dd3-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Hola mundo!"</span><span class="p">)</span>
 </pre>
 <p>Esta instrucción "print" muestra en pantalla lo que sea que le pongamos dentro de los paréntesis.</p>
 <p>Todo lo que está entre comillas "Texto" es un texto literal.</p>
 <p>Vamos a crear una variable, definiendo su nombre y asignándole un valor.</p>
-<pre class="code python"><a name="rest_code_1b76813b9feb42ea9c15b6740ec56aea-1"></a><span class="n">nombre</span> <span class="o">=</span> <span class="s2">"Nahuel Tori"</span>
-<a name="rest_code_1b76813b9feb42ea9c15b6740ec56aea-2"></a>
-<a name="rest_code_1b76813b9feb42ea9c15b6740ec56aea-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">nombre</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_56b51bbfc6224bb7b06eb08ba73c1b62-1"></a><span class="n">nombre</span> <span class="o">=</span> <span class="s2">"Nahuel Tori"</span>
+<a name="rest_code_56b51bbfc6224bb7b06eb08ba73c1b62-2"></a>
+<a name="rest_code_56b51bbfc6224bb7b06eb08ba73c1b62-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">nombre</span><span class="p">)</span>
 </pre>
 <p>En este último caso imprimimos en pantalla el contenido de nuestra variable, no el nombre, ya que no está entre comillas.</p>
-<pre class="code python"><a name="rest_code_83cf7b275d14496d9aef9a23a9c445c4-1"></a><span class="n">nombre</span> <span class="o">=</span> <span class="s2">"Nahuel Tori"</span>
-<a name="rest_code_83cf7b275d14496d9aef9a23a9c445c4-2"></a>
-<a name="rest_code_83cf7b275d14496d9aef9a23a9c445c4-3"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Hola, "</span> <span class="o">+</span> <span class="n">nombre</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_5f959b83c9764d218a46026ddda77e41-1"></a><span class="n">nombre</span> <span class="o">=</span> <span class="s2">"Nahuel Tori"</span>
+<a name="rest_code_5f959b83c9764d218a46026ddda77e41-2"></a>
+<a name="rest_code_5f959b83c9764d218a46026ddda77e41-3"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Hola, "</span> <span class="o">+</span> <span class="n">nombre</span><span class="p">)</span>
 </pre>
 <p>Acá combinamos la impresión de un texto literal, con el contenido de una variable, mediante el uso del operador "+".</p>
-<pre class="code python"><a name="rest_code_e06b67f4623641dc910c0d046698946f-1"></a><span class="n">nombre</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Decime, ¿cuál es tu nombre?"</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_23bcfefda1b44cd5b450db3fffa1c3ec-1"></a><span class="n">nombre</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Decime, ¿cuál es tu nombre?"</span><span class="p">)</span>
 </pre>
 <p>Esta es una nueva instrucción: sirve para que el programa pida información al usuario a través del teclado.</p>
 <p>Estas instrucciones son funciones que ya vienen creadas en Python. La función "input" primero imprime en pantalla el mensaje que se le envía en los paréntesis, al igual que "print". Pero luego de eso, quedará el cursor esperando que el usuario escriba en el teclado lo que quiera, hasta apretar "Enter".</p>
 <p>La información que el usuario haya ingresado, será lo que la función devuelva, y en este caso será el valor que se le asigne a la variable "nombre".</p>
 <p>Podemos comprobarlo, si mostramos en pantalla el contenido de "nombre".</p>
-<pre class="code python"><a name="rest_code_a9137e8cec6d4e21905cb16e438c828b-1"></a><span class="n">nombre</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Decime, ¿cuál es tu nombre?"</span><span class="p">)</span>
-<a name="rest_code_a9137e8cec6d4e21905cb16e438c828b-2"></a>
-<a name="rest_code_a9137e8cec6d4e21905cb16e438c828b-3"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Hola, "</span> <span class="o">+</span> <span class="n">nombre</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_2340a48b7d414a27a7b626530e08153f-1"></a><span class="n">nombre</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Decime, ¿cuál es tu nombre?"</span><span class="p">)</span>
+<a name="rest_code_2340a48b7d414a27a7b626530e08153f-2"></a>
+<a name="rest_code_2340a48b7d414a27a7b626530e08153f-3"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Hola, "</span> <span class="o">+</span> <span class="n">nombre</span><span class="p">)</span>
 </pre>
 <p>Veamos algunos ejemplos más:</p>
-<pre class="code python"><a name="rest_code_7ad5016b79954b4d9da84ca11d28fd8a-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"¡Buenos días!"</span><span class="p">)</span>
-<a name="rest_code_7ad5016b79954b4d9da84ca11d28fd8a-2"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"¿Cómo estás hoy?"</span><span class="p">)</span>
-<a name="rest_code_7ad5016b79954b4d9da84ca11d28fd8a-3"></a>
-<a name="rest_code_7ad5016b79954b4d9da84ca11d28fd8a-4"></a><span class="n">edad</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"¿Cuántos años tenés?"</span><span class="p">)</span>
-<a name="rest_code_7ad5016b79954b4d9da84ca11d28fd8a-5"></a><span class="n">vacaciones</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"¿A dónde te pensás ir de vacaciones?"</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_94d4d40eafea4e0e9383e86148f67c85-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"¡Buenos días!"</span><span class="p">)</span>
+<a name="rest_code_94d4d40eafea4e0e9383e86148f67c85-2"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"¿Cómo estás hoy?"</span><span class="p">)</span>
+<a name="rest_code_94d4d40eafea4e0e9383e86148f67c85-3"></a>
+<a name="rest_code_94d4d40eafea4e0e9383e86148f67c85-4"></a><span class="n">edad</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"¿Cuántos años tenés?"</span><span class="p">)</span>
+<a name="rest_code_94d4d40eafea4e0e9383e86148f67c85-5"></a><span class="n">vacaciones</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"¿A dónde te pensás ir de vacaciones?"</span><span class="p">)</span>
 </pre>
 <p>Importante:</p>
 <ul class="simple">
