@@ -62,28 +62,28 @@ Una de las formas básicas para controlar el flujo de un programa, es la alterna
 <h3>Alternativa condicional</h3>
 <p>Una de las formas básicas para controlar el flujo de un programa, es la alternativa condicional. Nos permite evaluar una condición, y basado en el resultado, que el programa ejecute una porción de código u otra.</p>
 <p>Tiene la siguiente forma:</p>
-<pre class="code python"><a name="rest_code_96bc525ae6e54b6d951b3aa0f8b297c1-1"></a><span class="k">if</span>  <span class="s2">"&lt;condicion&gt;"</span> <span class="p">:</span>
-<a name="rest_code_96bc525ae6e54b6d951b3aa0f8b297c1-2"></a>    <span class="s2">"&lt;código a ejecutar&gt;"</span>
+<pre class="code python"><a name="rest_code_4585e8e1d8a04d77abae12c47dae6e75-1"></a><span class="k">if</span>  <span class="s2">"&lt;condicion&gt;"</span> <span class="p">:</span>
+<a name="rest_code_4585e8e1d8a04d77abae12c47dae6e75-2"></a>    <span class="s2">"&lt;código a ejecutar&gt;"</span>
 </pre>
 <p>En la condición puede haber cualquier expresión que se resuelva en verdadero (True) o falso (False).
 Por ejemplo:</p>
-<pre class="code python"><a name="rest_code_0ee1f045630446159e4de9fe7019f16b-1"></a><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
-<a name="rest_code_0ee1f045630446159e4de9fe7019f16b-2"></a><span class="k">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
-<a name="rest_code_0ee1f045630446159e4de9fe7019f16b-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"La variable a es menor a 10"</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_79ea2393be034601be581d2e425b386f-1"></a><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
+<a name="rest_code_79ea2393be034601be581d2e425b386f-2"></a><span class="k">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+<a name="rest_code_79ea2393be034601be581d2e425b386f-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"La variable a es menor a 10"</span><span class="p">)</span>
 </pre>
 <p>También podemos tener:</p>
-<pre class="code python"><a name="rest_code_bf3dc5a8f1b4408ea18bc69c597c8bf9-1"></a><span class="n">salir</span> <span class="o">=</span> <span class="kc">False</span>
-<a name="rest_code_bf3dc5a8f1b4408ea18bc69c597c8bf9-2"></a><span class="k">if</span> <span class="n">salir</span><span class="p">:</span>
-<a name="rest_code_bf3dc5a8f1b4408ea18bc69c597c8bf9-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Gracias por usar este programa."</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_5550a000e48e48f4af40a63c18e2fa65-1"></a><span class="n">salir</span> <span class="o">=</span> <span class="kc">False</span>
+<a name="rest_code_5550a000e48e48f4af40a63c18e2fa65-2"></a><span class="k">if</span> <span class="n">salir</span><span class="p">:</span>
+<a name="rest_code_5550a000e48e48f4af40a63c18e2fa65-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Gracias por usar este programa."</span><span class="p">)</span>
 </pre>
 <p>En este ultimo caso, la linea con el print no se ejecutará, porque la condición es falsa.</p>
 <div class="section" id="indentacion">
 <h4>Indentación</h4>
 <p>Es lo que controla la porción de código que está dentro del if. Cada línea de código debe estar indentada de igual manera.</p>
-<pre class="code python"><a name="rest_code_b5fbcb19f9b6425497d9afeeae584732-1"></a><span class="n">salir</span> <span class="o">=</span> <span class="kc">False</span>
-<a name="rest_code_b5fbcb19f9b6425497d9afeeae584732-2"></a><span class="k">if</span> <span class="n">salir</span><span class="p">:</span>
-<a name="rest_code_b5fbcb19f9b6425497d9afeeae584732-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Gracias por usar este programa."</span><span class="p">)</span>
-<a name="rest_code_b5fbcb19f9b6425497d9afeeae584732-4"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Esta línea se imprime siempre."</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_92bb61a751a34584b676f4b6c3d7f63e-1"></a><span class="n">salir</span> <span class="o">=</span> <span class="kc">False</span>
+<a name="rest_code_92bb61a751a34584b676f4b6c3d7f63e-2"></a><span class="k">if</span> <span class="n">salir</span><span class="p">:</span>
+<a name="rest_code_92bb61a751a34584b676f4b6c3d7f63e-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Gracias por usar este programa."</span><span class="p">)</span>
+<a name="rest_code_92bb61a751a34584b676f4b6c3d7f63e-4"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Esta línea se imprime siempre."</span><span class="p">)</span>
 </pre>
 <p>En este último ejemplo, el anuncio de agradecimiento no se imprimirá, pero la línea siguiente si, ya que al no estar indentada no pertenece al bloque de código del if, sino al resto del programa.</p>
 </div>
@@ -91,40 +91,40 @@ Por ejemplo:</p>
 <h4>Sino</h4>
 <p>Cuando la condición no se cumple, no se ejecuta el código dentro, pero puede establecerse otra porción de código que se ejecutará cuando esto suceda.</p>
 <p>Por ejemplo:</p>
-<pre class="code python"><a name="rest_code_526a74e655ba44cc8418a061ce533ec5-1"></a><span class="n">salir</span> <span class="o">=</span> <span class="kc">False</span>
-<a name="rest_code_526a74e655ba44cc8418a061ce533ec5-2"></a><span class="k">if</span> <span class="n">salir</span><span class="p">:</span>
-<a name="rest_code_526a74e655ba44cc8418a061ce533ec5-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Gracias por usar este programa."</span><span class="p">)</span>
-<a name="rest_code_526a74e655ba44cc8418a061ce533ec5-4"></a><span class="k">else</span><span class="p">:</span>
-<a name="rest_code_526a74e655ba44cc8418a061ce533ec5-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Seguimos trabajando."</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_26021ce69cc9475eb4494d9c8272d999-1"></a><span class="n">salir</span> <span class="o">=</span> <span class="kc">False</span>
+<a name="rest_code_26021ce69cc9475eb4494d9c8272d999-2"></a><span class="k">if</span> <span class="n">salir</span><span class="p">:</span>
+<a name="rest_code_26021ce69cc9475eb4494d9c8272d999-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Gracias por usar este programa."</span><span class="p">)</span>
+<a name="rest_code_26021ce69cc9475eb4494d9c8272d999-4"></a><span class="k">else</span><span class="p">:</span>
+<a name="rest_code_26021ce69cc9475eb4494d9c8272d999-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Seguimos trabajando."</span><span class="p">)</span>
 </pre>
 <p>En este caso, el bloque de código dentro del else se ejecutará ya que la condición es falsa. Cuando la condición es verdadera, se ejecuta el código del if, pero <strong>no</strong> el del else, como acá:</p>
-<pre class="code python"><a name="rest_code_746e18298032437ebdaf345ab56cc920-1"></a><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
-<a name="rest_code_746e18298032437ebdaf345ab56cc920-2"></a><span class="k">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
-<a name="rest_code_746e18298032437ebdaf345ab56cc920-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"La variable a es menor a 10"</span><span class="p">)</span>
-<a name="rest_code_746e18298032437ebdaf345ab56cc920-4"></a><span class="k">else</span><span class="p">:</span>
-<a name="rest_code_746e18298032437ebdaf345ab56cc920-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"La variable a es mayor a 10"</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_16abf1071fad4d498af7b54184f6e327-1"></a><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
+<a name="rest_code_16abf1071fad4d498af7b54184f6e327-2"></a><span class="k">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+<a name="rest_code_16abf1071fad4d498af7b54184f6e327-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"La variable a es menor a 10"</span><span class="p">)</span>
+<a name="rest_code_16abf1071fad4d498af7b54184f6e327-4"></a><span class="k">else</span><span class="p">:</span>
+<a name="rest_code_16abf1071fad4d498af7b54184f6e327-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"La variable a es mayor a 10"</span><span class="p">)</span>
 </pre>
 </div>
 <div class="section" id="operadores">
 <h4>Operadores</h4>
 <p>También podemos tener operadores dentro de nuestras expresiones, como vimos anteriormente:</p>
-<pre class="code python"><a name="rest_code_521295d9340349fc9cdf44233a14a783-1"></a><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
-<a name="rest_code_521295d9340349fc9cdf44233a14a783-2"></a><span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
-<a name="rest_code_521295d9340349fc9cdf44233a14a783-3"></a><span class="k">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">10</span> <span class="ow">and</span> <span class="n">b</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">:</span>
-<a name="rest_code_521295d9340349fc9cdf44233a14a783-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"La variable a es menor a 10"</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_22f83e3c70c848c19f29f55e7bee47eb-1"></a><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
+<a name="rest_code_22f83e3c70c848c19f29f55e7bee47eb-2"></a><span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
+<a name="rest_code_22f83e3c70c848c19f29f55e7bee47eb-3"></a><span class="k">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">10</span> <span class="ow">and</span> <span class="n">b</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">:</span>
+<a name="rest_code_22f83e3c70c848c19f29f55e7bee47eb-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"La variable a es menor a 10"</span><span class="p">)</span>
 </pre>
 </div>
 <div class="section" id="sino-si">
 <h4>Sino, si</h4>
 <p>Hay una instrucción adicional que se llama "elif", y sirve para escribir varias condiciones encadenadas. Cuando la condición del if no se cumple, se puede preguntar por otra condición utilizando un elif, de esta manera:</p>
-<pre class="code python"><a name="rest_code_69a8f959a88245ee950a9c491b9ff692-1"></a><span class="n">a</span> <span class="o">=</span> <span class="mi">20</span>
-<a name="rest_code_69a8f959a88245ee950a9c491b9ff692-2"></a><span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
-<a name="rest_code_69a8f959a88245ee950a9c491b9ff692-3"></a><span class="k">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span><span class="p">:</span>
-<a name="rest_code_69a8f959a88245ee950a9c491b9ff692-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"La variable a es menor a b"</span><span class="p">)</span>
-<a name="rest_code_69a8f959a88245ee950a9c491b9ff692-5"></a><span class="k">elif</span> <span class="n">b</span> <span class="o">&lt;</span> <span class="n">a</span><span class="p">:</span>
-<a name="rest_code_69a8f959a88245ee950a9c491b9ff692-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"La variable a es mayor a b"</span><span class="p">)</span>
-<a name="rest_code_69a8f959a88245ee950a9c491b9ff692-7"></a><span class="k">else</span><span class="p">:</span>
-<a name="rest_code_69a8f959a88245ee950a9c491b9ff692-8"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Las variables son iguales"</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_643f8eea9de0450b91f4070187bec4c6-1"></a><span class="n">a</span> <span class="o">=</span> <span class="mi">20</span>
+<a name="rest_code_643f8eea9de0450b91f4070187bec4c6-2"></a><span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
+<a name="rest_code_643f8eea9de0450b91f4070187bec4c6-3"></a><span class="k">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span><span class="p">:</span>
+<a name="rest_code_643f8eea9de0450b91f4070187bec4c6-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"La variable a es menor a b"</span><span class="p">)</span>
+<a name="rest_code_643f8eea9de0450b91f4070187bec4c6-5"></a><span class="k">elif</span> <span class="n">b</span> <span class="o">&lt;</span> <span class="n">a</span><span class="p">:</span>
+<a name="rest_code_643f8eea9de0450b91f4070187bec4c6-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"La variable a es mayor a b"</span><span class="p">)</span>
+<a name="rest_code_643f8eea9de0450b91f4070187bec4c6-7"></a><span class="k">else</span><span class="p">:</span>
+<a name="rest_code_643f8eea9de0450b91f4070187bec4c6-8"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Las variables son iguales"</span><span class="p">)</span>
 </pre>
 <p>Como pueden ver, al final de la última condición se cierra la estructura con un else, para chequear el resto de las posibilidades si es necesario.</p>
 </div>

@@ -61,13 +61,13 @@ Hasta el momento estuvimos usando varias funciones de Python, que están incluid
 <div class="section" id="funciones">
 <h3>Funciones</h3>
 <p>Hasta el momento estuvimos usando varias funciones de Python, que están incluidas en el lenguaje. Pero también podemos crear los propios, dandole un nombre e incluyendo la funcionalidad que necesitemos. Por ejemplo, así:</p>
-<pre class="code python"><a name="rest_code_d18d930b67b849f89b97bfb95e01d00d-1"></a><span class="k">def</span> <span class="nf">saludar_usuario</span><span class="p">():</span>
-<a name="rest_code_d18d930b67b849f89b97bfb95e01d00d-2"></a>    <span class="n">nombre</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"¿Cuál es su nombre?"</span><span class="p">)</span>
-<a name="rest_code_d18d930b67b849f89b97bfb95e01d00d-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Bienvenido "</span> <span class="o">+</span> <span class="n">nombre</span> <span class="o">+</span> <span class="s2">"!"</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_097b207b0194461f90cc9e955165dbd2-1"></a><span class="k">def</span> <span class="nf">saludar_usuario</span><span class="p">():</span>
+<a name="rest_code_097b207b0194461f90cc9e955165dbd2-2"></a>    <span class="n">nombre</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"¿Cuál es su nombre?"</span><span class="p">)</span>
+<a name="rest_code_097b207b0194461f90cc9e955165dbd2-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Bienvenido "</span> <span class="o">+</span> <span class="n">nombre</span> <span class="o">+</span> <span class="s2">"!"</span><span class="p">)</span>
 </pre>
 <hr class="docutils">
 <p>Muy bien, de esa manera extendimos las posibilidades del lenguaje, y ahora tenemos la función saludar_usuario() disponible!. Al igual que print() e input(), se pueden usar en nuestro programa. Para hacerlo, se deben invocar como cualquier otra función:</p>
-<pre class="code python"><a name="rest_code_3256c0f6e884475aa6cf6fd1d412b1b4-1"></a><span class="n">saludar_usuario</span><span class="p">()</span>
+<pre class="code python"><a name="rest_code_2594da3edf2f4c5fb5e5113033696b4d-1"></a><span class="n">saludar_usuario</span><span class="p">()</span>
 </pre>
 <hr class="docutils">
 <p>Entonces, repasando: Para tener nuestras propias funciones en un programa, primero se deben definir (con la palabra reservada def), y luego se deben invocar.</p>
@@ -76,29 +76,29 @@ Hasta el momento estuvimos usando varias funciones de Python, que están incluid
 <div class="section" id="argumentos">
 <h3>Argumentos</h3>
 <p>Una función puede recibir datos desde fuera, y de esa forma aumentar su funcionalidad. Para definirlos, se debe crear el nombre del argumento y separarlos con comas, dentro de los paréntesis:</p>
-<pre class="code python"><a name="rest_code_8072a91e8eea439ba4d73dcbf10aa68e-1"></a><span class="k">def</span> <span class="nf">saludar</span><span class="p">(</span><span class="n">usuario</span><span class="p">):</span>
-<a name="rest_code_8072a91e8eea439ba4d73dcbf10aa68e-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Bienvenido "</span> <span class="o">+</span> <span class="n">usuario</span> <span class="o">+</span> <span class="s2">"!"</span><span class="p">)</span>
-<a name="rest_code_8072a91e8eea439ba4d73dcbf10aa68e-3"></a>
-<a name="rest_code_8072a91e8eea439ba4d73dcbf10aa68e-4"></a><span class="k">def</span> <span class="nf">dividir</span><span class="p">(</span><span class="n">dividendo</span><span class="p">,</span> <span class="n">divisor</span><span class="p">):</span>
-<a name="rest_code_8072a91e8eea439ba4d73dcbf10aa68e-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">dividendo</span> <span class="o">/</span> <span class="n">divisor</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_a5c43efd7f22499c869e1928e898eed9-1"></a><span class="k">def</span> <span class="nf">saludar</span><span class="p">(</span><span class="n">usuario</span><span class="p">):</span>
+<a name="rest_code_a5c43efd7f22499c869e1928e898eed9-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Bienvenido "</span> <span class="o">+</span> <span class="n">usuario</span> <span class="o">+</span> <span class="s2">"!"</span><span class="p">)</span>
+<a name="rest_code_a5c43efd7f22499c869e1928e898eed9-3"></a>
+<a name="rest_code_a5c43efd7f22499c869e1928e898eed9-4"></a><span class="k">def</span> <span class="nf">dividir</span><span class="p">(</span><span class="n">dividendo</span><span class="p">,</span> <span class="n">divisor</span><span class="p">):</span>
+<a name="rest_code_a5c43efd7f22499c869e1928e898eed9-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">dividendo</span> <span class="o">/</span> <span class="n">divisor</span><span class="p">)</span>
 </pre>
 <hr class="docutils">
 <p>Cuando se invocan las funcionen con parámetros, estamos obligados a completarlos todos. Se manejan de manera posicional; es decir que depende la posición en la que esté, significa a qué parámetro corresponde. También tenemos la posibilidad de nombrar explícitamente al parámetro, en tal caso ya no se manejarán posicionalmente.</p>
-<pre class="code python"><a name="rest_code_d6df03a4313843ad9d297548ebd88a11-1"></a><span class="n">saludar</span><span class="p">(</span><span class="s2">"Nahuel"</span><span class="p">)</span>
-<a name="rest_code_d6df03a4313843ad9d297548ebd88a11-2"></a>
-<a name="rest_code_d6df03a4313843ad9d297548ebd88a11-3"></a><span class="n">dividir</span><span class="p">(</span><span class="mi">35</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
-<a name="rest_code_d6df03a4313843ad9d297548ebd88a11-4"></a>
-<a name="rest_code_d6df03a4313843ad9d297548ebd88a11-5"></a><span class="n">dividir</span><span class="p">(</span><span class="n">divisor</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">dividendo</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_4b4ecb99c8c84c119eb98e7696f4c4f3-1"></a><span class="n">saludar</span><span class="p">(</span><span class="s2">"Nahuel"</span><span class="p">)</span>
+<a name="rest_code_4b4ecb99c8c84c119eb98e7696f4c4f3-2"></a>
+<a name="rest_code_4b4ecb99c8c84c119eb98e7696f4c4f3-3"></a><span class="n">dividir</span><span class="p">(</span><span class="mi">35</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+<a name="rest_code_4b4ecb99c8c84c119eb98e7696f4c4f3-4"></a>
+<a name="rest_code_4b4ecb99c8c84c119eb98e7696f4c4f3-5"></a><span class="n">dividir</span><span class="p">(</span><span class="n">divisor</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">dividendo</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
 </pre>
 <hr class="docutils">
 <div class="section" id="como-es-el-flujo-de-ejecucion-cuando-invocamos-una-funcion">
 <h4>¿Cómo es el flujo de ejecución cuando invocamos una función?</h4>
 <p>Tomemos este ejemplo para analizar:</p>
-<pre class="code python"><a name="rest_code_3cf08deccb4e4d739d76ad00b3cd1a21-1"></a><span class="k">def</span> <span class="nf">saludar</span><span class="p">(</span><span class="n">usuario</span><span class="p">):</span>
-<a name="rest_code_3cf08deccb4e4d739d76ad00b3cd1a21-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Bienvenido "</span> <span class="o">+</span> <span class="n">usuario</span> <span class="o">+</span> <span class="s2">"!"</span><span class="p">)</span>
-<a name="rest_code_3cf08deccb4e4d739d76ad00b3cd1a21-3"></a>
-<a name="rest_code_3cf08deccb4e4d739d76ad00b3cd1a21-4"></a><span class="n">saludar</span><span class="p">(</span><span class="s2">"Nahuel"</span><span class="p">)</span>
-<a name="rest_code_3cf08deccb4e4d739d76ad00b3cd1a21-5"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Adiós"</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_8803d1e3e6b84fb7b921e19a263e0fb5-1"></a><span class="k">def</span> <span class="nf">saludar</span><span class="p">(</span><span class="n">usuario</span><span class="p">):</span>
+<a name="rest_code_8803d1e3e6b84fb7b921e19a263e0fb5-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Bienvenido "</span> <span class="o">+</span> <span class="n">usuario</span> <span class="o">+</span> <span class="s2">"!"</span><span class="p">)</span>
+<a name="rest_code_8803d1e3e6b84fb7b921e19a263e0fb5-3"></a>
+<a name="rest_code_8803d1e3e6b84fb7b921e19a263e0fb5-4"></a><span class="n">saludar</span><span class="p">(</span><span class="s2">"Nahuel"</span><span class="p">)</span>
+<a name="rest_code_8803d1e3e6b84fb7b921e19a263e0fb5-5"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Adiós"</span><span class="p">)</span>
 </pre>
 <hr class="docutils">
 <ul class="simple">
@@ -113,14 +113,14 @@ Hasta el momento estuvimos usando varias funciones de Python, que están incluid
 <div class="section" id="valores-de-retorno">
 <h3>Valores de retorno</h3>
 <p>Es muy usual es que las funciones devuelvan algún valor, esto permite que en donde se haya invocado se reciba algún resultado de lo que se quería hacer. Mejoremos nuestra función de división:</p>
-<pre class="code python"><a name="rest_code_dedd1ef6458c44c189bd7612f0e5b906-1"></a><span class="k">def</span> <span class="nf">dividir</span><span class="p">(</span><span class="n">dividendo</span><span class="p">,</span> <span class="n">divisor</span><span class="p">):</span>
-<a name="rest_code_dedd1ef6458c44c189bd7612f0e5b906-2"></a>    <span class="n">resultado</span> <span class="o">=</span> <span class="n">dividendo</span> <span class="o">/</span> <span class="n">divisor</span>
-<a name="rest_code_dedd1ef6458c44c189bd7612f0e5b906-3"></a>    <span class="k">return</span> <span class="n">resultado</span>
+<pre class="code python"><a name="rest_code_a5ab911ad771442099c4ddda78c8f7bf-1"></a><span class="k">def</span> <span class="nf">dividir</span><span class="p">(</span><span class="n">dividendo</span><span class="p">,</span> <span class="n">divisor</span><span class="p">):</span>
+<a name="rest_code_a5ab911ad771442099c4ddda78c8f7bf-2"></a>    <span class="n">resultado</span> <span class="o">=</span> <span class="n">dividendo</span> <span class="o">/</span> <span class="n">divisor</span>
+<a name="rest_code_a5ab911ad771442099c4ddda78c8f7bf-3"></a>    <span class="k">return</span> <span class="n">resultado</span>
 </pre>
 <hr class="docutils">
 <p>¿Notaron el cambio? No se está haciendo más un "print" del resultado, sino que aparece la palabra reservada <em>return</em> y luego la variable con el resultado. Esto producirá que donde se haya invocado, se reciba ese dato:</p>
-<pre class="code python"><a name="rest_code_c9669fe9528145b68b693a2afc66f1a7-1"></a><span class="n">result</span> <span class="o">=</span> <span class="n">dividir</span><span class="p">(</span><span class="mi">35</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
-<a name="rest_code_c9669fe9528145b68b693a2afc66f1a7-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_5a0dfa051c674d458b53c6930b26e629-1"></a><span class="n">result</span> <span class="o">=</span> <span class="n">dividir</span><span class="p">(</span><span class="mi">35</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+<a name="rest_code_5a0dfa051c674d458b53c6930b26e629-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
 </pre>
 <hr class="docutils">
 <blockquote>

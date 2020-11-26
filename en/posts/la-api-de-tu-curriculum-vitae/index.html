@@ -81,7 +81,7 @@ Ejecutamos <code>source virtenv/Scripts/activate</code>. Ahora, los comandos <co
 Instalamos Flask, que por el momento será nuestra única dependencia y herramienta que utilizaremos para construir nuestra API: <code>pip install flask</code>. Junto con él, se instalan sus propias dependencias: Jinja2, Werkzeug y otros.</p>
 <p>4- Creamos nuestra API.  </p>
 <p>En la carpeta principal de nuestro proyecto, creamos el archivo api.py con el siguiente esqueleto:</p>
-<pre class="code literal-block"><span class="ch">#!flask/bin/python</span>
+<pre class="code literal-block"><span></span><code><span class="ch">#!flask/bin/python</span>
 <span class="c1"># -*- coding: UTF-8 -*-</span>
 
 <span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">request</span>
@@ -91,10 +91,11 @@ Instalamos Flask, que por el momento será nuestra única dependencia y herramie
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
     <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</pre>
+</code></pre>
+
 <p>Bien, nuestra api ya la podemos ejecutar con <code>python api.py</code>, pero aun no hace nada.
 Vamos a agregar la ruta básica, '/', para que muestre algo de información cuando la ejecutamos. Este código debe ir debajo de la definición de la variable <code>app</code>, pero antes del <code>if</code> del final.</p>
-<pre class="code literal-block"><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">'/'</span><span class="p">)</span>
+<pre class="code literal-block"><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">'/'</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
     <span class="n">info</span> <span class="o">=</span> <span class="p">{</span>
         <span class="s2">"mensaje"</span> <span class="p">:</span> <span class="s2">"Bienvenido a la API del curriculum vitae de Nahuel Tori."</span><span class="p">,</span>
@@ -104,7 +105,8 @@ Vamos a agregar la ruta básica, '/', para que muestre algo de información cuan
         <span class="p">]</span>
     <span class="p">}</span>
     <span class="k">return</span> <span class="n">jsonify</span><span class="p">(</span><span class="n">info</span><span class="p">)</span>
-</pre>
+</code></pre>
+
 <p>También debemos agregar <code>jsonify</code> al import inicial. ¿Qué hace esta función? Crea un objeto de tipo diccionario, con la información que queremos que nuestro servicio retorne. En la última línea, nos ayudamos del método <code>jsonify</code> de Flask para transformar ese objeto en un texto JSON válido.<br>
 Podemos ver agregamos una anotación al inicio <code>@app.route</code>, que usamos para indicarle a Flask cuál es la ruta que debe resolver con esta función.</p>
 <p>Ahora si, cuando ejecutamos nuestra API y accedemos en nuestro navegador a <code>http://127.0.0.1:5000/</code>, podremos ver el mensaje.</p>
@@ -112,7 +114,7 @@ Podemos ver agregamos una anotación al inicio <code>@app.route</code>, que usam
 <p>5- Agregamos más recursos y acciones</p>
 <p>Como buena API, en la nuestra los nombres de los endpoints describen los recursos usando sustantivos, y los verbos del protocolo HTTP describen las acciones que se pueden realizar.<br>
 Vamos a crear un recurso <code>curriculum</code>, que nos permita devolver la información de nuestro perfil personal mediante el verbo GET. También vamos a crear un recurso <code>mensajes</code>, donde usando el verbo POST nuestra API pueda recibir mensajes de quienes quieran ponerse en contacto con nosotros.</p>
-<pre class="code literal-block"><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">'/curriculum'</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s1">'GET'</span><span class="p">])</span>
+<pre class="code literal-block"><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">'/curriculum'</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s1">'GET'</span><span class="p">])</span>
 <span class="k">def</span> <span class="nf">cv</span><span class="p">():</span>
     <span class="n">url_imagen</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">host_url</span> <span class="o">+</span> <span class="s2">"static/FotoNahuel.jpg"</span>
     <span class="n">cv</span> <span class="o">=</span> <span class="p">{</span>
@@ -141,32 +143,36 @@ Vamos a crear un recurso <code>curriculum</code>, que nos permita devolver la in
         <span class="s2">"foto"</span> <span class="p">:</span> <span class="n">url_imagen</span>
     <span class="p">}</span>
     <span class="k">return</span> <span class="n">jsonify</span><span class="p">(</span><span class="n">cv</span><span class="p">)</span>
-</pre>
+</code></pre>
+
 <p>En esta función, estamos generando un gran objeto diccionario con toda nuestra información. Estos son algunos campos propuestos; vos podés incluir los que te parezcan mejor, como en tu CV.<br>
 En la primera línea describimos el endpoint dentro de la anotación, y también aclaramos que específicamente se responderá sólo al verbo GET.<br>
 Dentro de la función, lo primero que hacemos es armar la URL completa para proporcionar también una imagen nuestra: la imagen debemos guardarla dentro de una nueva carpeta llamada <code>static</code> dentro de nuestro proyecto. Recuerden agregar <code>request</code> al import de Flask en la primera línea.</p>
 <p>Luego de probar su nuevo endpoint, probablemente varios caracteres no se lean correctamente. En realidad, es el formato estándar Unicode en los archivos JSON, y las computadoras pueden leerlo sin problemas. Para que nosotros también podamos, hay que agregar esta línea luego de definir la variable <code>app</code>:<br><code>app.config['JSON_AS_ASCII'] = False</code></p>
 <p>Agregamos el otro endpoint:</p>
-<pre class="code literal-block"><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">'/mensajes'</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s1">'POST'</span><span class="p">])</span>
+<pre class="code literal-block"><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">'/mensajes'</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s1">'POST'</span><span class="p">])</span>
 <span class="k">def</span> <span class="nf">contacto</span><span class="p">():</span>
     <span class="n">mensaje</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">get_data</span><span class="p">()</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">mensaje</span><span class="p">:</span>
         <span class="n">abort</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">"Debe enviar su mensaje en el body del POST."</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"MENSAJE DE CONTACTO: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">mensaje</span><span class="p">))</span>
     <span class="k">return</span> <span class="s2">"Gracias por su mensaje."</span>
-</pre>
+</code></pre>
+
 <p>En esta función, definimos nuestro endpoint <code>mensajes</code> aceptando solamente llamadas mediante el verbo POST.<br>
 Lo que hacemos es buscar el mensaje en el cuerpo del llamado HTTP: si no hay nada, entonces respondemos con un error de código 400, que significa que el request recibido no tiene el formato correcto. También indicamos en la descripción qué es lo que está mal: de esta forma, quien nos invoque sabrá cómo hacerlo correctamente la próxima vez. También necesitaremos agregar <code>abort</code> entre los imports de Flask.<br>
 Si había algún contenido en el cuerpo del llamado, entonces ese es el texto que nos interesa: nuestro mensaje. En este ejemplo, por simplicidad solamente hacemos un <code>print</code> de su contenido, pero podría agregarse el código para mandar este mensaje por email, por ejemplo. Finalmente, devolvemos un mensaje de respuesta ante una llamada correcta.</p>
 <p>Muy bien, en este punto, nuestra API está conceptualmente terminada. Pueden extenderla todo lo que gusten, agregar más endpoints, validaciones, información, links o lo que gusten.</p>
 <p>6- Preparamos para subir nuestra API a un servicio de Host</p>
 <p>En primer lugar, debemos agregar esta línea de código:</p>
-<pre class="code literal-block"><span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s1">'JSONIFY_PRETTYPRINT_REGULAR'</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
-</pre>
+<pre class="code literal-block"><span></span><code><span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s1">'JSONIFY_PRETTYPRINT_REGULAR'</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+</code></pre>
+
 <p>Y cambiar esta:</p>
-<pre class="code literal-block"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
+<pre class="code literal-block"><span></span><code><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
     <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
-</pre>
+</code></pre>
+
 <p>Verán que al no estar utilizando más el modo debug, no funciona más el hot-reloading. Tampoco se formatea el mensaje JSON para verse mejor, por eso la primera configuración.</p>
 <p>Luego, debemos crear tres archivos de configuración necesarios para el repositorio online y para subir y ejecutar correctamente el proyecto en nuestro Host.</p>
 <h4>.gitignore</h4>

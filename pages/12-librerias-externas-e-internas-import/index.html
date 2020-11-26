@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html prefix="" lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>12- Librerías externas e internas: import | Programando Python</title>
+<link href="../../assets/css/all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+<link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../en/rss.xml">
+<link rel="canonical" href="https://programando-python.github.io/pages/12-librerias-externas-e-internas-import/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Nahuel Tori">
+<meta property="og:site_name" content="Programando Python">
+<meta property="og:title" content="12- Librerías externas e internas: import">
+<meta property="og:url" content="https://programando-python.github.io/pages/12-librerias-externas-e-internas-import/">
+<meta property="og:description" content="Unidad 12
+Librerías externas e internas: import
+En Python, tenemos dos conceptos para separar el código en diferentes secciones: Módulos y Paquetes.
+Los módulos son los archivos .py, y se pueden impor">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2020-11-26T18:08:21-03:00">
+<link rel="alternate" hreflang="en" href="../../en/pages/12-librerias-externas-e-internas-import/">
+</head>
+<body>
+    <a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+            styles, `#sidebar-checkbox` for behavior. -->
+    <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"><!-- Toggleable sidebar --><div class="sidebar" id="sidebar">
+        
+    <nav id="menu" role="navigation" class="sidebar-nav"><a class="sidebar-nav-item" href="../curso">Curso</a>
+        <a class="sidebar-nav-item" href="../../archive.html">Archivo</a>
+        <a class="sidebar-nav-item" href="../../categories/">Etiquetas</a>
+        <a class="sidebar-nav-item" href="../../rss.xml">Canal RSS</a>
+    
+    
+    </nav>
+</div>
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          
+    <h3 id="brand" class="masthead-title">
+      <a href="https://programando-python.github.io/" title="Programando Python" rel="home">Programando Python</a>
+    </h3>
+
+        </div>
+      </div>
+
+      <div class="container content" id="content">
+        
+<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="post-title p-name entry-title" itemprop="headline name"><a href="." class="u-url">12- Librerías externas e internas: import</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<h2>Unidad 12</h2>
+<h3>Librerías externas e internas: import</h3>
+<p>En Python, tenemos dos conceptos para separar el código en diferentes secciones: Módulos y Paquetes.</p>
+<p>Los módulos son los archivos .py, y se pueden importar para reutilizar el código que tengamos allí.</p>
+<p>Los paquetes son carpetas, que dentro contienen otros directorios y archivos. La particularidad de los paquetes, es que contienen un archivo llamado <code>__init__.py</code>.</p>
+<h3>Ejemplo: Módulos</h3>
+<pre class="code literal-block"><span></span><code><span class="kn">import</span> <span class="nn">math</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
+</code></pre>
+
+<p>En este caso, estamos importando en nuestro código todo el contenido del módulo <code>math</code>, dentro del cual utilizamos la variable <code>pi</code>.</p>
+<p>También podemos importar sólo una variable o método:</p>
+<pre class="code literal-block"><span></span><code><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">pi</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pi</span><span class="p">)</span>
+</code></pre>
+
+<p>También se pueden renombrar los objetos que importemos, si es necesario:</p>
+<pre class="code literal-block"><span></span><code><span class="kn">import</span> <span class="nn">math</span> <span class="k">as</span> <span class="nn">m</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
+</code></pre>
+
+<pre class="code literal-block"><span></span><code><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">pi</span> <span class="k">as</span> <span class="n">p</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+</code></pre>
+
+<h3>Librerías externas</h3>
+<p>Los imports nos sirven para agregar a nuestro código tanto módulos y paquetes propios, como elementos estándar de Python, y también librerías externas que instalemos en nuestro sistema.</p>
+<h4>Entornos virtuales</h4>
+<p>En Python, para manejar las dependencias de nuestro código es muy común utilizar entornos virtuales, ya que nos ayudan a que no entren en conflicto las dependencias de todos los proyectos y nuestro propio sistema.</p>
+<p>Los creamos con el siguiente comando, en una terminal:</p>
+<pre class="code literal-block"><span></span><code><span class="err">&gt; python -m venv entornovirtual</span>
+</code></pre>
+
+<p>Luego una vez creado debe activarse, para que la terminal utilice esas dependencias:</p>
+<pre class="code literal-block"><span></span><code><span class="err">&gt; .\entornovirtual\Scripts\activate</span>
+</code></pre>
+
+<h4>Instalación de otros sistemas</h4>
+<pre class="code literal-block"><span></span><code><span class="err">&gt; pip install &lt;nombre del paquete&gt;</span>
+</code></pre>
+
+<h3>Ejercicios:</h3>
+<p>1- Crear un entorno virtual en el directorio donde tengas los archivos Python del curso.</p>
+<p>2- Instalar el paquete "Requests", el cual vamos a utilizar en la unidad siguiente: <code>pip install requests</code>.</p>
+</div>
+    </div>
+    
+
+</article><footer id="footer"><p>Contenido © 2020         <a href="mailto:nahueltori@gmail.com">Nahuel Tori</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+            
+        </footer>
+</div>
+    </div>
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    
+    
+    
+            <script src="../../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
+    moment.locale("es");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>

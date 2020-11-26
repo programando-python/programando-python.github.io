@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html prefix="" lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>13- Uso de APIs. Qué son, para qué nos sirven. | Programando Python</title>
+<link href="../../assets/css/all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+<link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../en/rss.xml">
+<link rel="canonical" href="https://programando-python.github.io/pages/13-uso-de-apis-que-son-para-que-nos-sirven-buscamos-datos-del-clima/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Nahuel Tori">
+<meta property="og:site_name" content="Programando Python">
+<meta property="og:title" content="13- Uso de APIs. Qué son, para qué nos sirven.">
+<meta property="og:url" content="https://programando-python.github.io/pages/13-uso-de-apis-que-son-para-que-nos-sirven-buscamos-datos-del-clima/">
+<meta property="og:description" content="Unidad 12
+Uso de APIs. Qué son, para qué nos sirven. Buscamos datos del clima.
+¿Qué es una API?
+API significa Application Programming Interface, y en español eso significa Interfaz de Programación de ">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2020-11-26T18:08:42-03:00">
+<link rel="alternate" hreflang="en" href="../../en/pages/13-uso-de-apis-que-son-para-que-nos-sirven-buscamos-datos-del-clima/">
+</head>
+<body>
+    <a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+            styles, `#sidebar-checkbox` for behavior. -->
+    <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"><!-- Toggleable sidebar --><div class="sidebar" id="sidebar">
+        
+    <nav id="menu" role="navigation" class="sidebar-nav"><a class="sidebar-nav-item" href="../curso">Curso</a>
+        <a class="sidebar-nav-item" href="../../archive.html">Archivo</a>
+        <a class="sidebar-nav-item" href="../../categories/">Etiquetas</a>
+        <a class="sidebar-nav-item" href="../../rss.xml">Canal RSS</a>
+    
+    
+    </nav>
+</div>
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          
+    <h3 id="brand" class="masthead-title">
+      <a href="https://programando-python.github.io/" title="Programando Python" rel="home">Programando Python</a>
+    </h3>
+
+        </div>
+      </div>
+
+      <div class="container content" id="content">
+        
+<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="post-title p-name entry-title" itemprop="headline name"><a href="." class="u-url">13- Uso de APIs. Qué son, para qué nos sirven.</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<h2>Unidad 12</h2>
+<h3>Uso de APIs. Qué son, para qué nos sirven. Buscamos datos del clima.</h3>
+<h4>¿Qué es una API?</h4>
+<p>API significa Application Programming Interface, y en español eso significa Interfaz de Programación de Aplicaciones.<br>
+Las API es la forma en que se interconectan y comunican dos programas diferentes.</p>
+<h4>REST: Representational State Transfer</h4>
+<p>REST es el protocolo de configuración de APIs más utilizado hoy en día. Está basado en el protocolo HTTP de Internet, y utiliza sus verbos y recursos para configurar las acciones de una API.</p>
+<p>Veamos esto con un ejemplo:</p>
+<pre class="code literal-block"><span></span><code><span class="err">GET www.google.com</span>
+</code></pre>
+
+<p>Esta llamada HTTP ejecuta el verbo <code>GET</code>, llamando al recurso o endpoint <code>www.google.com</code>, y obtendrá como respuesta lo que envíe de retorno el servidor.</p>
+<p>Existen varios verbos diferentes, siendo los más utilizados: <strong>POST</strong>, <strong>GET</strong>, <strong>PUT</strong> y <strong>DELETE</strong>.</p>
+<p>GET se utiliza para consultar información.
+POST y PUT sirven para enviar información al servidor para ser procesada.
+DELETE se utiliza para ejecutar tareas de eliminación en el servidor.</p>
+<h3>Ejercitación</h3>
+<h4>Usemos una API, consultar datos del clima.</h4>
+<p>1- Vamos a crear una cuenta en el sitio http://openweathermap.org/.</p>
+<p>2- Luego, debemos confirmar nuestro email cuando el sitio nos lo solicite. Deberíamos recibir por email la API Key a utilizar en nuestro programa.</p>
+<p>3- De no recibirla, podemos encontrarla en el panel de control de nuestra cuenta dentro del sitio.</p>
+<p>4- Copiamos el siguiente código en un programa nuevo, y reemplazamos nuestra API Key.</p>
+<pre class="code literal-block"><span></span><code><span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">builtins</span>
+
+<span class="n">parametros</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">'appid'</span><span class="p">:</span> <span class="s1">'&lt;Reemplazar por nuestra API Key&gt;'</span><span class="p">,</span>
+    <span class="s1">'lang'</span><span class="p">:</span> <span class="s1">'es'</span><span class="p">,</span>
+    <span class="s1">'units'</span><span class="p">:</span> <span class="s1">'metric'</span>
+<span class="p">}</span>
+
+<span class="k">def</span> <span class="nf">buscarClima</span><span class="p">(</span><span class="n">ciudad</span><span class="p">):</span>
+    <span class="n">parametros</span><span class="p">[</span><span class="s1">'q'</span><span class="p">]</span> <span class="o">=</span> <span class="n">ciudad</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"http://api.openweathermap.org/data/2.5/weather"</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">parametros</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">r</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="n">requests</span><span class="o">.</span><span class="n">codes</span><span class="o">.</span><span class="n">ok</span><span class="p">:</span>
+        <span class="n">clima</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+        <span class="c1"># print(clima)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Información para "</span> <span class="o">+</span> <span class="n">clima</span><span class="p">[</span><span class="s1">'name'</span><span class="p">]</span> <span class="o">+</span> <span class="s2">", "</span> <span class="o">+</span> <span class="n">clima</span><span class="p">[</span><span class="s1">'sys'</span><span class="p">][</span><span class="s1">'country'</span><span class="p">])</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Estado: "</span> <span class="o">+</span> <span class="n">clima</span><span class="p">[</span><span class="s1">'weather'</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">'description'</span><span class="p">])</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Temperatura: "</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">clima</span><span class="p">[</span><span class="s1">'main'</span><span class="p">][</span><span class="s1">'temp'</span><span class="p">])),</span> <span class="s2">"°C"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Hubo un error:"</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">r</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="n">requests</span><span class="o">.</span><span class="n">codes</span><span class="o">.</span><span class="n">not_found</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"No se encuentra ese lugar"</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+    <span class="n">lugar</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Ingrese una ciudad: "</span><span class="p">)</span>
+    <span class="n">buscarClima</span><span class="p">(</span><span class="n">lugar</span><span class="p">)</span>
+</code></pre>
+</div>
+    </div>
+    
+
+</article><footer id="footer"><p>Contenido © 2020         <a href="mailto:nahueltori@gmail.com">Nahuel Tori</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+            
+        </footer>
+</div>
+    </div>
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    
+    
+    
+            <script src="../../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
+    moment.locale("es");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>
