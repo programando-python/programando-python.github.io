@@ -45,9 +45,9 @@ Clase 7
    11- :doc:`Manejo de archivos de texto. <11-manejo-de-archivos-de-texto>`  
 
 Clase 8  
-   12- Librerías externas e internas: import.  
+   12- :doc:`Librerías externas e internas: import. <12-librerias-externas-e-internas-import>`
 
-   13- Uso de APIs. Qué son, para qué nos sirven. Buscamos datos del clima.  
+   13- :doc:`Uso de APIs. Qué son, para qué nos sirven. Buscamos datos del clima. <13-uso-de-apis-que-son-para-que-nos-sirven-buscamos-datos-del-clima>`
 
 Clase 9  
    14- HTML, CSS, Javascript. ¿Cómo funciona la web?  
