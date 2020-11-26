@@ -28,6 +28,7 @@ Veamos esto con un ejemplo:
 ```
 GET www.google.com
 ```
+
 Esta llamada HTTP ejecuta el verbo `GET`, llamando al recurso o endpoint `www.google.com`, y obtendrá como respuesta lo que envíe de retorno el servidor.
 
 Existen varios verbos diferentes, siendo los más utilizados: **POST**, **GET**, **PUT** y **DELETE**.
