@@ -81,7 +81,8 @@ Creamos una carpeta `templates`, y dentro de ella un archivo `saludo.html` con e
 
 Y agregamos esta función:
 
+``` python
 @app.route('/saludo/<name>')
 def saludo(name=None):
     return render_template('saludo.html', name=name)
-    
+```
