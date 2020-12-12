@@ -61,8 +61,8 @@ Cuando necesitamos que un bloque de código se ejecute muchas veces, no lo copia
 <div class="section" id="repeticion-simple">
 <h3>Repetición Simple</h3>
 <p>Cuando necesitamos que un bloque de código se ejecute muchas veces, no lo copiamos y pegamos repitiéndolo muchas veces, sino que tenemos a disposición la estructura de repetición for, que usamos de la siguiente manera:</p>
-<pre class="code python"><a name="rest_code_7c7f98ae39bb45d0ac6891755ad13478-1"></a><span class="k">for</span> <span class="n">numero</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]:</span>
-<a name="rest_code_7c7f98ae39bb45d0ac6891755ad13478-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_7c7b2523fc5e4e87a31b67593c9b792b-1"></a><span class="k">for</span> <span class="n">numero</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]:</span>
+<a name="rest_code_7c7b2523fc5e4e87a31b67593c9b792b-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span>
 </pre>
 <hr class="docutils">
 <p>Dentro del bloque de código del for, podemos tener cualquier tipo de código python que necesitemos.</p>
@@ -71,16 +71,16 @@ Cuando necesitamos que un bloque de código se ejecute muchas veces, no lo copia
 <h4>La función <strong>range()</strong>
 </h4>
 <p>Esta función nos devuelve una secuencia de una cantidad de números, comenzando por el 0 (por defecto) y creciendo de a 1 (por defecto). Dadas estas características, se utiliza mucho en conjunto con el for, para repetir un bloque de código una cantidad determinada de veces.</p>
-<pre class="code python"><a name="rest_code_4652b60d808d465f800e52361b039f42-1"></a><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">8</span><span class="p">):</span>
-<a name="rest_code_4652b60d808d465f800e52361b039f42-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_50c269ce4cf643e8addfb1b744f9a66d-1"></a><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">8</span><span class="p">):</span>
+<a name="rest_code_50c269ce4cf643e8addfb1b744f9a66d-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
 </pre>
 <hr class="docutils">
 <p>¿Qué pasó recién? Estamos ejecutando una repetición for, la cual repetirá tantas veces como elementos haya luego del "in". Estos elementos están dados por la secuencia que genera range(8), que son los números desde el 0 hasta el 7, en total 8 elementos.</p>
 <p>Bien, en cada repetición el for va a estar utilizando cada uno de los valores de la secuencia, por lo que comienza con 0. El 0 lo guarda en la variable "num", y luego procede a ejecutar el bloque de código dentro del for: el print de la variable "num". En este primer ciclo, donde "num" tiene el valor 0, se mostrará en pantalla ese dato.
 Luego, comenzará el segundo ciclo de la repetición, donde "num" tomará el valor 1. Al ejecutarse el bloque de código del for, se mostrará en pantalla el 1. Luego, "num" tomará el valor 2, y así continuará ejecutandose cada ciclo hasta que no haya más elementos en la secuencia.</p>
 <p>El for nos permite iterar, ir accediendo de a un elemento, sobre una colección de elementos. La anterior es una lista de números enteros. También podemos iterar otros tipos de colecciones, como las cadenas de caracteres:</p>
-<pre class="code python"><a name="rest_code_d4c70e3d4ddc4efc8201af1e9338fdde-1"></a><span class="k">for</span> <span class="n">letra</span> <span class="ow">in</span> <span class="s2">"abcdefghijklmnñopqrstuvwxyz"</span><span class="p">:</span>
-<a name="rest_code_d4c70e3d4ddc4efc8201af1e9338fdde-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">letra</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_f4ca4efd91d9413bafb68c2ce5319ea7-1"></a><span class="k">for</span> <span class="n">letra</span> <span class="ow">in</span> <span class="s2">"abcdefghijklmnñopqrstuvwxyz"</span><span class="p">:</span>
+<a name="rest_code_f4ca4efd91d9413bafb68c2ce5319ea7-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">letra</span><span class="p">)</span>
 </pre>
 </div>
 <hr class="docutils">
@@ -88,10 +88,10 @@ Luego, comenzará el segundo ciclo de la repetición, donde "num" tomará el val
 <h4>La sentencia <strong>continue</strong>
 </h4>
 <p>Esta palabra dentro del for nos permitirá cortar la ejecución del elemento actual. Esto significa, que todo el código que haya luego del <strong>continue</strong> no será ejecutado. Veamos en acción:</p>
-<pre class="code python"><a name="rest_code_90500acf380f4bfeaa17bc03bfc3ef27-1"></a><span class="k">for</span> <span class="n">letra</span> <span class="ow">in</span> <span class="s2">"abcdefghijkl"</span><span class="p">:</span>
-<a name="rest_code_90500acf380f4bfeaa17bc03bfc3ef27-2"></a>    <span class="k">if</span> <span class="n">letra</span> <span class="o">==</span> <span class="s2">"c"</span><span class="p">:</span>
-<a name="rest_code_90500acf380f4bfeaa17bc03bfc3ef27-3"></a>        <span class="k">continue</span>
-<a name="rest_code_90500acf380f4bfeaa17bc03bfc3ef27-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">letra</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_f0e8ffef70684dff8e538e045c259e72-1"></a><span class="k">for</span> <span class="n">letra</span> <span class="ow">in</span> <span class="s2">"abcdefghijkl"</span><span class="p">:</span>
+<a name="rest_code_f0e8ffef70684dff8e538e045c259e72-2"></a>    <span class="k">if</span> <span class="n">letra</span> <span class="o">==</span> <span class="s2">"c"</span><span class="p">:</span>
+<a name="rest_code_f0e8ffef70684dff8e538e045c259e72-3"></a>        <span class="k">continue</span>
+<a name="rest_code_f0e8ffef70684dff8e538e045c259e72-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">letra</span><span class="p">)</span>
 </pre>
 </div>
 <hr class="docutils">
@@ -99,10 +99,10 @@ Luego, comenzará el segundo ciclo de la repetición, donde "num" tomará el val
 <h4>La sentencia <strong>break</strong>
 </h4>
 <p>Utilizando el <strong>break</strong> dentro del for, lo que producirá es que toda la repetición será detenida, por lo que no se ejecutará ningún otro ciclo más. Funciona así:</p>
-<pre class="code python"><a name="rest_code_ddabf82abb52462aa3f47f46f60235e2-1"></a><span class="k">for</span> <span class="n">letra</span> <span class="ow">in</span> <span class="s2">"abcdefghijkl"</span><span class="p">:</span>
-<a name="rest_code_ddabf82abb52462aa3f47f46f60235e2-2"></a>    <span class="k">if</span> <span class="n">letra</span> <span class="o">==</span> <span class="s2">"h"</span><span class="p">:</span>
-<a name="rest_code_ddabf82abb52462aa3f47f46f60235e2-3"></a>        <span class="k">break</span>
-<a name="rest_code_ddabf82abb52462aa3f47f46f60235e2-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">letra</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_661e14b7f88047e09e3447a32d0c0bd7-1"></a><span class="k">for</span> <span class="n">letra</span> <span class="ow">in</span> <span class="s2">"abcdefghijkl"</span><span class="p">:</span>
+<a name="rest_code_661e14b7f88047e09e3447a32d0c0bd7-2"></a>    <span class="k">if</span> <span class="n">letra</span> <span class="o">==</span> <span class="s2">"h"</span><span class="p">:</span>
+<a name="rest_code_661e14b7f88047e09e3447a32d0c0bd7-3"></a>        <span class="k">break</span>
+<a name="rest_code_661e14b7f88047e09e3447a32d0c0bd7-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">letra</span><span class="p">)</span>
 </pre>
 </div>
 </div>
