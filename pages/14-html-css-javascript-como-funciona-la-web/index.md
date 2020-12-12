@@ -31,11 +31,13 @@ Este es un esqueleto básico de una página web:
 </html>
 ```
 
-Una etiqueta se identifica con los signos `<>` y se cierra con `</>`; por ejemplo `<p>` y `</p>` en el ejemplo anterior, que sirven para delimitar un párrafo.  
-`<!DOCTYPE html>` sirve para indicar que el documento es de tipo HTML, y el navegador pueda mostrarlo apropiadamente.  
-`<html>` es la etiqueta principal que contiene todo el código de la página web.  
-`<head>` es una etiqueta que contiene información sobre la página web, metadata, que no se mostrará pero que sirve al navegador, buscadores y otras herramientas.
-`<body>` es la etiqueta donde va todo el contenido que será mostrado por el navegador.
+Una etiqueta se identifica con los signos <> y se cierra con </>; por ejemplo <p> y </p> en el ejemplo anterior, que sirven para delimitar un párrafo.  
+* `<!DOCTYPE html>` sirve para indicar que el documento es de tipo HTML, y el navegador pueda mostrarlo apropiadamente.  
+* `<html>` es la etiqueta principal que contiene todo el código de la página web.  
+* `<head>` es una etiqueta que contiene información sobre la página web, metadata, que no se mostrará pero que sirve al navegador, buscadores y otras herramientas.
+* `<body>` es la etiqueta donde va todo el contenido que será mostrado por el navegador.
+
+
 
 Otras etiquetas importantes:
 

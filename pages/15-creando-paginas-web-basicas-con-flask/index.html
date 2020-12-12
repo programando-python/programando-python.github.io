@@ -107,9 +107,10 @@ Flask es un framework en Python usado para crear sitios web. Es muy configurable
 </code></pre>
 
 <p>Y agregamos esta función:</p>
-<p>@app.route('/saludo/<name>')
-def saludo(name=None):
-    return render_template('saludo.html', name=name)</name></p>
+<pre class="code literal-block"><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">'/saludo/&lt;name&gt;'</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">saludo</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s1">'saludo.html'</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">)</span>
+</code></pre>
 </div>
     </div>
     

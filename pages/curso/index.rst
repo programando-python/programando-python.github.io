@@ -50,9 +50,9 @@ Clase 8
    13- :doc:`Uso de APIs. Qué son, para qué nos sirven. Buscamos datos del clima. <13-uso-de-apis-que-son-para-que-nos-sirven-buscamos-datos-del-clima>`
 
 Clase 9  
-   14- HTML, CSS, Javascript. ¿Cómo funciona la web?
+   14- :doc:`HTML, CSS, Javascript. ¿Cómo funciona la web? <14-html-css-javascript-como-funciona-la-web>`
 
-   15- Creando páginas web básicas con Flask.  
+   15- :doc:`Creando páginas web básicas con Flask. <15-creando-paginas-web-basicas-con-flask>`
 
 Material adicional:  
    16- Control de versiones de código fuente: git.  
