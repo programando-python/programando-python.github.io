@@ -937,7 +937,7 @@ LICENSE = ""
 
 # A small copyright notice for the page footer (in HTML).
 # (translatable)
-CONTENT_FOOTER = 'Contenido &copy; {date}         <a href="mailto:{email}">{author}</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         {license}'
+CONTENT_FOOTER = 'Contenido &copy; {date}         <a href="mailto:{email}">{author}</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         {license} - <a title=\"Privacy-friendly Web Analytics\" href=\"https://clicky.com/101385120\"><img alt=\"Clicky\" src=\"//static.getclicky.com/media/links/badge.gif\" border=\"0\" /></a> <script async src=\"//static.getclicky.com/101385120.js\"></script> <noscript><p><img alt=\"Clicky\" width=\"1\" height=\"1\" src=\"//in.getclicky.com/101385120ns.gif\" /></p></noscript>'
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
 # for translatability, as dicts are not formattable.  Nikola will
@@ -1213,7 +1213,7 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code', 'markdown.extensions.c
 # Google Analytics or whatever else you use. Added to the bottom of <body>
 # in the default template (base.tmpl).
 # (translatable)
-# BODY_END = ""
+# BODY_END = "<a title=\"Privacy-friendly Web Analytics\" href=\"https://clicky.com/101385120\"><img alt=\"Clicky\" src=\"//static.getclicky.com/media/links/badge.gif\" border=\"0\" /></a> <script async src=\"//static.getclicky.com/101385120.js\"></script> <noscript><p><img alt=\"Clicky\" width=\"1\" height=\"1\" src=\"//in.getclicky.com/101385120ns.gif\" /></p></noscript>"
 
 # The possibility to extract metadata from the filename by using a
 # regular expression.
