@@ -7,8 +7,8 @@
 .. description: 
 .. type: text
 
-Bienvenidos a Programando con Python
-======================================
+¡Bienvenidos a Aprende Programando!
+====================================
 
 Si estás leyendo estas líneas, entonces quiere decir que vas a aprender a programar, utilizando un lenguaje simple y fácil de aprender.
 

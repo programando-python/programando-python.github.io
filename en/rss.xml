@@ -1,6 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Programando Python</title><link>https://programando-python.github.io/</link><description>Aprendiendo a programar</description><atom:link href="https://programando-python.github.io/en/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2020 &lt;a href="mailto:nahueltori@gmail.com"&gt;Nahuel Tori&lt;/a&gt; </copyright><lastBuildDate>Sat, 12 Dec 2020 16:15:59 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>La API de tu currículum vitae</title><link>https://programando-python.github.io/en/posts/la-api-de-tu-curriculum-vitae/</link><dc:creator>Nahuel Tori</dc:creator><description>&lt;div&gt;&lt;h2&gt;La API de tu currículum vitae&lt;/h2&gt;
-&lt;h3&gt;Cómo crear una API para que sea tu currículum&lt;/h3&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Learning programming</title><link>https://programando-python.github.io/</link><description>Learning to program by doing, programming a new thing and learn it.</description><atom:link href="https://programando-python.github.io/en/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2022 &lt;a href="mailto:nahueltori@gmail.com"&gt;Nahuel Tori&lt;/a&gt; </copyright><lastBuildDate>Mon, 24 Oct 2022 11:43:26 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>100 días de código: Día 1</title><link>https://programando-python.github.io/en/posts/ciendiasdecodigo/dia-1/</link><dc:creator>Nahuel Tori</dc:creator><description>&lt;h2&gt;100 días de código&lt;/h2&gt;
+&lt;h3&gt;¡Hola, programador!&lt;/h3&gt;
+&lt;p&gt;Vamos a comenzar nuestro propio desafío para aprender a programar. Y lo haremos utilizando un método que probó ser muy efectivo. 100 días de código surgió con un chico de secundaria que quería aprender a programar. Acá podés leer toda su historia -&amp;gt; &lt;a href="https://www.freecodecamp.org/espanol/news/el-desafio-100daysofcode-su-historia-y-por-que-debes-probarlo-para-2022/"&gt;link&lt;/a&gt;.
+Otros desafío muy conocido es &lt;a href="https://hourofcode.com/es"&gt;La Hora del código&lt;/a&gt;, te invito a explorar el sitio y participar de alguna actividad.&lt;/p&gt;
+&lt;p&gt;Nosotros iremos transitando cada día de actividades de los 100 días de código en el sitio &lt;a href="https://www.replit.com"&gt;Replit&lt;/a&gt;. Si aun no tienes cuenta, adelántate y &lt;a href="https://replit.com/signup"&gt;crea una&lt;/a&gt;!
+Luego de loguearte en el sitio, entra a la sección Learn y podrás encontrar los &lt;a href="https://replit.com/learn/100-days-of-python"&gt;100 días de código con Python&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Día 1&lt;/h3&gt;
+&lt;h4&gt;El espacio de trabajo&lt;/h4&gt;
+&lt;p&gt;Sobre la izquierda de la pantalla, encontraremos la consigna a desarrollar. Al pie de cada explicación, tenemos flechas para avanzar a la siguiente lección, o volver a repetir o releer alguna pasada. La parte central es donde escribiremos el código, que se guarda en el archivo llamado &lt;code&gt;main.py&lt;/code&gt; como se ve en la parte superior. Hacia la derecha, está la consola, que es donde el código se ejecuta e interactúa con el usuario. Abajo, tenemos el video con la explicación de David, quien habla un perfecto inglés. Les recomiendo activar los subtítulos: en inglés si les ayuda a entender mejor, y también se puede configurar la traducción automática a Español.&lt;/p&gt;
+&lt;p&gt;Cómo vamos a trabajar: Leemos la consigna, escuchamos el video, y &lt;strong&gt;lo pausamos&lt;/strong&gt; cada vez que sea necesario. Una vez que entendimos la consigna, pausamos el video y escribimos el código. Lo bueno del video es que podemos volver a verlo todas las veces que sea necesario. Si aun no entendemos algo, también podremos guiarnos con este mismo texto: tendremos todas las consignas de cada día traducidas y explicadas.&lt;/p&gt;
+&lt;h4&gt;Manos a la obra&lt;/h4&gt;
+&lt;p&gt;Vamos a empezar con la primer lección que todo programador debe hacer: saludar al mundo. En la pantalla central, donde escribimos código en el archivo &lt;code&gt;main.py&lt;/code&gt;, escribimos la siguiente línea y clickeamos &lt;code&gt;Run&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"Hello Replit"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Cuando veas líneas de código como las anteriores, podés copiar y pegarlas en el editor, o escribirlas directamente.
+Si todo funcionó bien, deberías ver en la ventana de la consola, tu hermoso mensaje!!&lt;/p&gt;
+&lt;h4&gt;La primer instrucción&lt;/h4&gt;
+&lt;p&gt;Acabamos de aprender el primer comando: &lt;code&gt;print&lt;/code&gt;. Lo que hace es mostrar en la consola lo que sea que haya entre paréntesis. Es la forma en que nuestros programas muestran texto al usuario.&lt;br&gt;
+* Las comillas "" se usan para indicar que se desea mostrar exactamente esa cadena de texto, es decir, todo lo que esté dentro de las comillas.
+* El conjunto de texto, o lo que sea que haya entre las comillas, es llamado &lt;em&gt;string&lt;/em&gt; o cadena.&lt;/p&gt;
+&lt;p&gt;Más código para probar:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"Bueno,"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"vamos a mostrar"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"más líneas de código."&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"""Cualquier cosa que&lt;/span&gt;
+&lt;span class="s2"&gt;comience con triple comillas&lt;/span&gt;
+&lt;span class="s2"&gt;y termine también con triple&lt;/span&gt;
+&lt;span class="s2"&gt;comillas puede ocupas varias líneas e&lt;/span&gt;
+&lt;span class="s2"&gt;incluso contener " comillas sin&lt;/span&gt;
+&lt;span class="s2"&gt;que nada se rompa."""&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4&gt;Posibles errores&lt;/h4&gt;
+&lt;p&gt;A veces podemos tener errores de sintaxis al escribir código. ¿&lt;a href="https://es.wikipedia.org/wiki/Sintaxis"&gt;Qué es la sintaxis&lt;/a&gt;?. Estos son los más comunes:&lt;/p&gt;
+&lt;h5&gt;Name Error&lt;/h5&gt;
+&lt;p&gt;Este error lo encontraremos cuando:
+- Escribimos mal el nombre de una función.
+- Deletreamos mal algún nombre.
+- Agregamos o sacamos alguna máyúscula donde no debemos.&lt;/p&gt;
+&lt;p&gt;Probá el siguiente código en el editor. Luego, arreglalo hasta que funcione:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="n"&gt;Print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"¿Seguro que está mal?"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Siempre es importante leer los mensajes, que nos brindan ayuda para encontrar nuestro error.&lt;/p&gt;
+&lt;h5&gt;Syntax Error&lt;/h5&gt;
+&lt;p&gt;Este mensaje lo encontramos cuando:
+- El orden de los símbolos es incorrecto.
+- Olvidamos algún paréntesis ( ) o comillas " ".&lt;/p&gt;
+&lt;p&gt;Prueben y arreglen los siguientes trozos de código:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="nb"&gt;print&lt;/span&gt; &lt;span class="s2"&gt;"Por favor funcioná!!!"&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Ahora&lt;/span&gt; &lt;span class="n"&gt;sí&lt;/span&gt; &lt;span class="n"&gt;tiene&lt;/span&gt; &lt;span class="n"&gt;que&lt;/span&gt; &lt;span class="n"&gt;andar&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4&gt;Desafío del Día 1&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Escribir tu nombre completo y la fecha del día de hoy por consola, en líneas de código separadas.&lt;/li&gt;
+&lt;li&gt;Mostrar por consola el texto de abajo. Intentá hacerlo con sólo 1 instrucción &lt;code&gt;print&lt;/code&gt;:
+I am signing up for Replit's 100 days of Python challenge!
+I will make sure to spend some time every day coding along, for a minimum of 10 minutes a day.
+I'll be using Replit, an amazing online IDE so I can do this from my phone wherever I happend to be. No excuses for not coding from the middle of a field!&lt;/li&gt;
+&lt;li&gt;En la línea siguiente, muestra &lt;code&gt;Hoy me siento&lt;/code&gt; más un emoji que demuestre cómo te estás sintiendo al respecto de este desafío.&lt;/li&gt;
+&lt;li&gt;Agrega una línea más con &lt;code&gt;Podés seguir mi progreso en replit.com/@&lt;/code&gt; y tu nombre de usuario de replit. Esta es una buena manera de incentivar tu progreso cada día!.&lt;/li&gt;
+&lt;li&gt;Dale &lt;code&gt;Run&lt;/code&gt; a tu programa.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h3&gt;Si pudiste resolverlo o necesitás ayuda:&lt;/h3&gt;
+&lt;p&gt;¡Escribilo en los comentarios!&lt;br&gt;
+Tu aporte, tanto sea de la solución como de cualquier pregunta, es bienvenido y le sirve a todos los que lean esto.&lt;br&gt;
+También, podés leer &lt;a href="https://programando-python.github.io/en/posts/como-encontrar-ayuda.md"&gt;esta guía de ayuda&lt;/a&gt; sobre cómo encontrar la información necesaria para resolverlo.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;## ¿Qué aprendiste?&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Tomate un minuto para pensar qué aprendiste con este ejercicio.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;¿Alguna nueva instrucción?&lt;/li&gt;
+&lt;li&gt;¿Por qué Python nos da funciones ya listas para usar?&lt;/li&gt;
+&lt;li&gt;¿Qué es el código fuente y qué es la ejecución de un programa?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;¡Muy bien!&lt;br&gt;
+En breve, aparecerá publicado el día 2. ¡Nos vemos!&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;</description><guid>https://programando-python.github.io/en/posts/ciendiasdecodigo/dia-1/</guid><pubDate>Thu, 06 Oct 2022 12:09:41 GMT</pubDate></item><item><title>Cómo encontrar ayuda en Internet</title><link>https://programando-python.github.io/en/posts/como-encontrar-ayuda/</link><dc:creator>Nahuel Tori</dc:creator><description>&lt;h2&gt;¡Hola, programador!&lt;/h2&gt;
+&lt;h3&gt;¿Estás trabado con un problema o ejercicio? ¿Necesitás ayuda?&lt;/h3&gt;
+&lt;p&gt;En el camino de aprender a programar, muchas veces vamos a necesitar una respuesta que no tenemos. &lt;strong&gt;Todos&lt;/strong&gt; los programadores nos encontramos &lt;em&gt;continuamente&lt;/em&gt; con cosas que no sabemos resolver. Pero la gran mayoría de las veces, lo mismo ya le pasó a otra persona que generosamente compartie su solución en línea.&lt;br&gt;
+¿Cómo hacemos para encontrarlo entonces?&lt;/p&gt;
+&lt;h3&gt;Diferentes tipos de ayuda&lt;/h3&gt;
+&lt;p&gt;En Internet encontramos información en un sinfín de formas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Manuales de referencia sobre el tema&lt;/li&gt;
+&lt;li&gt;Videos explicativos&lt;/li&gt;
+&lt;li&gt;Sitios de preguntas y respuestas&lt;/li&gt;
+&lt;li&gt;Libros digitales&lt;/li&gt;
+&lt;li&gt;Cursos online&lt;/li&gt;
+&lt;li&gt;Foros y comunidades de ayuda&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3&gt;Primer paso: Buscar tu necesidad&lt;/h3&gt;
+&lt;p&gt;Google (o inserte aquí su buscador) es muy bueno encontrando lo que le pidamos. Haz una búsqueda de lo que necesitas resolver, el error que da tu programa o el dato que intentas averiguar.  &lt;/p&gt;
+&lt;p&gt;Por ejemplo:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;como sumar dos números ingresados por el usuario en python&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;python convertir texto en número&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;python crear una lista desde una cadena de texto&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;python abrir y editar un archivo&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;python TypeError: Can't convert int to str&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Cuanto más específicos seamos en la búsqueda, mejor. Siempre intento poner primero el lenguaje o tema principal de lo que busco, y luego una buena descripción de mi problema.&lt;br&gt;
+Estas búsquedas la mayoría de las veces nos devuelven la respuesta en los primeros resultados (ojo con los anuncios). Muchas de las soluciones incluyen ejemplos de código.&lt;/p&gt;
+&lt;h3&gt;Segunda opción: Manual de referencia&lt;/h3&gt;
+&lt;p&gt;Si la búsqueda online no resultó, lo mejor es ir a la fuente. El sitio web oficial de la herramienta que estamos usando que nos da el problema, suele tener una guía de uso, ejemplos de código, tutoriales, etc.
+A veces no es tan sencillo, pero seguro que la información que buscamos en algún lado del sitio estará.
+En caso que la herramienta no tenga sitio web o documentación sobre su uso, entonces es mejor cambiar de herramienta: si no tiene un buen mantenimiento, no nos servirá en el largo plazo.&lt;/p&gt;
+&lt;h3&gt;Tercera chance: Cursos online&lt;/h3&gt;
+&lt;p&gt;Si disponemos de un poco más de tiempo, una buena alternativa es hacer un curso. Puede ser en video, en forma de tutorial, o como mejor nos guste.
+Los cursos suelen comenzar con temas básicos y agregan complejidad a medida que avanzan. Seguramente nos ayudará con nuestro problema y además tendremos un mejor contexto de la herramienta y su forma de uso.&lt;/p&gt;
+&lt;h3&gt;Cuarta posibilidad: Hacer la pregunta&lt;/h3&gt;
+&lt;p&gt;Si todo lo anterior no nos dio la respuesta, aun tenemos forma de encontrarla: dejar nuestra consulta y esperar que alguien nos responda.
+Hay muchos sitios dedicados a ser foro de consultas y respuestas, pero el más conocido es stackoverflow.com. Hay preguntas de prácticamente todos los temas, y a esta altura seguramente ya te apareció en los resultados de tu búsqueda.
+También, una buena alternativa es acceder al sitio de la herramienta y buscar allí si existe algún foro o comunidad online. Encontraremos personas con conocimiento del tema que seguramente podrán ayudarnos.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;</description><guid>https://programando-python.github.io/en/posts/como-encontrar-ayuda/</guid><pubDate>Tue, 05 Jul 2022 12:23:41 GMT</pubDate></item><item><title>The API of your resume</title><link>https://programando-python.github.io/en/posts/the-api-of-your-resume/</link><dc:creator>Nahuel Tori</dc:creator><description>&lt;h2&gt;The API of your resume&lt;/h2&gt;
+&lt;h3&gt;How to create an API and use it as your resume&lt;/h3&gt;
 &lt;p&gt;En este post vamos a escribir nuestra propia API mediante Flask, usando como datos nuestro currículum vitae. Luego vamos a publicar el código en GitHub y finalmente usando Heroku la implementaremos online. Al final tendrás tu propia API funcionando.&lt;/p&gt;
 &lt;p&gt;1- Instalar Python.  &lt;/p&gt;
 &lt;p&gt;En &lt;a href="https://www.python.org/downloads/"&gt;la página oficial de Python&lt;/a&gt; podrás encontrar la versión de Python para tu sistema operativo.&lt;/p&gt;
@@ -14,7 +138,7 @@ Ejecutamos &lt;code&gt;source virtenv/Scripts/activate&lt;/code&gt;. Ahora, los 
 Instalamos Flask, que por el momento será nuestra única dependencia y herramienta que utilizaremos para construir nuestra API: &lt;code&gt;pip install flask&lt;/code&gt;. Junto con él, se instalan sus propias dependencias: Jinja2, Werkzeug y otros.&lt;/p&gt;
 &lt;p&gt;4- Creamos nuestra API.  &lt;/p&gt;
 &lt;p&gt;En la carpeta principal de nuestro proyecto, creamos el archivo api.py con el siguiente esqueleto:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="ch"&gt;#!flask/bin/python&lt;/span&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="ch"&gt;#!flask/bin/python&lt;/span&gt;
 &lt;span class="c1"&gt;# -*- coding: UTF-8 -*-&lt;/span&gt;
 
 &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;flask&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Flask&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;request&lt;/span&gt;
@@ -24,11 +148,11 @@ Instalamos Flask, que por el momento será nuestra única dependencia y herramie
 
 &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="vm"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s1"&gt;'__main__'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
     &lt;span class="n"&gt;app&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;debug&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Bien, nuestra api ya la podemos ejecutar con &lt;code&gt;python api.py&lt;/code&gt;, pero aun no hace nada.
 Vamos a agregar la ruta básica, '/', para que muestre algo de información cuando la ejecutamos. Este código debe ir debajo de la definición de la variable &lt;code&gt;app&lt;/code&gt;, pero antes del &lt;code&gt;if&lt;/code&gt; del final.&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nd"&gt;@app&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;route&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'/'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="nd"&gt;@app&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;route&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'/'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;index&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
     &lt;span class="n"&gt;info&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
         &lt;span class="s2"&gt;"mensaje"&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"Bienvenido a la API del curriculum vitae de Nahuel Tori."&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
@@ -38,7 +162,7 @@ Vamos a agregar la ruta básica, '/', para que muestre algo de información cuan
         &lt;span class="p"&gt;]&lt;/span&gt;
     &lt;span class="p"&gt;}&lt;/span&gt;
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;jsonify&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;info&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;También debemos agregar &lt;code&gt;jsonify&lt;/code&gt; al import inicial. ¿Qué hace esta función? Crea un objeto de tipo diccionario, con la información que queremos que nuestro servicio retorne. En la última línea, nos ayudamos del método &lt;code&gt;jsonify&lt;/code&gt; de Flask para transformar ese objeto en un texto JSON válido.&lt;br&gt;
 Podemos ver agregamos una anotación al inicio &lt;code&gt;@app.route&lt;/code&gt;, que usamos para indicarle a Flask cuál es la ruta que debe resolver con esta función.&lt;/p&gt;
@@ -47,7 +171,7 @@ Podemos ver agregamos una anotación al inicio &lt;code&gt;@app.route&lt;/code&g
 &lt;p&gt;5- Agregamos más recursos y acciones&lt;/p&gt;
 &lt;p&gt;Como buena API, en la nuestra los nombres de los endpoints describen los recursos usando sustantivos, y los verbos del protocolo HTTP describen las acciones que se pueden realizar.&lt;br&gt;
 Vamos a crear un recurso &lt;code&gt;curriculum&lt;/code&gt;, que nos permita devolver la información de nuestro perfil personal mediante el verbo GET. También vamos a crear un recurso &lt;code&gt;mensajes&lt;/code&gt;, donde usando el verbo POST nuestra API pueda recibir mensajes de quienes quieran ponerse en contacto con nosotros.&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nd"&gt;@app&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;route&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'/curriculum'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;methods&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'GET'&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="nd"&gt;@app&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;route&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'/curriculum'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;methods&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'GET'&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;cv&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
     &lt;span class="n"&gt;url_imagen&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;request&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;host_url&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s2"&gt;"static/FotoNahuel.jpg"&lt;/span&gt;
     &lt;span class="n"&gt;cv&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
@@ -76,7 +200,7 @@ Vamos a crear un recurso &lt;code&gt;curriculum&lt;/code&gt;, que nos permita de
         &lt;span class="s2"&gt;"foto"&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;url_imagen&lt;/span&gt;
     &lt;span class="p"&gt;}&lt;/span&gt;
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;jsonify&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;cv&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;En esta función, estamos generando un gran objeto diccionario con toda nuestra información. Estos son algunos campos propuestos; vos podés incluir los que te parezcan mejor, como en tu CV.&lt;br&gt;
 En la primera línea describimos el endpoint dentro de la anotación, y también aclaramos que específicamente se responderá sólo al verbo GET.&lt;br&gt;
@@ -84,14 +208,14 @@ Dentro de la función, lo primero que hacemos es armar la URL completa para prop
 &lt;p&gt;Luego de probar su nuevo endpoint, probablemente varios caracteres no se lean correctamente. En realidad, es el formato estándar Unicode en los archivos JSON, y las computadoras pueden leerlo sin problemas. Para que nosotros también podamos, hay que agregar esta línea luego de definir la variable &lt;code&gt;app&lt;/code&gt;:&lt;br&gt;
 &lt;code&gt;app.config['JSON_AS_ASCII'] = False&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Agregamos el otro endpoint:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nd"&gt;@app&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;route&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'/mensajes'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;methods&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'POST'&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="nd"&gt;@app&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;route&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'/mensajes'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;methods&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'POST'&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;contacto&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
     &lt;span class="n"&gt;mensaje&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;request&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get_data&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
     &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="ow"&gt;not&lt;/span&gt; &lt;span class="n"&gt;mensaje&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
         &lt;span class="n"&gt;abort&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;400&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;description&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"Debe enviar su mensaje en el body del POST."&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"MENSAJE DE CONTACTO: "&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nb"&gt;str&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;mensaje&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="s2"&gt;"Gracias por su mensaje."&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;En esta función, definimos nuestro endpoint &lt;code&gt;mensajes&lt;/code&gt; aceptando solamente llamadas mediante el verbo POST.&lt;br&gt;
 Lo que hacemos es buscar el mensaje en el cuerpo del llamado HTTP: si no hay nada, entonces respondemos con un error de código 400, que significa que el request recibido no tiene el formato correcto. También indicamos en la descripción qué es lo que está mal: de esta forma, quien nos invoque sabrá cómo hacerlo correctamente la próxima vez. También necesitaremos agregar &lt;code&gt;abort&lt;/code&gt; entre los imports de Flask.&lt;br&gt;
@@ -99,36 +223,36 @@ Si había algún contenido en el cuerpo del llamado, entonces ese es el texto qu
 &lt;p&gt;Muy bien, en este punto, nuestra API está conceptualmente terminada. Pueden extenderla todo lo que gusten, agregar más endpoints, validaciones, información, links o lo que gusten.&lt;/p&gt;
 &lt;p&gt;6- Preparamos para subir nuestra API a un servicio de Host&lt;/p&gt;
 &lt;p&gt;En primer lugar, debemos agregar esta línea de código:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;app&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'JSONIFY_PRETTYPRINT_REGULAR'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;True&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="n"&gt;app&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'JSONIFY_PRETTYPRINT_REGULAR'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;True&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Y cambiar esta:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="vm"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s1"&gt;'__main__'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="vm"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s1"&gt;'__main__'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
     &lt;span class="n"&gt;app&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Verán que al no estar utilizando más el modo debug, no funciona más el hot-reloading. Tampoco se formatea el mensaje JSON para verse mejor, por eso la primera configuración.&lt;/p&gt;
 &lt;p&gt;Luego, debemos crear tres archivos de configuración necesarios para el repositorio online y para subir y ejecutar correctamente el proyecto en nuestro Host.&lt;/p&gt;
 &lt;h4&gt;.gitignore&lt;/h4&gt;
 &lt;p&gt;En la carpeta principal, creamos un archivo llamado &lt;code&gt;.gitignore&lt;/code&gt;. se utiliza para excluír determinados elementos de que sean guardados en nuestro repositorio de código en GitHub, que haremos en el siguiente paso.
 El archivo debe contener las siguientes líneas:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;__pycache__&lt;/span&gt;&lt;span class="err"&gt;/&lt;/span&gt;
-&lt;span class="na"&gt;.env&lt;/span&gt;
-&lt;span class="nf"&gt;virtenv&lt;/span&gt;&lt;span class="err"&gt;/&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="nf"&gt;__pycache__&lt;/span&gt;&lt;span class="err"&gt;/&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="na"&gt;.env&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nf"&gt;virtenv&lt;/span&gt;&lt;span class="err"&gt;/&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Principalmente, nos servirá para que toda la carpeta de nuestro entorno virtual local no sea sincronizada, ya que no es necesario.&lt;/p&gt;
 &lt;h4&gt;requirements.txt&lt;/h4&gt;
 &lt;p&gt;También lo creamos en la carpeta principal, y debe tener el siguiente contenido:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;Flask&lt;/span&gt;
-&lt;span class="err"&gt;gunicorn&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;Flask
+gunicorn
+&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Este archivo indica qué dependencias tiene nuestro proyecto, y que serán instaladas cuando se quiera ejecutar. Pueden ver que hay una nueva que no nombramos antes, &lt;code&gt;gunicorn&lt;/code&gt;. Esta la utilizaremos para correr nuestro servidor web de manera productiva, ya que el que Flask provee solamente sirve para hacerlo de forma local o en ambientes de desarrollo.&lt;/p&gt;
 &lt;h4&gt;Procfile&lt;/h4&gt;
 &lt;p&gt;En la carpeta principal creamos un archivo llamado &lt;code&gt;Procfile&lt;/code&gt;, con el siguiente contenido:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;web&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;gunicorn&lt;/span&gt; &lt;span class="n"&gt;api&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;app&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="n"&gt;web&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;gunicorn&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;api&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;app&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Este archivo será utilizado por Heroku, nuestro Host online, para ejecutar la api.&lt;/p&gt;
 &lt;p&gt;7- Sincronizamos nuestro código en GitHub&lt;/p&gt;
@@ -166,80 +290,24 @@ Completar con un nombre relacionado al proyecto, como &lt;code&gt;cv-nahuel-api&
 &lt;p&gt;Si todo funcionó bien, Heroku se tomará un tiempo para hacer todo lo necesario y entregarles una aplicación instalada. Pueden verla con el botón "Open app".
 Si algo funcionó mal, en el botón "More" pueden ir a "View logs" y chequear qué funcionó mal.&lt;/p&gt;
 &lt;p&gt;En este momento, pueden probar agregar algo a su proyecto (por ejemplo el README.md, o algún nuevo endpoint), hacer el push en el repositorio de GitHub y ver cómo Heroku instala automáticamente la nueva versión de su aplicación.&lt;/p&gt;
-&lt;p&gt;Espero que te haya servido, y si te quedó alguna pregunta o algo no te funciona, no dudes en escribirme.&lt;/p&gt;&lt;/div&gt;</description><guid>https://programando-python.github.io/en/posts/la-api-de-tu-curriculum-vitae/</guid><pubDate>Mon, 16 Nov 2020 19:05:51 GMT</pubDate></item><item><title>Curso Aprender a Programar</title><link>https://programando-python.github.io/en/posts/curso-aprender-a-programar/</link><dc:creator>Nahuel Tori</dc:creator><description>&lt;div&gt;&lt;div class="section" id="queres-aprender-a-programar"&gt;
-&lt;h2&gt;¿Querés aprender a programar?&lt;/h2&gt;
-&lt;p&gt;Entonces este curso es para vos. Vas a aprender a escribir programas que hagan las cosas que vos quieras, aunque no sepas nada aun de programación.
-Vas a entender cómo funciona una computadora, cómo la información viaja de un lado a otro, y vas a poder ser vos mismo quien escriba programas que hagan esas cosas.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="como-es-el-curso-cuando-empieza"&gt;
-&lt;h2&gt;¿Cómo es el curso? ¿Cuándo empieza?&lt;/h2&gt;
-&lt;p&gt;Las clases serán reuniones virtuales en las que se explicará el tema del día, se mostrará en práctica lo aprendido y luego se darán ejercicios para practicar lo visto en clase.&lt;/p&gt;
-&lt;p&gt;La práctica es lo más importante; es lo que te va a ayudar a entender cada concepto y poder construir sobre el anterior.&lt;/p&gt;
-&lt;p&gt;El curso se dictará cada dos semanas, los días jueves a las 19:00 horas, comenzando el 20 de agosto. Tendrá una duración de 9 clases de 2 horas cada una. También estará la posibilidad de contactar al profesor para consultar dudas entre cada clase.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="puedo-anotarme-si-no-se-nada-sobre-programacion"&gt;
-&lt;h2&gt;¿Puedo anotarme si no sé nada sobre programación?&lt;/h2&gt;
-&lt;p&gt;¡Por supuesto!, la idea de este curso es aprender a programar desde cero, sin ningún conocimiento previo requerido.
-Lo que sí es indispensable, además de una computadora a tu disposición, es tener ganas de aprender y hacer cosas nuevas.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="temas-que-vamos-a-ver-en-el-curso"&gt;
-&lt;h2&gt;Temas que vamos a ver en el curso&lt;/h2&gt;
-&lt;p&gt;Cada clase vamos a aprender un tema nuevo, y también lo vamos a ejercitar. Además, habrá un par de clases adicionales que las dedicaremos completamente a un ejercicio práctico integrador, creando un programa que unifique todo lo que aprendimos hasta el momento.
-A grandes rasgos, estos son los temas que vamos a ver:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;Por qué aprender a programar.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Instrucciones básicas, variables y expresiones.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Control de ejecución: Alternativa, repeticiones, funciones.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Estructuras de datos: Listas y Diccionarios.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Manejo de archivos, librerías externas y uso de APIs.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Introducción a la creación de sitios web con Flask.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="section" id="como-te-podes-anotar-en-el-curso"&gt;
-&lt;h2&gt;¿Cómo te podés anotar en el curso?&lt;/h2&gt;
-&lt;p&gt;Para anotarse en el curso, tenés que mandar un mail con tu nombre y apellido a la dirección &lt;a class="reference external" href="mailto:curso.programando.python@gmail.com"&gt;curso.programando.python@gmail.com&lt;/a&gt;.
-También deberás realizar el pago de la cuota inicial del curso. Una vez realizados ambos pasos, te llegará un email confirmando la inscripción.&lt;/p&gt;
-&lt;p&gt;Las vacantes para el curso &lt;strong&gt;son limitadas&lt;/strong&gt;; no dejes la inscripción para el último día. De la misma manera, el curso comenzará solamente si se inscriben la cantidad mínima de participantes.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="pago-del-curso"&gt;
-&lt;h2&gt;Pago del curso&lt;/h2&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;El pago se realizará en cuotas mensuales, debiendo abonar la primera ahora para reservar tu lugar en el curso. Serán 5 cuotas de $1500 cada una. El pago de la cuota inicial de inscripción lo podés hacer con Mercadopago acá:&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="figure"&gt;
-&lt;a class="reference external image-reference" href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=46241058-7734a127-8241-438a-b34b-d5039c997cc3"&gt;&lt;img alt="/images/pagar.png" class="thumbnail" src="https://programando-python.github.io/images/pagar.png"&gt;&lt;/a&gt;
-&lt;/div&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;Si te anotás entre 3 o más amigos, entonces cada uno obtendrá un 20% de descuento en cada cuota. Para hacerlo, enviá un mail a &lt;a class="reference external" href="mailto:curso.programando.python@gmail.com"&gt;curso.programando.python@gmail.com&lt;/a&gt; con los nombres y emails de cada uno, así les podemos mandar el link de pago con el descuento. La inscripción quedará confirmada una vez que todos realicen su pago.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="section" id="quien-va-a-dar-el-curso"&gt;
-&lt;h2&gt;¿Quién va a dar el curso?&lt;/h2&gt;
-&lt;p&gt;Mi nombre es Nahuel Tori, trabajo como desarrollador de software en una empresa y también soy docente.
-Podés ver mi perfil completo en &lt;a class="reference external" href="https://www.linkedin.com/in/nahueltori/es"&gt;LinkedIn&lt;/a&gt;, y también seguirme en &lt;a class="reference external" href="https://twitter.com/nahueltori"&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="queres-hacer-alguna-otra-consulta"&gt;
-&lt;h2&gt;¿Querés hacer alguna otra consulta?&lt;/h2&gt;
-&lt;p&gt;Por cualquier duda que tengas sobre el curso, podés escribirme un email a: &lt;a class="reference external" href="mailto:curso.programando.python@gmail.com"&gt;curso.programando.python@gmail.com&lt;/a&gt;
-¡Gracias!&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;</description><guid>https://programando-python.github.io/en/posts/curso-aprender-a-programar/</guid><pubDate>Sun, 09 Aug 2020 22:00:11 GMT</pubDate></item><item><title>¿Por qué aprender a programar?</title><link>https://programando-python.github.io/en/posts/por-que-aprender-a-programar/</link><dc:creator>Nahuel Tori</dc:creator><description>&lt;div&gt;&lt;p&gt;Una pregunta muy válida es, justamente, esta: ¿Por qué aprender a programar?.&lt;/p&gt;
+&lt;p&gt;Espero que te haya servido, y si te quedó alguna pregunta o algo no te funciona, no dudes en escribirme.&lt;/p&gt;</description><category>api</category><category>flask</category><category>github</category><category>heroku</category><category>python</category><category>tutorial</category><guid>https://programando-python.github.io/en/posts/the-api-of-your-resume/</guid><pubDate>Mon, 16 Nov 2020 19:05:51 GMT</pubDate></item><item><title>Why learn programming?</title><link>https://programando-python.github.io/en/posts/why-learn-programming/</link><dc:creator>Nahuel Tori</dc:creator><description>&lt;div&gt;&lt;p&gt;Una pregunta muy válida es, justamente, esta: ¿Por qué aprender a programar?.&lt;/p&gt;
 &lt;p&gt;Les propongo ver esta charla de Santiago Ceria, profesor de la UBA y la cabeza en Medallia Argentina:&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://programando-python.github.io/en/posts/por-que-aprender-a-programar/"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><guid>https://programando-python.github.io/en/posts/por-que-aprender-a-programar/</guid><pubDate>Sun, 09 Aug 2020 21:55:11 GMT</pubDate></item><item><title>Instalando lo necesario</title><link>https://programando-python.github.io/en/posts/instalando-lo-necesario/</link><dc:creator>Nahuel Tori</dc:creator><description>&lt;div&gt;&lt;p&gt;Para poder trabajar cómodamente, lo mejor es tener acceso a una computadora personal en la cual escribir tus programas, guardarlos, probarlos y reutilizarlos.
+&lt;p&gt;&lt;a href="https://programando-python.github.io/en/posts/why-learn-programming/"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><guid>https://programando-python.github.io/en/posts/why-learn-programming/</guid><pubDate>Sun, 09 Aug 2020 21:55:11 GMT</pubDate></item><item><title>Setting up your environment</title><link>https://programando-python.github.io/en/posts/setting-up-your-environment/</link><dc:creator>Nahuel Tori</dc:creator><description>&lt;div&gt;&lt;p&gt;Para poder trabajar cómodamente, lo mejor es tener acceso a una computadora personal en la cual escribir tus programas, guardarlos, probarlos y reutilizarlos.
 Para eso, necesitamos que tenga instalado cierto software que repasaremos a continuación.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://programando-python.github.io/en/posts/instalando-lo-necesario/"&gt;Read more…&lt;/a&gt; (2 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><guid>https://programando-python.github.io/en/posts/instalando-lo-necesario/</guid><pubDate>Sat, 18 Jul 2020 14:59:11 GMT</pubDate></item><item><title>Bienvenidos</title><link>https://programando-python.github.io/en/posts/bienvenidos/</link><dc:creator>Nahuel Tori</dc:creator><description>&lt;div class="section" id="bienvenidos-a-programando-con-python"&gt;
-&lt;h2&gt;Bienvenidos a Programando con Python&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://programando-python.github.io/en/posts/setting-up-your-environment/"&gt;Read more…&lt;/a&gt; (2 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><guid>https://programando-python.github.io/en/posts/setting-up-your-environment/</guid><pubDate>Sat, 18 Jul 2020 14:59:11 GMT</pubDate></item><item><title>Welcome</title><link>https://programando-python.github.io/en/posts/welcome/</link><dc:creator>Nahuel Tori</dc:creator><description>&lt;section id="welcome-to-learning-programming"&gt;
+&lt;h2&gt;Welcome to Learning Programming!&lt;/h2&gt;
 &lt;p&gt;Si estás leyendo estas líneas, entonces quiere decir que vas a aprender a programar, utilizando un lenguaje simple y fácil de aprender.&lt;/p&gt;
-&lt;div class="section" id="a-quienes-esta-dirigido"&gt;
+&lt;section id="a-quienes-esta-dirigido"&gt;
 &lt;h3&gt;¿A quiénes está dirigido?&lt;/h3&gt;
 &lt;p&gt;Todos pueden aprender a programar, por lo que si tenés ganas y la motivación suficiente, podrás aprender a decirle a la computadora que haga todo lo que desees.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="que-necesitas-para-empezar"&gt;
+&lt;/section&gt;
+&lt;section id="que-necesitas-para-empezar"&gt;
 &lt;h3&gt;Qué necesitás para empezar:&lt;/h3&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;p&gt;Una computadora, cualquiera sirve, mientras tenga conexión a internet.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Instalar el software necesario, &lt;a class="reference external" href="https://programando-python.github.io/posts/instalando-lo-necesario/"&gt;acá&lt;/a&gt; lo tenés bien explicado.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Instalar el software necesario, &lt;a class="reference external" href="https://programando-python.github.io/en/posts/setting-up-your-environment/"&gt;acá&lt;/a&gt; lo tenés bien explicado.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Practicar y estudiar regularmente. Ya sea un rato todos los días o 2-3 horas todas las semanas, hacerte una rutina te ayudará a ir ganando conocimiento y cimentarlo con la práctica.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;¡Suerte!&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><guid>https://programando-python.github.io/en/posts/bienvenidos/</guid><pubDate>Sat, 18 Jul 2020 14:54:57 GMT</pubDate></item></channel></rss>
+&lt;/section&gt;
+&lt;/section&gt;</description><guid>https://programando-python.github.io/en/posts/welcome/</guid><pubDate>Sat, 18 Jul 2020 14:54:57 GMT</pubDate></item></channel></rss>

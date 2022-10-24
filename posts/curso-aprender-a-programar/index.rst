@@ -3,7 +3,7 @@
 .. date: 2020-08-09 19:00:11 UTC-03:00
 .. tags: curso, python, programar
 .. author: Nahuel Tori
-.. status: featured
+.. status: private
 .. category: 
 .. link: 
 .. description: 

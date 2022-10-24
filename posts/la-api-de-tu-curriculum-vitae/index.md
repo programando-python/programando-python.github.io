@@ -2,10 +2,10 @@
 .. title: La API de tu currículum vitae
 .. slug: la-api-de-tu-curriculum-vitae
 .. date: 2020-11-16 16:05:51 UTC-03:00
-.. tags: 
-.. category: 
+.. tags: tutorial,python,api,flask,github,heroku
+.. category: Tutorial
 .. link: 
-.. description: 
+.. description: Cómo crear una API para que sea tu currículum
 .. type: text
 -->
 

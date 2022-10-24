@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>7-Estructuras de datos: Listas | Programando Python</title>
+<title>7-Estructuras de datos: Listas | Learning programming</title>
 <link href="../../../assets/css/all.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
 <link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../../../rss.xml">
 <link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../rss.xml">
 <link rel="canonical" href="https://programando-python.github.io/en/pages/7-estructuras-de-datos-listas/">
 <!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Nahuel Tori">
-<meta property="og:site_name" content="Programando Python">
+<meta property="og:site_name" content="Learning programming">
 <meta property="og:title" content="7-Estructuras de datos: Listas">
 <meta property="og:url" content="https://programando-python.github.io/en/pages/7-estructuras-de-datos-listas/">
 <meta property="og:description" content="Unidad 7
@@ -42,7 +42,7 @@ Una cadena de c">
         <div class="container">
           
     <h3 id="brand" class="masthead-title">
-      <a href="https://programando-python.github.io/en/" title="Programando Python" rel="home">Programando Python</a>
+      <a href="https://programando-python.github.io/en/" title="Learning programming" rel="home">Learning programming</a>
     </h3>
 
         </div>
@@ -55,61 +55,60 @@ Una cadena de c">
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
-<h2>Unidad 7</h2>
+    <h2>Unidad 7</h2>
 <h3>Estructuras de datos: Listas</h3>
 <p>Vamos a conocer una de las formas básicas de organizar la información: las listas. Hasta el momento ya las habíamos usado, pero sin darnos cuenta.<br>
 Una cadena de caracteres es una lista, y también la función range() nos devuelve una lista de números enteros.
 Veamos ejemplos en el código:</p>
-<pre class="code literal-block"><span></span><code><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<div class="code"><pre class="code literal-block"><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
 <span class="n">semana</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"lunes"</span><span class="p">,</span> <span class="s2">"martes"</span><span class="p">,</span> <span class="s2">"miercoles"</span><span class="p">,</span> <span class="s2">"jueves"</span><span class="p">,</span> <span class="s2">"viernes"</span><span class="p">]</span>
 <span class="n">texto</span> <span class="o">=</span> <span class="s2">"Este texto también es una lista, de caracteres"</span>
-</code></pre>
+</pre></div>
 
 <h4>Iterar a través de una lista</h4>
 <p>Como ya aprendimos, utilizando el <code>for</code> podemos recorrer todos los elementos de una lista, uno por uno. Por ejemplo:</p>
-<pre class="code literal-block"><span></span><code><span class="k">for</span> <span class="n">elemento</span> <span class="ow">in</span> <span class="n">semana</span><span class="p">:</span>
+<div class="code"><pre class="code literal-block"><span class="k">for</span> <span class="n">elemento</span> <span class="ow">in</span> <span class="n">semana</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">elemento</span><span class="p">)</span>
-</code></pre>
+</pre></div>
 
 <h4>Agregar elementos a una lista</h4>
 <p>Podemos agregarle elementos a una lista usando cualquiera de estas dos funciones: <code>append()</code> o <code>insert()</code>.</p>
 <p>Agregar elementos al final:</p>
-<pre class="code literal-block"><span></span><code><span class="n">semana</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"domingo"</span><span class="p">)</span>
-</code></pre>
+<div class="code"><pre class="code literal-block"><span class="n">semana</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"domingo"</span><span class="p">)</span>
+</pre></div>
 
 <p>Agregar elementos en una posición determinada:</p>
-<pre class="code literal-block"><span></span><code><span class="n">semana</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="s2">"sabado"</span><span class="p">)</span>
-</code></pre>
+<div class="code"><pre class="code literal-block"><span class="n">semana</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="s2">"sabado"</span><span class="p">)</span>
+</pre></div>
 
 <h4>Acceder a elementos de la lista</h4>
 <p>Podemos utilizar el índice para acceder a un elemento de la lista, o modificarlo. El índice de las listas se utiliza mediante corchetes [].</p>
-<pre class="code literal-block"><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">semana</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+<div class="code"><pre class="code literal-block"><span class="nb">print</span><span class="p">(</span><span class="n">semana</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
 <span class="n">semana</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"miércoles"</span>
 <span class="n">semana</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"sábado"</span>
-</code></pre>
+</pre></div>
 
 <p>También podemos chequear si un determinado elemento existe en una lista utilizando el <code>in</code>, y preguntar cuál es su índice mediante la función <code>index()</code>.</p>
-<pre class="code literal-block"><span></span><code><span class="k">if</span> <span class="s2">"lunes"</span> <span class="ow">in</span> <span class="n">semana</span><span class="p">:</span>
+<div class="code"><pre class="code literal-block"><span class="k">if</span> <span class="s2">"lunes"</span> <span class="ow">in</span> <span class="n">semana</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">semana</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">"lunes"</span><span class="p">))</span>
-</code></pre>
+</pre></div>
 
 <h4>Eliminar elementos de la lista</h4>
 <p>Utilizando <code>remove()</code> quitamos un elemento puntual. Con <code>pop()</code> vamos a remover el último de la lista, y <code>del</code> nos permite eliminar utilizando el índice.</p>
-<pre class="code literal-block"><span></span><code><span class="n">semana</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s2">"miércoles"</span><span class="p">)</span>
+<div class="code"><pre class="code literal-block"><span class="n">semana</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s2">"miércoles"</span><span class="p">)</span>
 <span class="n">semana</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
 <span class="k">del</span> <span class="n">semana</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
 <span class="k">del</span> <span class="n">semana</span>
-</code></pre>
+</pre></div>
 
 <p>Usando a la lista como condición, vamos a poder verificar si está vacía.</p>
-<pre class="code literal-block"><span></span><code><span class="k">if</span> <span class="ow">not</span> <span class="n">semana</span><span class="p">:</span>
+<div class="code"><pre class="code literal-block"><span class="k">if</span> <span class="ow">not</span> <span class="n">semana</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"La lista semana está vacía"</span><span class="p">)</span>
-</code></pre>
+</pre></div>
 
 <h4>Ejercicios</h4>
 <p>1- Dado el siguiente programa, completar las partes del código donde se debe agregar un item, modificar un item, eliminarlo, y mostrar la lista entera.</p>
-<pre class="code literal-block"><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">"Lista recordatorio de compras del supermercado"</span><span class="p">)</span>
+<div class="code"><pre class="code literal-block"><span class="nb">print</span><span class="p">(</span><span class="s2">"Lista recordatorio de compras del supermercado"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Elija la función a ejecutar:"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"1: Listar elementos"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"2: Agregar elemento"</span><span class="p">)</span>
@@ -124,14 +123,13 @@ Veamos ejemplos en el código:</p>
 <span class="k">elif</span> <span class="n">opcion</span> <span class="o">==</span> <span class="s2">"3"</span><span class="p">:</span>
 
 <span class="k">elif</span> <span class="n">opcion</span> <span class="o">==</span> <span class="s2">"4"</span><span class="p">:</span>
-</code></pre>
+</pre></div>
 
 <p>2- Para cada una de las cuatro funciones agregadas anteriormente, crear una función que la realice, y reemplazar su código en el programa por la llamada a esa función.</p>
-</div>
     </div>
     
 
-</article><footer id="footer"><p>Contenido © 2020         <a href="mailto:nahueltori@gmail.com">Nahuel Tori</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+</article><footer id="footer"><p>Contenido © 2022         <a href="mailto:nahueltori@gmail.com">Nahuel Tori</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

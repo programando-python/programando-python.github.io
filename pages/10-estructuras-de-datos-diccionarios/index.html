@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>10. Estructuras de datos: diccionarios. | Programando Python</title>
+<title>10. Estructuras de datos: diccionarios. | Aprende programando</title>
 <link href="../../assets/css/all.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
 <link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../../rss.xml">
 <link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../en/rss.xml">
 <link rel="canonical" href="https://programando-python.github.io/pages/10-estructuras-de-datos-diccionarios/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Nahuel Tori">
-<meta property="og:site_name" content="Programando Python">
+<meta property="og:site_name" content="Aprende programando">
 <meta property="og:title" content="10. Estructuras de datos: diccionarios.">
 <meta property="og:url" content="https://programando-python.github.io/pages/10-estructuras-de-datos-diccionarios/">
 <meta property="og:description" content="Unidad 10
@@ -42,7 +42,7 @@ Una estructura de datos muy utilizada en Python es el diccionario, o 'dict'. Se 
         <div class="container">
           
     <h3 id="brand" class="masthead-title">
-      <a href="https://programando-python.github.io/" title="Programando Python" rel="home">Programando Python</a>
+      <a href="https://programando-python.github.io/" title="Aprende programando" rel="home">Aprende programando</a>
     </h3>
 
         </div>
@@ -55,79 +55,78 @@ Una estructura de datos muy utilizada en Python es el diccionario, o 'dict'. Se 
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
-<h2>Unidad 10</h2>
+    <h2>Unidad 10</h2>
 <h3>Estructuras de datos: Diccionario</h3>
 <p>Una estructura de datos muy utilizada en Python es el diccionario, o 'dict'. Se trata de pares de key-values o claves y sus valores, asociados, que guardan la información en la estructura.</p>
-<pre class="code literal-block"><span></span><code><span class="n">datos</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"a"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">"c"</span><span class="p">:</span> <span class="mi">3</span><span class="p">}</span>
-</code></pre>
+<div class="code"><pre class="code literal-block"><span class="n">datos</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"a"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">"c"</span><span class="p">:</span> <span class="mi">3</span><span class="p">}</span>
+</pre></div>
 
 <h4>Acceder a los elementos</h4>
 <p>Obtenemos los valores en un diccionario, accediendo por su clave:</p>
-<pre class="code literal-block"><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="n">datos</span><span class="p">[</span><span class="s2">"a"</span><span class="p">]</span>
-</code></pre>
+<div class="code"><pre class="code literal-block"><span class="n">x</span> <span class="o">=</span> <span class="n">datos</span><span class="p">[</span><span class="s2">"a"</span><span class="p">]</span>
+</pre></div>
 
 <p>También podemos usar el método get():</p>
-<pre class="code literal-block"><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="n">datos</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"a"</span><span class="p">)</span>
-</code></pre>
+<div class="code"><pre class="code literal-block"><span class="n">x</span> <span class="o">=</span> <span class="n">datos</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"a"</span><span class="p">)</span>
+</pre></div>
 
 <h4>Actualizar datos</h4>
 <p>Podemos actualizar los datos de un determinado elemento, refiriéndolo por su clave:</p>
-<pre class="code literal-block"><span></span><code><span class="n">datos</span><span class="p">[</span><span class="s2">"b"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>
-</code></pre>
+<div class="code"><pre class="code literal-block"><span class="n">datos</span><span class="p">[</span><span class="s2">"b"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>
+</pre></div>
 
 <h4>Recorrer todos los datos de un diccionario</h4>
 <p>Para iterar los elementos de un diccionario, los recorremos utilizando la estructura <code>for</code>. Cuando pasamos por sus elementos de esta manera, el elemento que obtenemos es la <strong>clave</strong>.</p>
-<pre class="code literal-block"><span></span><code><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">datos</span><span class="p">:</span>
+<div class="code"><pre class="code literal-block"><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">datos</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</code></pre>
+</pre></div>
 
 <p>Para iterar los <strong>valores</strong>, debemos hacer:</p>
-<pre class="code literal-block"><span></span><code><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">datos</span><span class="p">:</span>
+<div class="code"><pre class="code literal-block"><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">datos</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">datos</span><span class="p">[</span><span class="n">x</span><span class="p">])</span>
-</code></pre>
+</pre></div>
 
 <p>O también:</p>
-<pre class="code literal-block"><span></span><code><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">datos</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+<div class="code"><pre class="code literal-block"><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">datos</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</code></pre>
+</pre></div>
 
 <p>También tenemos la posibilidad, muy útil a veces, de obtener ambos valores <strong>clave</strong> y <strong>valor</strong> en cada iteración:</p>
-<pre class="code literal-block"><span></span><code><span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">datos</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+<div class="code"><pre class="code literal-block"><span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">datos</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-</code></pre>
+</pre></div>
 
 <h4>Chequear la existencia de una clave</h4>
 <p>Esta utilidad es muy importante, ya que si queremos acceder a una clave que no existe obtendremos un error.</p>
-<pre class="code literal-block"><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">datos</span><span class="p">[</span><span class="s2">"e"</span><span class="p">])</span>
+<div class="code"><pre class="code literal-block"><span class="nb">print</span><span class="p">(</span><span class="n">datos</span><span class="p">[</span><span class="s2">"e"</span><span class="p">])</span>
 
 <span class="k">if</span> <span class="s2">"c"</span> <span class="ow">in</span> <span class="n">datos</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"La clave 'c' existe en el diccionario datos."</span><span class="p">)</span>
-</code></pre>
+</pre></div>
 
 <h4>Agregando elementos</h4>
 <p>Para agregar datos al diccionario, simplemente referenciamos la nueva clave asignándole un valor:</p>
-<pre class="code literal-block"><span></span><code><span class="n">datos</span><span class="p">[</span><span class="s2">"d"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>
-</code></pre>
+<div class="code"><pre class="code literal-block"><span class="n">datos</span><span class="p">[</span><span class="s2">"d"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>
+</pre></div>
 
 <h4>Eliminar un elemento</h4>
 <p>Al igual que con las listas, para eliminar elementos hay varias formas:</p>
-<pre class="code literal-block"><span></span><code><span class="n">datos</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">"b"</span><span class="p">)</span>       <span class="c1"># Elimina el elemento indicado</span>
+<div class="code"><pre class="code literal-block"><span class="n">datos</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">"b"</span><span class="p">)</span>       <span class="c1"># Elimina el elemento indicado</span>
 <span class="n">datos</span><span class="o">.</span><span class="n">popitem</span><span class="p">()</span>      <span class="c1"># Elimina el último elemento</span>
 <span class="k">del</span> <span class="n">datos</span><span class="p">[</span><span class="s2">"c"</span><span class="p">]</span>       <span class="c1"># Elimina el elemento indicado</span>
 <span class="n">datos</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>        <span class="c1"># Vacía por completo el diccionario</span>
 <span class="k">del</span> <span class="n">datos</span>            <span class="c1"># Elimina todo el objeto diccionario</span>
-</code></pre>
+</pre></div>
 
 <h4>Copiar diccionarios</h4>
 <p>Con los tipos de datos que conocíamos hasta el momento, podíamos copiar un elemento simplemente asignándolo a uno nuevo. Pero con los diccionarios, esto no funciona, ya que solamente estaríamos copiando su <em>referencia</em>. Para copiarlo completamente, debemos utilizar el método <code>copy()</code>.</p>
-<pre class="code literal-block"><span></span><code><span class="n">nuevoDicc</span> <span class="o">=</span> <span class="n">datos</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<div class="code"><pre class="code literal-block"><span class="n">nuevoDicc</span> <span class="o">=</span> <span class="n">datos</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">nuevoDicc</span><span class="p">)</span>
-</code></pre>
+</pre></div>
 
 <h4>Ejercicios</h4>
 <p>1- Dada la siguiente estructura inicial de un programa Python, completar el código necesario para mostrar los elementos, agregar uno nuevo, modificar uno existente, eliminar uno y para salir. Como clave del diccionario utilizaremos el nombre del libro, y como valor, el nombre de la persona a quien se lo prestamos.</p>
-<pre class="code literal-block"><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">"Archivo de libros prestados"</span><span class="p">)</span>
+<div class="code"><pre class="code literal-block"><span class="nb">print</span><span class="p">(</span><span class="s2">"Archivo de libros prestados"</span><span class="p">)</span>
 <span class="n">salir</span> <span class="o">=</span> <span class="kc">False</span>
 
 <span class="k">while</span> <span class="ow">not</span> <span class="n">salir</span><span class="p">:</span>
@@ -148,14 +147,13 @@ Una estructura de datos muy utilizada en Python es el diccionario, o 'dict'. Se 
     <span class="k">elif</span> <span class="n">opcion</span> <span class="o">==</span> <span class="s2">"4"</span><span class="p">:</span>
 
     <span class="k">elif</span> <span class="n">opcion</span> <span class="o">==</span> <span class="s2">"5"</span><span class="p">:</span>
-</code></pre>
+</pre></div>
 
 <p>2- Idealmente, al realizar el ejercicio anterior, cada parte del código podemos agregarlo como una nueva función de forma que el código quede más ordenado y legible.</p>
-</div>
     </div>
     
 
-</article><footer id="footer"><p>Contenido © 2020         <a href="mailto:nahueltori@gmail.com">Nahuel Tori</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+</article><footer id="footer"><p>Contenido © 2022         <a href="mailto:nahueltori@gmail.com">Nahuel Tori</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

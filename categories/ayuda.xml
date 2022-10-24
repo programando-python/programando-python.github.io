@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Aprende programando (Publicaciones sobre ayuda)</title><link>https://programando-python.github.io/</link><description></description><atom:link href="https://programando-python.github.io/categories/ayuda.xml" rel="self" type="application/rss+xml"></atom:link><language>es</language><copyright>Contents © 2022 &lt;a href="mailto:nahueltori@gmail.com"&gt;Nahuel Tori&lt;/a&gt; </copyright><lastBuildDate>Mon, 24 Oct 2022 11:43:26 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Cómo encontrar ayuda en Internet</title><link>https://programando-python.github.io/posts/como-encontrar-ayuda/</link><dc:creator>Nahuel Tori</dc:creator><description>&lt;h2&gt;¡Hola, programador!&lt;/h2&gt;
+&lt;h3&gt;¿Estás trabado con un problema o ejercicio? ¿Necesitás ayuda?&lt;/h3&gt;
+&lt;p&gt;En el camino de aprender a programar, muchas veces vamos a necesitar una respuesta que no tenemos. &lt;strong&gt;Todos&lt;/strong&gt; los programadores nos encontramos &lt;em&gt;continuamente&lt;/em&gt; con cosas que no sabemos resolver. Pero la gran mayoría de las veces, lo mismo ya le pasó a otra persona que generosamente compartie su solución en línea.&lt;br&gt;
+¿Cómo hacemos para encontrarlo entonces?&lt;/p&gt;
+&lt;h3&gt;Diferentes tipos de ayuda&lt;/h3&gt;
+&lt;p&gt;En Internet encontramos información en un sinfín de formas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Manuales de referencia sobre el tema&lt;/li&gt;
+&lt;li&gt;Videos explicativos&lt;/li&gt;
+&lt;li&gt;Sitios de preguntas y respuestas&lt;/li&gt;
+&lt;li&gt;Libros digitales&lt;/li&gt;
+&lt;li&gt;Cursos online&lt;/li&gt;
+&lt;li&gt;Foros y comunidades de ayuda&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3&gt;Primer paso: Buscar tu necesidad&lt;/h3&gt;
+&lt;p&gt;Google (o inserte aquí su buscador) es muy bueno encontrando lo que le pidamos. Haz una búsqueda de lo que necesitas resolver, el error que da tu programa o el dato que intentas averiguar.  &lt;/p&gt;
+&lt;p&gt;Por ejemplo:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;como sumar dos números ingresados por el usuario en python&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;python convertir texto en número&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;python crear una lista desde una cadena de texto&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;python abrir y editar un archivo&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;python TypeError: Can't convert int to str&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Cuanto más específicos seamos en la búsqueda, mejor. Siempre intento poner primero el lenguaje o tema principal de lo que busco, y luego una buena descripción de mi problema.&lt;br&gt;
+Estas búsquedas la mayoría de las veces nos devuelven la respuesta en los primeros resultados (ojo con los anuncios). Muchas de las soluciones incluyen ejemplos de código.&lt;/p&gt;
+&lt;h3&gt;Segunda opción: Manual de referencia&lt;/h3&gt;
+&lt;p&gt;Si la búsqueda online no resultó, lo mejor es ir a la fuente. El sitio web oficial de la herramienta que estamos usando que nos da el problema, suele tener una guía de uso, ejemplos de código, tutoriales, etc.
+A veces no es tan sencillo, pero seguro que la información que buscamos en algún lado del sitio estará.
+En caso que la herramienta no tenga sitio web o documentación sobre su uso, entonces es mejor cambiar de herramienta: si no tiene un buen mantenimiento, no nos servirá en el largo plazo.&lt;/p&gt;
+&lt;h3&gt;Tercera chance: Cursos online&lt;/h3&gt;
+&lt;p&gt;Si disponemos de un poco más de tiempo, una buena alternativa es hacer un curso. Puede ser en video, en forma de tutorial, o como mejor nos guste.
+Los cursos suelen comenzar con temas básicos y agregan complejidad a medida que avanzan. Seguramente nos ayudará con nuestro problema y además tendremos un mejor contexto de la herramienta y su forma de uso.&lt;/p&gt;
+&lt;h3&gt;Cuarta posibilidad: Hacer la pregunta&lt;/h3&gt;
+&lt;p&gt;Si todo lo anterior no nos dio la respuesta, aun tenemos forma de encontrarla: dejar nuestra consulta y esperar que alguien nos responda.
+Hay muchos sitios dedicados a ser foro de consultas y respuestas, pero el más conocido es stackoverflow.com. Hay preguntas de prácticamente todos los temas, y a esta altura seguramente ya te apareció en los resultados de tu búsqueda.
+También, una buena alternativa es acceder al sitio de la herramienta y buscar allí si existe algún foro o comunidad online. Encontraremos personas con conocimiento del tema que seguramente podrán ayudarnos.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;</description><category>ayuda</category><guid>https://programando-python.github.io/posts/como-encontrar-ayuda/</guid><pubDate>Tue, 05 Jul 2022 12:23:41 GMT</pubDate></item></channel></rss>

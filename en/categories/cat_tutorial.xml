@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Learning programming (Posts about Tutorial)</title><link>https://programando-python.github.io/</link><description></description><atom:link href="https://programando-python.github.io/en/categories/cat_tutorial.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2022 &lt;a href="mailto:nahueltori@gmail.com"&gt;Nahuel Tori&lt;/a&gt; </copyright><lastBuildDate>Mon, 24 Oct 2022 11:43:26 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>The API of your resume</title><link>https://programando-python.github.io/en/posts/the-api-of-your-resume/</link><dc:creator>Nahuel Tori</dc:creator><description>&lt;h2&gt;The API of your resume&lt;/h2&gt;
+&lt;h3&gt;How to create an API and use it as your resume&lt;/h3&gt;
+&lt;p&gt;En este post vamos a escribir nuestra propia API mediante Flask, usando como datos nuestro currículum vitae. Luego vamos a publicar el código en GitHub y finalmente usando Heroku la implementaremos online. Al final tendrás tu propia API funcionando.&lt;/p&gt;
+&lt;p&gt;1- Instalar Python.  &lt;/p&gt;
+&lt;p&gt;En &lt;a href="https://www.python.org/downloads/"&gt;la página oficial de Python&lt;/a&gt; podrás encontrar la versión de Python para tu sistema operativo.&lt;/p&gt;
+&lt;p&gt;2- Crear un Virtual Environment.  &lt;/p&gt;
+&lt;p&gt;En Python, la mejor forma de aislar un proyecto y sus dependencias es con un entorno virtual. Es una carpeta especial donde se instalará todo lo que tu proyecto necesita.&lt;br&gt;
+Creamos una nueva carpeta donde guardar nuestro proyecto &lt;code&gt;mkdir cv-nahuel-api&lt;/code&gt;, y cambiamos a esta &lt;code&gt;cd cv-nahuel-api&lt;/code&gt;.
+Creamos un entorno virtual con el comando: &lt;code&gt;python -m venv virtenv&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;3- Instalamos lo necesario.  &lt;/p&gt;
+&lt;p&gt;Primero que nada, debemos activar nuestro entorno virtual, para que el sistema sepa que queremos usar esos programas de esta carpeta en particular.&lt;br&gt;
+Ejecutamos &lt;code&gt;source virtenv/Scripts/activate&lt;/code&gt;. Ahora, los comandos &lt;code&gt;python&lt;/code&gt; y &lt;code&gt;pip&lt;/code&gt; que ejecutemos serán los de la carpeta &lt;code&gt;virtenv&lt;/code&gt;.
+Instalamos Flask, que por el momento será nuestra única dependencia y herramienta que utilizaremos para construir nuestra API: &lt;code&gt;pip install flask&lt;/code&gt;. Junto con él, se instalan sus propias dependencias: Jinja2, Werkzeug y otros.&lt;/p&gt;
+&lt;p&gt;4- Creamos nuestra API.  &lt;/p&gt;
+&lt;p&gt;En la carpeta principal de nuestro proyecto, creamos el archivo api.py con el siguiente esqueleto:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="ch"&gt;#!flask/bin/python&lt;/span&gt;
+&lt;span class="c1"&gt;# -*- coding: UTF-8 -*-&lt;/span&gt;
+
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;flask&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Flask&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;request&lt;/span&gt;
+
+&lt;span class="n"&gt;app&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Flask&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="vm"&gt;__name__&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="vm"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s1"&gt;'__main__'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;app&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;debug&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Bien, nuestra api ya la podemos ejecutar con &lt;code&gt;python api.py&lt;/code&gt;, pero aun no hace nada.
+Vamos a agregar la ruta básica, '/', para que muestre algo de información cuando la ejecutamos. Este código debe ir debajo de la definición de la variable &lt;code&gt;app&lt;/code&gt;, pero antes del &lt;code&gt;if&lt;/code&gt; del final.&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="nd"&gt;@app&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;route&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'/'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;index&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;info&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="s2"&gt;"mensaje"&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"Bienvenido a la API del curriculum vitae de Nahuel Tori."&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+        &lt;span class="s2"&gt;"acciones"&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;
+            &lt;span class="s2"&gt;"GET /curriculum"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+            &lt;span class="s2"&gt;"POST /mensajes"&lt;/span&gt;
+        &lt;span class="p"&gt;]&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;jsonify&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;info&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;También debemos agregar &lt;code&gt;jsonify&lt;/code&gt; al import inicial. ¿Qué hace esta función? Crea un objeto de tipo diccionario, con la información que queremos que nuestro servicio retorne. En la última línea, nos ayudamos del método &lt;code&gt;jsonify&lt;/code&gt; de Flask para transformar ese objeto en un texto JSON válido.&lt;br&gt;
+Podemos ver agregamos una anotación al inicio &lt;code&gt;@app.route&lt;/code&gt;, que usamos para indicarle a Flask cuál es la ruta que debe resolver con esta función.&lt;/p&gt;
+&lt;p&gt;Ahora si, cuando ejecutamos nuestra API y accedemos en nuestro navegador a &lt;code&gt;http://127.0.0.1:5000/&lt;/code&gt;, podremos ver el mensaje.&lt;/p&gt;
+&lt;p&gt;Si no habías detenido previamente la ejecución, podrás ver cómo Flask detecta el cambio en el archivo al ser guardado, y vuelve a recargar la API.&lt;/p&gt;
+&lt;p&gt;5- Agregamos más recursos y acciones&lt;/p&gt;
+&lt;p&gt;Como buena API, en la nuestra los nombres de los endpoints describen los recursos usando sustantivos, y los verbos del protocolo HTTP describen las acciones que se pueden realizar.&lt;br&gt;
+Vamos a crear un recurso &lt;code&gt;curriculum&lt;/code&gt;, que nos permita devolver la información de nuestro perfil personal mediante el verbo GET. También vamos a crear un recurso &lt;code&gt;mensajes&lt;/code&gt;, donde usando el verbo POST nuestra API pueda recibir mensajes de quienes quieran ponerse en contacto con nosotros.&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="nd"&gt;@app&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;route&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'/curriculum'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;methods&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'GET'&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;cv&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;url_imagen&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;request&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;host_url&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s2"&gt;"static/FotoNahuel.jpg"&lt;/span&gt;
+    &lt;span class="n"&gt;cv&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="s2"&gt;"nombre"&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"Nahuel"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+        &lt;span class="s2"&gt;"apellido"&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"Tori"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+        &lt;span class="s2"&gt;"residencia"&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"Argentina"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+        &lt;span class="s2"&gt;"experiencia"&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[{&lt;/span&gt;
+            &lt;span class="s2"&gt;"posicion"&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"&amp;lt; describe tu posición&amp;gt;"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+            &lt;span class="s2"&gt;"empresa"&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"&amp;lt; nombre de tu empresa &amp;gt;"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+            &lt;span class="s2"&gt;"desde"&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"&amp;lt; cuándo empezaste a trabajar &amp;gt;"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+            &lt;span class="s2"&gt;"hasta"&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"&amp;lt; si ya no trabajas más, cuándo &amp;gt;"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+            &lt;span class="s2"&gt;"descripcion"&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"&amp;lt; detalles &amp;gt;"&lt;/span&gt;
+        &lt;span class="p"&gt;}],&lt;/span&gt;
+        &lt;span class="s2"&gt;"educación"&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+            &lt;span class="s2"&gt;"nivel"&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"&amp;lt; nivel de tus estudios &amp;gt;"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+            &lt;span class="s2"&gt;"titulo"&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"&amp;lt; nombre de tu carrera &amp;gt;"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+            &lt;span class="s2"&gt;"institucion"&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"&amp;lt; dónde estudiaste &amp;gt;"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+            &lt;span class="s2"&gt;"facultad"&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"&amp;lt; más detalles &amp;gt;"&lt;/span&gt;
+        &lt;span class="p"&gt;},&lt;/span&gt;
+        &lt;span class="s2"&gt;"intereses"&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"python"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"apis"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"enseñar"&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
+        &lt;span class="s2"&gt;"redes"&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+            &lt;span class="s2"&gt;"github"&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"https://github.com/nahueltori"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+            &lt;span class="s2"&gt;"twitter"&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"https://twitter.com/nahueltori"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+            &lt;span class="s2"&gt;"linkedin"&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"https://www.linkedin.com/in/nahueltori"&lt;/span&gt;
+        &lt;span class="p"&gt;},&lt;/span&gt;
+        &lt;span class="s2"&gt;"foto"&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;url_imagen&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;jsonify&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;cv&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;En esta función, estamos generando un gran objeto diccionario con toda nuestra información. Estos son algunos campos propuestos; vos podés incluir los que te parezcan mejor, como en tu CV.&lt;br&gt;
+En la primera línea describimos el endpoint dentro de la anotación, y también aclaramos que específicamente se responderá sólo al verbo GET.&lt;br&gt;
+Dentro de la función, lo primero que hacemos es armar la URL completa para proporcionar también una imagen nuestra: la imagen debemos guardarla dentro de una nueva carpeta llamada &lt;code&gt;static&lt;/code&gt; dentro de nuestro proyecto. Recuerden agregar &lt;code&gt;request&lt;/code&gt; al import de Flask en la primera línea.&lt;/p&gt;
+&lt;p&gt;Luego de probar su nuevo endpoint, probablemente varios caracteres no se lean correctamente. En realidad, es el formato estándar Unicode en los archivos JSON, y las computadoras pueden leerlo sin problemas. Para que nosotros también podamos, hay que agregar esta línea luego de definir la variable &lt;code&gt;app&lt;/code&gt;:&lt;br&gt;
+&lt;code&gt;app.config['JSON_AS_ASCII'] = False&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Agregamos el otro endpoint:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="nd"&gt;@app&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;route&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'/mensajes'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;methods&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'POST'&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;contacto&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;mensaje&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;request&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get_data&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="ow"&gt;not&lt;/span&gt; &lt;span class="n"&gt;mensaje&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;abort&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;400&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;description&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"Debe enviar su mensaje en el body del POST."&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"MENSAJE DE CONTACTO: "&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nb"&gt;str&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;mensaje&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="s2"&gt;"Gracias por su mensaje."&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;En esta función, definimos nuestro endpoint &lt;code&gt;mensajes&lt;/code&gt; aceptando solamente llamadas mediante el verbo POST.&lt;br&gt;
+Lo que hacemos es buscar el mensaje en el cuerpo del llamado HTTP: si no hay nada, entonces respondemos con un error de código 400, que significa que el request recibido no tiene el formato correcto. También indicamos en la descripción qué es lo que está mal: de esta forma, quien nos invoque sabrá cómo hacerlo correctamente la próxima vez. También necesitaremos agregar &lt;code&gt;abort&lt;/code&gt; entre los imports de Flask.&lt;br&gt;
+Si había algún contenido en el cuerpo del llamado, entonces ese es el texto que nos interesa: nuestro mensaje. En este ejemplo, por simplicidad solamente hacemos un &lt;code&gt;print&lt;/code&gt; de su contenido, pero podría agregarse el código para mandar este mensaje por email, por ejemplo. Finalmente, devolvemos un mensaje de respuesta ante una llamada correcta.&lt;/p&gt;
+&lt;p&gt;Muy bien, en este punto, nuestra API está conceptualmente terminada. Pueden extenderla todo lo que gusten, agregar más endpoints, validaciones, información, links o lo que gusten.&lt;/p&gt;
+&lt;p&gt;6- Preparamos para subir nuestra API a un servicio de Host&lt;/p&gt;
+&lt;p&gt;En primer lugar, debemos agregar esta línea de código:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="n"&gt;app&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'JSONIFY_PRETTYPRINT_REGULAR'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;True&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Y cambiar esta:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="vm"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s1"&gt;'__main__'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;app&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Verán que al no estar utilizando más el modo debug, no funciona más el hot-reloading. Tampoco se formatea el mensaje JSON para verse mejor, por eso la primera configuración.&lt;/p&gt;
+&lt;p&gt;Luego, debemos crear tres archivos de configuración necesarios para el repositorio online y para subir y ejecutar correctamente el proyecto en nuestro Host.&lt;/p&gt;
+&lt;h4&gt;.gitignore&lt;/h4&gt;
+&lt;p&gt;En la carpeta principal, creamos un archivo llamado &lt;code&gt;.gitignore&lt;/code&gt;. se utiliza para excluír determinados elementos de que sean guardados en nuestro repositorio de código en GitHub, que haremos en el siguiente paso.
+El archivo debe contener las siguientes líneas:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="nf"&gt;__pycache__&lt;/span&gt;&lt;span class="err"&gt;/&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="na"&gt;.env&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nf"&gt;virtenv&lt;/span&gt;&lt;span class="err"&gt;/&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Principalmente, nos servirá para que toda la carpeta de nuestro entorno virtual local no sea sincronizada, ya que no es necesario.&lt;/p&gt;
+&lt;h4&gt;requirements.txt&lt;/h4&gt;
+&lt;p&gt;También lo creamos en la carpeta principal, y debe tener el siguiente contenido:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;Flask
+gunicorn
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Este archivo indica qué dependencias tiene nuestro proyecto, y que serán instaladas cuando se quiera ejecutar. Pueden ver que hay una nueva que no nombramos antes, &lt;code&gt;gunicorn&lt;/code&gt;. Esta la utilizaremos para correr nuestro servidor web de manera productiva, ya que el que Flask provee solamente sirve para hacerlo de forma local o en ambientes de desarrollo.&lt;/p&gt;
+&lt;h4&gt;Procfile&lt;/h4&gt;
+&lt;p&gt;En la carpeta principal creamos un archivo llamado &lt;code&gt;Procfile&lt;/code&gt;, con el siguiente contenido:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="n"&gt;web&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;gunicorn&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;api&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;app&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Este archivo será utilizado por Heroku, nuestro Host online, para ejecutar la api.&lt;/p&gt;
+&lt;p&gt;7- Sincronizamos nuestro código en GitHub&lt;/p&gt;
+&lt;p&gt;GitHub es el repositorio online más popular donde subir nuestro código, y es muy utilizado por reclutadores para conocernos más a través de cómo programamos.&lt;br&gt;
+Para poder subir nuestro código a GitHub, antes debemos tener instalado algún cliente Git. Para eso, lo podemos descargar &lt;a href="https://git-scm.com/download"&gt;acá&lt;/a&gt;.&lt;br&gt;
+&lt;a href="https://training.github.com/downloads/es_ES/github-git-cheat-sheet/"&gt;Acá&lt;/a&gt; hay una guía rápida sobre cómo configurar la herramienta para usarla por primera vez.&lt;/p&gt;
+&lt;p&gt;Vamos ahora a GitHub, y si aun no tienen una cuenta les recomiendo crearla: la pueden poner en la información de su currículum en la API :). Luego de crear la cuenta, vamos a &lt;a href="https://github.com/new"&gt;new&lt;/a&gt; a crear el repositorio para guardar nuestro proyecto.&lt;br&gt;
+Completar con un nombre relacionado al proyecto, como &lt;code&gt;cv-nahuel-api&lt;/code&gt; por ejemplo. &lt;strong&gt;Muy importante:&lt;/strong&gt; no tildar ninguna de las opciones de inicialización del repositorio en &lt;em&gt;Initialize this repository with&lt;/em&gt;. Eso nos permitirá subir todo el código de nuestra carpeta local sin problemas.&lt;/p&gt;
+&lt;p&gt;Una vez creado el repositorio, podemos subir el código siguiendo las mismas instrucciones que vemos en pantalla:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Parados en la carpeta de nuestro proyecto, ejecutamos &lt;code&gt;git init&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Luego &lt;code&gt;git add .&lt;/code&gt; para incluir todos los archivos del directorio.&lt;/li&gt;
+&lt;li&gt;Con &lt;code&gt;git commit -m "Primera versión de nuestro CV en una API"&lt;/code&gt; generamos el paquete de código trabajado.&lt;/li&gt;
+&lt;li&gt;Creamos un nombre para la línea por defecto donde subir el código: &lt;code&gt;git branch -M main&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Configuramos nuestra carpeta con el repositorio online creado: &lt;code&gt;git remote add origin https://github.com/nahueltori/cv-nahuel-api.git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Finalmente, con este comando nuestro código quedará guardado en la nube: &lt;code&gt;git push -u origin main&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;En adelante, cada vez que hagamos un cambio, sólo tendremos que ejecutar lo siguiente:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Luego &lt;code&gt;git add .&lt;/code&gt; para incluir todos los archivos del directorio.&lt;/li&gt;
+&lt;li&gt;Con &lt;code&gt;git commit -m "Comentario descriptivo de lo que hicimos"&lt;/code&gt; generamos el paquete de código trabajado.&lt;/li&gt;
+&lt;li&gt;Finalmente, con este comando nuestro código quedará guardado en la nube: &lt;code&gt;git push -u origin main&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;8- Heroku: hosting de proyectos para desarrolladores&lt;/p&gt;
+&lt;p&gt;Heroku es una plataforma cloud que nos permite crear aplicaciones muy rápidamente, sólo ponemos el código y la plataforma se encarga de toda la infraestructura para que esté funcionando.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Si aun no tienen una cuenta, vamos a crear una nueva.&lt;/li&gt;
+&lt;li&gt;En el dashboard, hacemos click en "New" -&amp;gt; "App".&lt;/li&gt;
+&lt;li&gt;En Deployment method, seleccionamos "GitHub". Si nunca habían conectado su cuenta previamente, los redirigirá al sitio de GitHub donde deberán ingresar su usuario y contraseña para autorizar a Heroku poder buscar su código.&lt;/li&gt;
+&lt;li&gt;Una vez conectadas las cuentas, podrán buscar el repositorio por su nombre: &lt;code&gt;cv-nahuel-api&lt;/code&gt; y apretan "Search".&lt;/li&gt;
+&lt;li&gt;En el listado les muestra los repositorios encontrados, simplemente clickeamos "Connect" en el correcto.&lt;/li&gt;
+&lt;li&gt;Es una muy buena idea activar los Deploys automáticos: cada vez que hagan push en su repositorio, Heroku se dará cuenta e instalará la nueva versión de su aplicación. &lt;strong&gt;Importante:&lt;/strong&gt; si lo activamos, recordar sólo hacer push del código luego de haber probado que nuestra aplicación funciona correctamente.&lt;/li&gt;
+&lt;li&gt;Finalmente, debemos hacer el primer deploy de nuestra aplicación. Para eso, clickeamos el botón "Deploy Branch" en la sección "Manual deploy".&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Si todo funcionó bien, Heroku se tomará un tiempo para hacer todo lo necesario y entregarles una aplicación instalada. Pueden verla con el botón "Open app".
+Si algo funcionó mal, en el botón "More" pueden ir a "View logs" y chequear qué funcionó mal.&lt;/p&gt;
+&lt;p&gt;En este momento, pueden probar agregar algo a su proyecto (por ejemplo el README.md, o algún nuevo endpoint), hacer el push en el repositorio de GitHub y ver cómo Heroku instala automáticamente la nueva versión de su aplicación.&lt;/p&gt;
+&lt;p&gt;Espero que te haya servido, y si te quedó alguna pregunta o algo no te funciona, no dudes en escribirme.&lt;/p&gt;</description><category>api</category><category>flask</category><category>github</category><category>heroku</category><category>python</category><category>tutorial</category><guid>https://programando-python.github.io/en/posts/the-api-of-your-resume/</guid><pubDate>Mon, 16 Nov 2020 19:05:51 GMT</pubDate></item></channel></rss>

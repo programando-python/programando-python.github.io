@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Learning programming (Posts about 100daysofcode)</title><link>https://programando-python.github.io/</link><description></description><atom:link href="https://programando-python.github.io/en/categories/100daysofcode.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2022 &lt;a href="mailto:nahueltori@gmail.com"&gt;Nahuel Tori&lt;/a&gt; </copyright><lastBuildDate>Mon, 24 Oct 2022 11:43:26 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>100 días de código: Día 1</title><link>https://programando-python.github.io/en/posts/ciendiasdecodigo/dia-1/</link><dc:creator>Nahuel Tori</dc:creator><description>&lt;h2&gt;100 días de código&lt;/h2&gt;
+&lt;h3&gt;¡Hola, programador!&lt;/h3&gt;
+&lt;p&gt;Vamos a comenzar nuestro propio desafío para aprender a programar. Y lo haremos utilizando un método que probó ser muy efectivo. 100 días de código surgió con un chico de secundaria que quería aprender a programar. Acá podés leer toda su historia -&amp;gt; &lt;a href="https://www.freecodecamp.org/espanol/news/el-desafio-100daysofcode-su-historia-y-por-que-debes-probarlo-para-2022/"&gt;link&lt;/a&gt;.
+Otros desafío muy conocido es &lt;a href="https://hourofcode.com/es"&gt;La Hora del código&lt;/a&gt;, te invito a explorar el sitio y participar de alguna actividad.&lt;/p&gt;
+&lt;p&gt;Nosotros iremos transitando cada día de actividades de los 100 días de código en el sitio &lt;a href="https://www.replit.com"&gt;Replit&lt;/a&gt;. Si aun no tienes cuenta, adelántate y &lt;a href="https://replit.com/signup"&gt;crea una&lt;/a&gt;!
+Luego de loguearte en el sitio, entra a la sección Learn y podrás encontrar los &lt;a href="https://replit.com/learn/100-days-of-python"&gt;100 días de código con Python&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Día 1&lt;/h3&gt;
+&lt;h4&gt;El espacio de trabajo&lt;/h4&gt;
+&lt;p&gt;Sobre la izquierda de la pantalla, encontraremos la consigna a desarrollar. Al pie de cada explicación, tenemos flechas para avanzar a la siguiente lección, o volver a repetir o releer alguna pasada. La parte central es donde escribiremos el código, que se guarda en el archivo llamado &lt;code&gt;main.py&lt;/code&gt; como se ve en la parte superior. Hacia la derecha, está la consola, que es donde el código se ejecuta e interactúa con el usuario. Abajo, tenemos el video con la explicación de David, quien habla un perfecto inglés. Les recomiendo activar los subtítulos: en inglés si les ayuda a entender mejor, y también se puede configurar la traducción automática a Español.&lt;/p&gt;
+&lt;p&gt;Cómo vamos a trabajar: Leemos la consigna, escuchamos el video, y &lt;strong&gt;lo pausamos&lt;/strong&gt; cada vez que sea necesario. Una vez que entendimos la consigna, pausamos el video y escribimos el código. Lo bueno del video es que podemos volver a verlo todas las veces que sea necesario. Si aun no entendemos algo, también podremos guiarnos con este mismo texto: tendremos todas las consignas de cada día traducidas y explicadas.&lt;/p&gt;
+&lt;h4&gt;Manos a la obra&lt;/h4&gt;
+&lt;p&gt;Vamos a empezar con la primer lección que todo programador debe hacer: saludar al mundo. En la pantalla central, donde escribimos código en el archivo &lt;code&gt;main.py&lt;/code&gt;, escribimos la siguiente línea y clickeamos &lt;code&gt;Run&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"Hello Replit"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Cuando veas líneas de código como las anteriores, podés copiar y pegarlas en el editor, o escribirlas directamente.
+Si todo funcionó bien, deberías ver en la ventana de la consola, tu hermoso mensaje!!&lt;/p&gt;
+&lt;h4&gt;La primer instrucción&lt;/h4&gt;
+&lt;p&gt;Acabamos de aprender el primer comando: &lt;code&gt;print&lt;/code&gt;. Lo que hace es mostrar en la consola lo que sea que haya entre paréntesis. Es la forma en que nuestros programas muestran texto al usuario.&lt;br&gt;
+* Las comillas "" se usan para indicar que se desea mostrar exactamente esa cadena de texto, es decir, todo lo que esté dentro de las comillas.
+* El conjunto de texto, o lo que sea que haya entre las comillas, es llamado &lt;em&gt;string&lt;/em&gt; o cadena.&lt;/p&gt;
+&lt;p&gt;Más código para probar:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"Bueno,"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"vamos a mostrar"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"más líneas de código."&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"""Cualquier cosa que&lt;/span&gt;
+&lt;span class="s2"&gt;comience con triple comillas&lt;/span&gt;
+&lt;span class="s2"&gt;y termine también con triple&lt;/span&gt;
+&lt;span class="s2"&gt;comillas puede ocupas varias líneas e&lt;/span&gt;
+&lt;span class="s2"&gt;incluso contener " comillas sin&lt;/span&gt;
+&lt;span class="s2"&gt;que nada se rompa."""&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4&gt;Posibles errores&lt;/h4&gt;
+&lt;p&gt;A veces podemos tener errores de sintaxis al escribir código. ¿&lt;a href="https://es.wikipedia.org/wiki/Sintaxis"&gt;Qué es la sintaxis&lt;/a&gt;?. Estos son los más comunes:&lt;/p&gt;
+&lt;h5&gt;Name Error&lt;/h5&gt;
+&lt;p&gt;Este error lo encontraremos cuando:
+- Escribimos mal el nombre de una función.
+- Deletreamos mal algún nombre.
+- Agregamos o sacamos alguna máyúscula donde no debemos.&lt;/p&gt;
+&lt;p&gt;Probá el siguiente código en el editor. Luego, arreglalo hasta que funcione:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="n"&gt;Print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"¿Seguro que está mal?"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Siempre es importante leer los mensajes, que nos brindan ayuda para encontrar nuestro error.&lt;/p&gt;
+&lt;h5&gt;Syntax Error&lt;/h5&gt;
+&lt;p&gt;Este mensaje lo encontramos cuando:
+- El orden de los símbolos es incorrecto.
+- Olvidamos algún paréntesis ( ) o comillas " ".&lt;/p&gt;
+&lt;p&gt;Prueben y arreglen los siguientes trozos de código:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="nb"&gt;print&lt;/span&gt; &lt;span class="s2"&gt;"Por favor funcioná!!!"&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Ahora&lt;/span&gt; &lt;span class="n"&gt;sí&lt;/span&gt; &lt;span class="n"&gt;tiene&lt;/span&gt; &lt;span class="n"&gt;que&lt;/span&gt; &lt;span class="n"&gt;andar&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4&gt;Desafío del Día 1&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Escribir tu nombre completo y la fecha del día de hoy por consola, en líneas de código separadas.&lt;/li&gt;
+&lt;li&gt;Mostrar por consola el texto de abajo. Intentá hacerlo con sólo 1 instrucción &lt;code&gt;print&lt;/code&gt;:
+I am signing up for Replit's 100 days of Python challenge!
+I will make sure to spend some time every day coding along, for a minimum of 10 minutes a day.
+I'll be using Replit, an amazing online IDE so I can do this from my phone wherever I happend to be. No excuses for not coding from the middle of a field!&lt;/li&gt;
+&lt;li&gt;En la línea siguiente, muestra &lt;code&gt;Hoy me siento&lt;/code&gt; más un emoji que demuestre cómo te estás sintiendo al respecto de este desafío.&lt;/li&gt;
+&lt;li&gt;Agrega una línea más con &lt;code&gt;Podés seguir mi progreso en replit.com/@&lt;/code&gt; y tu nombre de usuario de replit. Esta es una buena manera de incentivar tu progreso cada día!.&lt;/li&gt;
+&lt;li&gt;Dale &lt;code&gt;Run&lt;/code&gt; a tu programa.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h3&gt;Si pudiste resolverlo o necesitás ayuda:&lt;/h3&gt;
+&lt;p&gt;¡Escribilo en los comentarios!&lt;br&gt;
+Tu aporte, tanto sea de la solución como de cualquier pregunta, es bienvenido y le sirve a todos los que lean esto.&lt;br&gt;
+También, podés leer &lt;a href="https://programando-python.github.io/en/posts/como-encontrar-ayuda.md"&gt;esta guía de ayuda&lt;/a&gt; sobre cómo encontrar la información necesaria para resolverlo.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;## ¿Qué aprendiste?&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Tomate un minuto para pensar qué aprendiste con este ejercicio.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;¿Alguna nueva instrucción?&lt;/li&gt;
+&lt;li&gt;¿Por qué Python nos da funciones ya listas para usar?&lt;/li&gt;
+&lt;li&gt;¿Qué es el código fuente y qué es la ejecución de un programa?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;¡Muy bien!&lt;br&gt;
+En breve, aparecerá publicado el día 2. ¡Nos vemos!&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;</description><guid>https://programando-python.github.io/en/posts/ciendiasdecodigo/dia-1/</guid><pubDate>Thu, 06 Oct 2022 12:09:41 GMT</pubDate></item></channel></rss>

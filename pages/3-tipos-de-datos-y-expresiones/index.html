@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>3-Tipos de datos y expresiones | Programando Python</title>
+<title>3-Tipos de datos y expresiones | Aprende programando</title>
 <link href="../../assets/css/all.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
 <link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../../rss.xml">
 <link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../en/rss.xml">
 <link rel="canonical" href="https://programando-python.github.io/pages/3-tipos-de-datos-y-expresiones/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Nahuel Tori">
-<meta property="og:site_name" content="Programando Python">
+<meta property="og:site_name" content="Aprende programando">
 <meta property="og:title" content="3-Tipos de datos y expresiones">
 <meta property="og:url" content="https://programando-python.github.io/pages/3-tipos-de-datos-y-expresiones/">
 <meta property="og:description" content="Unidad 3
@@ -42,7 +42,7 @@ En Python, aprendimos que para definir una variable debemos nombrarla y asignarl
         <div class="container">
           
     <h3 id="brand" class="masthead-title">
-      <a href="https://programando-python.github.io/" title="Programando Python" rel="home">Programando Python</a>
+      <a href="https://programando-python.github.io/" title="Aprende programando" rel="home">Aprende programando</a>
     </h3>
 
         </div>
@@ -55,134 +55,118 @@ En Python, aprendimos que para definir una variable debemos nombrarla y asignarl
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div class="section" id="unidad-3">
-<h2>Unidad 3</h2>
+    <section id="unidad-3"><h2>Unidad 3</h2>
 <p><a class="reference external" href="https://realpython.com/python-data-types">Tipos de datos en Real Python</a></p>
 <p>En Python, aprendimos que para definir una variable debemos nombrarla y asignarle un valor. El valor que le asignamos a la variable define su tipo de dato. El tipo de dato se refiere a qué forma tiene su contenido: ¿es un número? ¿es texto? ¿hay otros tipos de datos?</p>
 <p>Hasta el momento, solamente vimos y usamos un tipo de dato: cadena de caracteres o comunmente llamado "string". Hay varios tipos más de datos en Python, y vamos a ver los más usados.</p>
-<div class="section" id="enteros">
-<h3>Enteros</h3>
+<section id="enteros"><h3>Enteros</h3>
 <p>Un número entero puede ser del largo que sea necesario, no tiene límite.</p>
-<pre class="code python"><a name="rest_code_7ae43fcf86654b9f8a2095ad295617ca-1"></a><span class="n">numero</span> <span class="o">=</span> <span class="mi">123456</span>
-<a name="rest_code_7ae43fcf86654b9f8a2095ad295617ca-2"></a><span class="n">largo</span> <span class="o">=</span> <span class="mi">98765432101234567890987654321012345678909876543210</span>
-<a name="rest_code_7ae43fcf86654b9f8a2095ad295617ca-3"></a>
-<a name="rest_code_7ae43fcf86654b9f8a2095ad295617ca-4"></a><span class="nb">type</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span>
-<a name="rest_code_7ae43fcf86654b9f8a2095ad295617ca-5"></a><span class="nb">type</span><span class="p">(</span><span class="n">largo</span><span class="p">)</span>
-</pre>
+<div class="code"><pre class="code python"><a id="rest_code_635e3a068fe443479be4c4e4c8009859-1" name="rest_code_635e3a068fe443479be4c4e4c8009859-1" href="#rest_code_635e3a068fe443479be4c4e4c8009859-1"></a><span class="n">numero</span> <span class="o">=</span> <span class="mi">123456</span>
+<a id="rest_code_635e3a068fe443479be4c4e4c8009859-2" name="rest_code_635e3a068fe443479be4c4e4c8009859-2" href="#rest_code_635e3a068fe443479be4c4e4c8009859-2"></a><span class="n">largo</span> <span class="o">=</span> <span class="mi">98765432101234567890987654321012345678909876543210</span>
+<a id="rest_code_635e3a068fe443479be4c4e4c8009859-3" name="rest_code_635e3a068fe443479be4c4e4c8009859-3" href="#rest_code_635e3a068fe443479be4c4e4c8009859-3"></a>
+<a id="rest_code_635e3a068fe443479be4c4e4c8009859-4" name="rest_code_635e3a068fe443479be4c4e4c8009859-4" href="#rest_code_635e3a068fe443479be4c4e4c8009859-4"></a><span class="nb">type</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span>
+<a id="rest_code_635e3a068fe443479be4c4e4c8009859-5" name="rest_code_635e3a068fe443479be4c4e4c8009859-5" href="#rest_code_635e3a068fe443479be4c4e4c8009859-5"></a><span class="nb">type</span><span class="p">(</span><span class="n">largo</span><span class="p">)</span>
+</pre></div>
 <p>Si ejecutamos el código anterior, podemos ver que la función "type" devuelve 'int', que significa 'integer'.</p>
-</div>
-<div class="section" id="decimales">
-<h3>Decimales</h3>
+</section><section id="decimales"><h3>Decimales</h3>
 <p>Los números de punto flotante, comunmente llamados decimales, se especifican utilizando un punto dentro del número.</p>
-<pre class="code python"><a name="rest_code_84495ea0a20e4fbb8f203245aa9a432a-1"></a><span class="n">decimal</span> <span class="o">=</span> <span class="mf">1.8</span>
-<a name="rest_code_84495ea0a20e4fbb8f203245aa9a432a-2"></a><span class="n">medio</span> <span class="o">=</span> <span class="o">.</span><span class="mi">5</span>
-<a name="rest_code_84495ea0a20e4fbb8f203245aa9a432a-3"></a>
-<a name="rest_code_84495ea0a20e4fbb8f203245aa9a432a-4"></a><span class="nb">type</span><span class="p">(</span><span class="n">decimal</span><span class="p">)</span>
-</pre>
+<div class="code"><pre class="code python"><a id="rest_code_b9a2bfb5ff374368b83922a9ee0ab91f-1" name="rest_code_b9a2bfb5ff374368b83922a9ee0ab91f-1" href="#rest_code_b9a2bfb5ff374368b83922a9ee0ab91f-1"></a><span class="n">decimal</span> <span class="o">=</span> <span class="mf">1.8</span>
+<a id="rest_code_b9a2bfb5ff374368b83922a9ee0ab91f-2" name="rest_code_b9a2bfb5ff374368b83922a9ee0ab91f-2" href="#rest_code_b9a2bfb5ff374368b83922a9ee0ab91f-2"></a><span class="n">medio</span> <span class="o">=</span> <span class="mf">.5</span>
+<a id="rest_code_b9a2bfb5ff374368b83922a9ee0ab91f-3" name="rest_code_b9a2bfb5ff374368b83922a9ee0ab91f-3" href="#rest_code_b9a2bfb5ff374368b83922a9ee0ab91f-3"></a>
+<a id="rest_code_b9a2bfb5ff374368b83922a9ee0ab91f-4" name="rest_code_b9a2bfb5ff374368b83922a9ee0ab91f-4" href="#rest_code_b9a2bfb5ff374368b83922a9ee0ab91f-4"></a><span class="nb">type</span><span class="p">(</span><span class="n">decimal</span><span class="p">)</span>
+</pre></div>
 <p>También se puede utlilizar notación científica, agregando una 'e' o 'E' seguido de un número positivo o negativo:</p>
-<pre class="code python"><a name="rest_code_76eddc14263444c59c53ca7d29da7d88-1"></a><span class="n">pequeño</span> <span class="o">=</span> <span class="mf">523e-6</span>
-<a name="rest_code_76eddc14263444c59c53ca7d29da7d88-2"></a><span class="n">enorme</span> <span class="o">=</span> <span class="mf">8e15</span>
-<a name="rest_code_76eddc14263444c59c53ca7d29da7d88-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">pequeño</span><span class="p">)</span>
-<a name="rest_code_76eddc14263444c59c53ca7d29da7d88-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">enorme</span><span class="p">)</span>
-</pre>
-</div>
-<div class="section" id="cadenas-de-caracteres">
-<h3>Cadenas de caracteres</h3>
+<div class="code"><pre class="code python"><a id="rest_code_6947aca470d246378376bac35e0263b6-1" name="rest_code_6947aca470d246378376bac35e0263b6-1" href="#rest_code_6947aca470d246378376bac35e0263b6-1"></a><span class="n">pequeño</span> <span class="o">=</span> <span class="mf">523e-6</span>
+<a id="rest_code_6947aca470d246378376bac35e0263b6-2" name="rest_code_6947aca470d246378376bac35e0263b6-2" href="#rest_code_6947aca470d246378376bac35e0263b6-2"></a><span class="n">enorme</span> <span class="o">=</span> <span class="mf">8e15</span>
+<a id="rest_code_6947aca470d246378376bac35e0263b6-3" name="rest_code_6947aca470d246378376bac35e0263b6-3" href="#rest_code_6947aca470d246378376bac35e0263b6-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">pequeño</span><span class="p">)</span>
+<a id="rest_code_6947aca470d246378376bac35e0263b6-4" name="rest_code_6947aca470d246378376bac35e0263b6-4" href="#rest_code_6947aca470d246378376bac35e0263b6-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">enorme</span><span class="p">)</span>
+</pre></div>
+</section><section id="cadenas-de-caracteres"><h3>Cadenas de caracteres</h3>
 <p>Las cadenas o "strings" son secuencias de caracteres. Para especificar un string, lo hacemos encerrando el texto con comillas simples o dobles, ' o ".</p>
-<pre class="code python"><a name="rest_code_ac627ea24b9b4b1092be5d65878d8d04-1"></a><span class="n">texto1</span> <span class="o">=</span> <span class="s2">"Esto es un string"</span>
-<a name="rest_code_ac627ea24b9b4b1092be5d65878d8d04-2"></a><span class="n">texto2</span> <span class="o">=</span> <span class="s1">'Esto también'</span>
-<a name="rest_code_ac627ea24b9b4b1092be5d65878d8d04-3"></a>
-<a name="rest_code_ac627ea24b9b4b1092be5d65878d8d04-4"></a><span class="n">texto3</span> <span class="o">=</span> <span class="s2">"Un string no puede contener el delimitador de comillas "</span> <span class="n">dentro</span> <span class="n">así</span> <span class="n">nomás</span><span class="s2">"</span>
-</pre>
+<div class="code"><pre class="code python"><a id="rest_code_7b25865926cf49538b265d4963a63e90-1" name="rest_code_7b25865926cf49538b265d4963a63e90-1" href="#rest_code_7b25865926cf49538b265d4963a63e90-1"></a><span class="n">texto1</span> <span class="o">=</span> <span class="s2">"Esto es un string"</span>
+<a id="rest_code_7b25865926cf49538b265d4963a63e90-2" name="rest_code_7b25865926cf49538b265d4963a63e90-2" href="#rest_code_7b25865926cf49538b265d4963a63e90-2"></a><span class="n">texto2</span> <span class="o">=</span> <span class="s1">'Esto también'</span>
+<a id="rest_code_7b25865926cf49538b265d4963a63e90-3" name="rest_code_7b25865926cf49538b265d4963a63e90-3" href="#rest_code_7b25865926cf49538b265d4963a63e90-3"></a>
+<a id="rest_code_7b25865926cf49538b265d4963a63e90-4" name="rest_code_7b25865926cf49538b265d4963a63e90-4" href="#rest_code_7b25865926cf49538b265d4963a63e90-4"></a><span class="n">texto3</span> <span class="o">=</span> <span class="s2">"Un string no puede contener el delimitador de comillas "</span> <span class="n">dentro</span> <span class="n">así</span> <span class="n">nomás</span><span class="s2">"</span>
+</pre></div>
 <p>Podemos escribir un texto que contenga comillas, usando las otras como delimitador:</p>
-<pre class="code python"><a name="rest_code_8ff97792167f43c3a38401d4d918d86d-1"></a><span class="n">texto1</span> <span class="o">=</span> <span class="s2">"Este string tiene una ' comilla"</span>
-<a name="rest_code_8ff97792167f43c3a38401d4d918d86d-2"></a><span class="n">texto2</span> <span class="o">=</span> <span class="s1">'Este string tiene " comillas dobles'</span>
-</pre>
+<div class="code"><pre class="code python"><a id="rest_code_10dae3560b374495aeed8ecc39a1ce4f-1" name="rest_code_10dae3560b374495aeed8ecc39a1ce4f-1" href="#rest_code_10dae3560b374495aeed8ecc39a1ce4f-1"></a><span class="n">texto1</span> <span class="o">=</span> <span class="s2">"Este string tiene una ' comilla"</span>
+<a id="rest_code_10dae3560b374495aeed8ecc39a1ce4f-2" name="rest_code_10dae3560b374495aeed8ecc39a1ce4f-2" href="#rest_code_10dae3560b374495aeed8ecc39a1ce4f-2"></a><span class="n">texto2</span> <span class="o">=</span> <span class="s1">'Este string tiene " comillas dobles'</span>
+</pre></div>
 <p>Caracter de escape: . Utilizando una barra invertida, podemos saltear el error de un caracter especial, como las comillas:</p>
-<pre class="code python"><a name="rest_code_d5e4f84e11784ffcbee44694802ca1d8-1"></a><span class="n">texto1</span> <span class="o">=</span> <span class="s2">"Este string tiene unas </span><span class="se">\"</span><span class="s2"> comillas dobles"</span>
-</pre>
+<div class="code"><pre class="code python"><a id="rest_code_f709c9e5446540ef824d27a08c60e20e-1" name="rest_code_f709c9e5446540ef824d27a08c60e20e-1" href="#rest_code_f709c9e5446540ef824d27a08c60e20e-1"></a><span class="n">texto1</span> <span class="o">=</span> <span class="s2">"Este string tiene unas </span><span class="se">\"</span><span class="s2"> comillas dobles"</span>
+</pre></div>
 <p>De esta forma, hay determinados caracteres especiales que podemos utilizar:</p>
 <ul class="simple">
 <li><p>n  --&gt; Nueva línea</p></li>
 <li><p>t  --&gt; Tabulación horizontal</p></li>
 <li><p>b  --&gt; Backspace o vuelta atrás</p></li>
 </ul>
-<pre class="code python"><a name="rest_code_300e998f4ff24311a0bed3ecccded018-1"></a><span class="n">texto1</span> <span class="o">=</span> <span class="s2">"Este texto </span><span class="se">\n</span><span class="s2"> tiene dos líneas"</span>
-<a name="rest_code_300e998f4ff24311a0bed3ecccded018-2"></a><span class="n">texto2</span> <span class="o">=</span> <span class="s2">"Este texto está </span><span class="se">\t</span><span class="s2"> tabulado"</span>
-</pre>
-</div>
-<div class="section" id="booleanos">
-<h3>Booleanos</h3>
+<div class="code"><pre class="code python"><a id="rest_code_ded8c5eacf4346f5a8569858be2d93b0-1" name="rest_code_ded8c5eacf4346f5a8569858be2d93b0-1" href="#rest_code_ded8c5eacf4346f5a8569858be2d93b0-1"></a><span class="n">texto1</span> <span class="o">=</span> <span class="s2">"Este texto </span><span class="se">\n</span><span class="s2"> tiene dos líneas"</span>
+<a id="rest_code_ded8c5eacf4346f5a8569858be2d93b0-2" name="rest_code_ded8c5eacf4346f5a8569858be2d93b0-2" href="#rest_code_ded8c5eacf4346f5a8569858be2d93b0-2"></a><span class="n">texto2</span> <span class="o">=</span> <span class="s2">"Este texto está </span><span class="se">\t</span><span class="s2"> tabulado"</span>
+</pre></div>
+</section><section id="booleanos"><h3>Booleanos</h3>
 <p>Los tipos de datos booleanos tienen dos posibles valores: True o False, verdadero o falso. Los utilizamos para determinar condiciones e interpretar expresiones, como veremos en breve.</p>
-<pre class="code python"><a name="rest_code_77b3f5c33a4e4bb1ba7ae0ced5cc8526-1"></a><span class="n">verdadero</span> <span class="o">=</span> <span class="kc">True</span>
-<a name="rest_code_77b3f5c33a4e4bb1ba7ae0ced5cc8526-2"></a><span class="n">falso</span> <span class="o">=</span> <span class="kc">False</span>
-<a name="rest_code_77b3f5c33a4e4bb1ba7ae0ced5cc8526-3"></a>
-<a name="rest_code_77b3f5c33a4e4bb1ba7ae0ced5cc8526-4"></a><span class="nb">type</span><span class="p">(</span><span class="n">verdadero</span><span class="p">)</span>
-<a name="rest_code_77b3f5c33a4e4bb1ba7ae0ced5cc8526-5"></a><span class="nb">type</span><span class="p">(</span><span class="n">falso</span><span class="p">)</span>
-</pre>
-</div>
-<div class="section" id="casteos-de-datos">
-<h3>Casteos de datos</h3>
+<div class="code"><pre class="code python"><a id="rest_code_34bbc49fd933478084b2b65888f03c48-1" name="rest_code_34bbc49fd933478084b2b65888f03c48-1" href="#rest_code_34bbc49fd933478084b2b65888f03c48-1"></a><span class="n">verdadero</span> <span class="o">=</span> <span class="kc">True</span>
+<a id="rest_code_34bbc49fd933478084b2b65888f03c48-2" name="rest_code_34bbc49fd933478084b2b65888f03c48-2" href="#rest_code_34bbc49fd933478084b2b65888f03c48-2"></a><span class="n">falso</span> <span class="o">=</span> <span class="kc">False</span>
+<a id="rest_code_34bbc49fd933478084b2b65888f03c48-3" name="rest_code_34bbc49fd933478084b2b65888f03c48-3" href="#rest_code_34bbc49fd933478084b2b65888f03c48-3"></a>
+<a id="rest_code_34bbc49fd933478084b2b65888f03c48-4" name="rest_code_34bbc49fd933478084b2b65888f03c48-4" href="#rest_code_34bbc49fd933478084b2b65888f03c48-4"></a><span class="nb">type</span><span class="p">(</span><span class="n">verdadero</span><span class="p">)</span>
+<a id="rest_code_34bbc49fd933478084b2b65888f03c48-5" name="rest_code_34bbc49fd933478084b2b65888f03c48-5" href="#rest_code_34bbc49fd933478084b2b65888f03c48-5"></a><span class="nb">type</span><span class="p">(</span><span class="n">falso</span><span class="p">)</span>
+</pre></div>
+</section><section id="casteos-de-datos"><h3>Casteos de datos</h3>
 <p>Castear una variable se refiere a transformar su tipo de dato en otro. Por ejemplo, un número en un texto, o un decimal a entero.</p>
-<pre class="code python"><a name="rest_code_9a62e9b575254c9a9164a7c8f18a9a67-1"></a><span class="n">entero_desde_texto</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="s2">"10"</span><span class="p">)</span>
-<a name="rest_code_9a62e9b575254c9a9164a7c8f18a9a67-2"></a><span class="n">texto_desde_float</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="mf">1.25</span><span class="p">)</span>
-<a name="rest_code_9a62e9b575254c9a9164a7c8f18a9a67-3"></a><span class="n">float_desde_texto</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="s2">"2.5"</span><span class="p">)</span>
-<a name="rest_code_9a62e9b575254c9a9164a7c8f18a9a67-4"></a><span class="n">entero_desde_float</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="mf">10.8</span><span class="p">)</span>
-</pre>
+<div class="code"><pre class="code python"><a id="rest_code_fea02498b3304f3d86b49802b271b9e5-1" name="rest_code_fea02498b3304f3d86b49802b271b9e5-1" href="#rest_code_fea02498b3304f3d86b49802b271b9e5-1"></a><span class="n">entero_desde_texto</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="s2">"10"</span><span class="p">)</span>
+<a id="rest_code_fea02498b3304f3d86b49802b271b9e5-2" name="rest_code_fea02498b3304f3d86b49802b271b9e5-2" href="#rest_code_fea02498b3304f3d86b49802b271b9e5-2"></a><span class="n">texto_desde_float</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="mf">1.25</span><span class="p">)</span>
+<a id="rest_code_fea02498b3304f3d86b49802b271b9e5-3" name="rest_code_fea02498b3304f3d86b49802b271b9e5-3" href="#rest_code_fea02498b3304f3d86b49802b271b9e5-3"></a><span class="n">float_desde_texto</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="s2">"2.5"</span><span class="p">)</span>
+<a id="rest_code_fea02498b3304f3d86b49802b271b9e5-4" name="rest_code_fea02498b3304f3d86b49802b271b9e5-4" href="#rest_code_fea02498b3304f3d86b49802b271b9e5-4"></a><span class="n">entero_desde_float</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="mf">10.8</span><span class="p">)</span>
+</pre></div>
 <p>Estas funciones incluidas en Python nos ayudan a transformar el tipo de dato de una variable cuando lo necesitemos.</p>
-</div>
-<div class="section" id="expresiones">
-<h3>Expresiones</h3>
+</section><section id="expresiones"><h3>Expresiones</h3>
 <p>Las expresiones están formadas mediante datos o variables y diferentes operadores. Cada operador funciona de una determinada manera según el tipo de dato.</p>
 <p><a class="reference external" href="https://www.w3schools.com/python/python_operators.asp">Operadores en w3schools</a></p>
 <ul class="simple">
 <li><p>Operadores aritméticos:</p></li>
 </ul>
-<pre class="code python"><a name="rest_code_34bd483e73a541bd9f06550913da0ef6-1"></a><span class="n">suma</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span>
-<a name="rest_code_34bd483e73a541bd9f06550913da0ef6-2"></a><span class="n">resta</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">-</span> <span class="mi">8</span>
-<a name="rest_code_34bd483e73a541bd9f06550913da0ef6-3"></a><span class="n">multiplicacion</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="mi">4</span>
-<a name="rest_code_34bd483e73a541bd9f06550913da0ef6-4"></a><span class="n">division</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">/</span> <span class="mi">2</span>
-<a name="rest_code_34bd483e73a541bd9f06550913da0ef6-5"></a>
-<a name="rest_code_34bd483e73a541bd9f06550913da0ef6-6"></a><span class="n">concatenacion</span> <span class="o">=</span> <span class="s2">"Hola"</span> <span class="o">+</span> <span class="s2">", cómo te va?"</span>
-<a name="rest_code_34bd483e73a541bd9f06550913da0ef6-7"></a><span class="n">copiado</span> <span class="o">=</span> <span class="s2">"Hola "</span> <span class="o">*</span> <span class="mi">4</span>
-</pre>
+<div class="code"><pre class="code python"><a id="rest_code_7dce237563c24436a7106f3565e2daf7-1" name="rest_code_7dce237563c24436a7106f3565e2daf7-1" href="#rest_code_7dce237563c24436a7106f3565e2daf7-1"></a><span class="n">suma</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span>
+<a id="rest_code_7dce237563c24436a7106f3565e2daf7-2" name="rest_code_7dce237563c24436a7106f3565e2daf7-2" href="#rest_code_7dce237563c24436a7106f3565e2daf7-2"></a><span class="n">resta</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">-</span> <span class="mi">8</span>
+<a id="rest_code_7dce237563c24436a7106f3565e2daf7-3" name="rest_code_7dce237563c24436a7106f3565e2daf7-3" href="#rest_code_7dce237563c24436a7106f3565e2daf7-3"></a><span class="n">multiplicacion</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="mi">4</span>
+<a id="rest_code_7dce237563c24436a7106f3565e2daf7-4" name="rest_code_7dce237563c24436a7106f3565e2daf7-4" href="#rest_code_7dce237563c24436a7106f3565e2daf7-4"></a><span class="n">division</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">/</span> <span class="mi">2</span>
+<a id="rest_code_7dce237563c24436a7106f3565e2daf7-5" name="rest_code_7dce237563c24436a7106f3565e2daf7-5" href="#rest_code_7dce237563c24436a7106f3565e2daf7-5"></a>
+<a id="rest_code_7dce237563c24436a7106f3565e2daf7-6" name="rest_code_7dce237563c24436a7106f3565e2daf7-6" href="#rest_code_7dce237563c24436a7106f3565e2daf7-6"></a><span class="n">concatenacion</span> <span class="o">=</span> <span class="s2">"Hola"</span> <span class="o">+</span> <span class="s2">", cómo te va?"</span>
+<a id="rest_code_7dce237563c24436a7106f3565e2daf7-7" name="rest_code_7dce237563c24436a7106f3565e2daf7-7" href="#rest_code_7dce237563c24436a7106f3565e2daf7-7"></a><span class="n">copiado</span> <span class="o">=</span> <span class="s2">"Hola "</span> <span class="o">*</span> <span class="mi">4</span>
+</pre></div>
 <ul class="simple">
 <li><p>Operadores de comparación:</p></li>
 </ul>
-<pre class="code python"><a name="rest_code_c4572b26d46f47f9ad2e6375182b9a5c-1"></a><span class="mi">5</span> <span class="o">==</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span>
-<a name="rest_code_c4572b26d46f47f9ad2e6375182b9a5c-2"></a><span class="s2">"Hola"</span> <span class="o">!=</span> <span class="s2">"Chau"</span>
-<a name="rest_code_c4572b26d46f47f9ad2e6375182b9a5c-3"></a><span class="mi">10</span> <span class="o">&lt;</span> <span class="mi">10</span> <span class="o">+</span> <span class="mi">5</span>
-<a name="rest_code_c4572b26d46f47f9ad2e6375182b9a5c-4"></a><span class="mi">1</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span>
-</pre>
+<div class="code"><pre class="code python"><a id="rest_code_6e94bb95288b4d7c92081b36701c0197-1" name="rest_code_6e94bb95288b4d7c92081b36701c0197-1" href="#rest_code_6e94bb95288b4d7c92081b36701c0197-1"></a><span class="mi">5</span> <span class="o">==</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span>
+<a id="rest_code_6e94bb95288b4d7c92081b36701c0197-2" name="rest_code_6e94bb95288b4d7c92081b36701c0197-2" href="#rest_code_6e94bb95288b4d7c92081b36701c0197-2"></a><span class="s2">"Hola"</span> <span class="o">!=</span> <span class="s2">"Chau"</span>
+<a id="rest_code_6e94bb95288b4d7c92081b36701c0197-3" name="rest_code_6e94bb95288b4d7c92081b36701c0197-3" href="#rest_code_6e94bb95288b4d7c92081b36701c0197-3"></a><span class="mi">10</span> <span class="o">&lt;</span> <span class="mi">10</span> <span class="o">+</span> <span class="mi">5</span>
+<a id="rest_code_6e94bb95288b4d7c92081b36701c0197-4" name="rest_code_6e94bb95288b4d7c92081b36701c0197-4" href="#rest_code_6e94bb95288b4d7c92081b36701c0197-4"></a><span class="mi">1</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span>
+</pre></div>
 <ul class="simple">
 <li><p>Operadores lógicos:</p></li>
 </ul>
-<pre class="code python"><a name="rest_code_00faeb7c19b14b9ab4faae8c77c04876-1"></a><span class="n">operador_y</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">5</span> <span class="ow">and</span> <span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">10</span>
-<a name="rest_code_00faeb7c19b14b9ab4faae8c77c04876-2"></a><span class="n">operador_o</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">4</span> <span class="ow">or</span> <span class="mi">10</span> <span class="o">&gt;</span> <span class="mi">20</span>
-<a name="rest_code_00faeb7c19b14b9ab4faae8c77c04876-3"></a><span class="n">operador_no</span> <span class="o">=</span> <span class="ow">not</span><span class="p">(</span><span class="mi">5</span> <span class="o">==</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span>
-<a name="rest_code_00faeb7c19b14b9ab4faae8c77c04876-4"></a>
-<a name="rest_code_00faeb7c19b14b9ab4faae8c77c04876-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">operador_y</span><span class="p">)</span>
-<a name="rest_code_00faeb7c19b14b9ab4faae8c77c04876-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">operador_o</span><span class="p">)</span>
-<a name="rest_code_00faeb7c19b14b9ab4faae8c77c04876-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">operador_no</span><span class="p">)</span>
-</pre>
+<div class="code"><pre class="code python"><a id="rest_code_970afa4722bc4f13aa726400d67c4b89-1" name="rest_code_970afa4722bc4f13aa726400d67c4b89-1" href="#rest_code_970afa4722bc4f13aa726400d67c4b89-1"></a><span class="n">operador_y</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">5</span> <span class="ow">and</span> <span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">10</span>
+<a id="rest_code_970afa4722bc4f13aa726400d67c4b89-2" name="rest_code_970afa4722bc4f13aa726400d67c4b89-2" href="#rest_code_970afa4722bc4f13aa726400d67c4b89-2"></a><span class="n">operador_o</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">4</span> <span class="ow">or</span> <span class="mi">10</span> <span class="o">&gt;</span> <span class="mi">20</span>
+<a id="rest_code_970afa4722bc4f13aa726400d67c4b89-3" name="rest_code_970afa4722bc4f13aa726400d67c4b89-3" href="#rest_code_970afa4722bc4f13aa726400d67c4b89-3"></a><span class="n">operador_no</span> <span class="o">=</span> <span class="ow">not</span><span class="p">(</span><span class="mi">5</span> <span class="o">==</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span>
+<a id="rest_code_970afa4722bc4f13aa726400d67c4b89-4" name="rest_code_970afa4722bc4f13aa726400d67c4b89-4" href="#rest_code_970afa4722bc4f13aa726400d67c4b89-4"></a>
+<a id="rest_code_970afa4722bc4f13aa726400d67c4b89-5" name="rest_code_970afa4722bc4f13aa726400d67c4b89-5" href="#rest_code_970afa4722bc4f13aa726400d67c4b89-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">operador_y</span><span class="p">)</span>
+<a id="rest_code_970afa4722bc4f13aa726400d67c4b89-6" name="rest_code_970afa4722bc4f13aa726400d67c4b89-6" href="#rest_code_970afa4722bc4f13aa726400d67c4b89-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">operador_o</span><span class="p">)</span>
+<a id="rest_code_970afa4722bc4f13aa726400d67c4b89-7" name="rest_code_970afa4722bc4f13aa726400d67c4b89-7" href="#rest_code_970afa4722bc4f13aa726400d67c4b89-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">operador_no</span><span class="p">)</span>
+</pre></div>
 <p>El resultado de la expresión es lo que Python devuelve luego de evaluarla. Entonces, el resultado de la expresión 1 + 3 es 4, y el de 1 + 3 == 5 es False.
 Las expresiones de comparación, en las cuales el resultado es un booleano verdadero o falso, nos van a servir cuando veamos alternativa condicional (o if), el tema que viene.</p>
-</div>
-<div class="section" id="ejercicios">
-<h3>Ejercicios</h3>
+</section><section id="ejercicios"><h3>Ejercicios</h3>
 <ol class="arabic simple">
 <li><p>Escribir un programa que pregunte dos números diferentes al usuario, luego los sume y finalmente muestre el resultado en pantalla.</p></li>
 <li><p>Ídem al programa anterior, pero que reste el segundo número al primero.</p></li>
 <li><p>Escribir un programa que pida al usuario el ingreso de un texto cualquiera, y luego un cantidad de veces a repetirlo. Mostrar en pantalla el texto ingresado, repetido tantas veces como haya solicitado el usuario.</p></li>
 <li><p>Ídem al programa anterior, pero entre cada repetición de texto, agregar un separador de nueva línea.</p></li>
 <li><p>Pedir al usuario que ingrese por pantalla dos números. Luego evaluar si la suma de ellos es mayor que su multiplicación, y mostrar un mensaje en pantalla indicando eso. El mensaje a mostrar puede ser algo como: "La suma de los números &lt;X&gt; y &lt;Y&gt; es mayor que la multiplicación de &lt;X&gt; y &lt;Y&gt;: &lt;True/False&gt;"</p></li>
-</ol>
+</ol></section></section>
 </div>
-</div>
-    </div>
     
 
-</article><footer id="footer"><p>Contenido © 2020         <a href="mailto:nahueltori@gmail.com">Nahuel Tori</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+</article><footer id="footer"><p>Contenido © 2022         <a href="mailto:nahueltori@gmail.com">Nahuel Tori</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

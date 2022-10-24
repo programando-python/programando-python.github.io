@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>15- Creando páginas web básicas con Flask | Programando Python</title>
+<title>15- Creando páginas web básicas con Flask | Aprende programando</title>
 <link href="../../assets/css/all.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
 <link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../../rss.xml">
 <link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../en/rss.xml">
 <link rel="canonical" href="https://programando-python.github.io/pages/15-creando-paginas-web-basicas-con-flask/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Nahuel Tori">
-<meta property="og:site_name" content="Programando Python">
+<meta property="og:site_name" content="Aprende programando">
 <meta property="og:title" content="15- Creando páginas web básicas con Flask">
 <meta property="og:url" content="https://programando-python.github.io/pages/15-creando-paginas-web-basicas-con-flask/">
 <meta property="og:description" content="Unidad 15
@@ -42,7 +42,7 @@ Flask es un framework en Python usado para crear sitios web. Es muy configurable
         <div class="container">
           
     <h3 id="brand" class="masthead-title">
-      <a href="https://programando-python.github.io/" title="Programando Python" rel="home">Programando Python</a>
+      <a href="https://programando-python.github.io/" title="Aprende programando" rel="home">Aprende programando</a>
     </h3>
 
         </div>
@@ -55,67 +55,65 @@ Flask es un framework en Python usado para crear sitios web. Es muy configurable
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
-<h2>Unidad 15</h2>
+    <h2>Unidad 15</h2>
 <h3>Creando páginas web básicas con Flask</h3>
 <p>Flask es un framework en Python usado para crear sitios web. Es muy configurable, y muy extensible. Hay muchos otros proyectos que conectan diferentes tipos de aplicaciones, bases de datos, utilizades, etc. con Flask.</p>
 <h4>Instalación</h4>
 <p>Lo primero que debemos hacer como en cualquier nuevo proyecto en Python, es crear un nuevo entorno virtual. Una vez activado, debemos instalar Flask.</p>
-<pre class="code literal-block"><span></span><code><span class="err">python -m venv venv</span>
-<span class="err">.\venv\Scripts\activate</span>
-<span class="err">(venv) c:\...\&gt; pip install flask</span>
-</code></pre>
+<div class="code"><pre class="code literal-block">python -m venv venv
+.\venv\Scripts\activate
+(venv) c:\...\&gt; pip install flask
+</pre></div>
 
 <p>Luego creamos un archivo python donde escribir nuestro código: <code>sitioweb.py</code>.</p>
 <h4>Aplicación inicial: Hola Mundo!</h4>
 <p>Incluimos este código en el archivo python:</p>
-<pre class="code literal-block"><span></span><code><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
+<div class="code"><pre class="code literal-block"><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
 
 <span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
 
 <span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">'/'</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">hola</span><span class="p">():</span>
     <span class="k">return</span> <span class="s1">'Hola, Mundo!'</span>
-</code></pre>
+</pre></div>
 
 <p>Para ejecutarlo, debemos escribir lo siguiente en la terminal:</p>
-<pre class="code literal-block"><span></span><code><span class="err">set FLASK_APP=sitioweb.py</span>
-<span class="err">flask run</span>
-</code></pre>
+<div class="code"><pre class="code literal-block">set FLASK_APP=sitioweb.py
+flask run
+</pre></div>
 
 <h4>Página web usando una plantilla</h4>
 <p>Agreguemos ahora esta nueva función:</p>
-<pre class="code literal-block"><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">'/'</span><span class="p">)</span>
+<div class="code"><pre class="code literal-block"><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">'/'</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">saludo</span><span class="p">():</span>
     <span class="k">return</span> <span class="s1">'''</span>
 <span class="s1">&lt;!doctype html&gt;</span>
 <span class="s1">&lt;title&gt;Hola, como estas?&lt;/title&gt;</span>
 <span class="s1">  &lt;h1&gt;Bienvenido a tu nuevo sitio web!&lt;/h1&gt;</span>
 <span class="s1">'''</span>
-</code></pre>
+</pre></div>
 
 <p>Con Ctrl+C detenemos la ejecución de Flask si ya estaba corriendo. Con <code>flask run</code> nuevamente lo ejecutamos.</p>
 <h4>Plantilla en un archivo template</h4>
 <p>Creamos una carpeta <code>templates</code>, y dentro de ella un archivo <code>saludo.html</code> con el siguiente contenido:</p>
-<pre class="code literal-block"><span></span><code><span class="cp">&lt;!doctype html&gt;</span>
+<div class="code"><pre class="code literal-block"><span class="cp">&lt;!doctype html&gt;</span>
 <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Hola, como estas?<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
 {% if name %}
   <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hola {{ name }}!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
 {% else %}
   <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hola, Mundo!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
 {% endif %}
-</code></pre>
+</pre></div>
 
 <p>Y agregamos esta función:</p>
-<pre class="code literal-block"><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">'/saludo/&lt;name&gt;'</span><span class="p">)</span>
+<div class="code"><pre class="code literal-block"><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">'/saludo/&lt;name&gt;'</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">saludo</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s1">'saludo.html'</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">)</span>
-</code></pre>
-</div>
+</pre></div>
     </div>
     
 
-</article><footer id="footer"><p>Contenido © 2020         <a href="mailto:nahueltori@gmail.com">Nahuel Tori</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+</article><footer id="footer"><p>Contenido © 2022         <a href="mailto:nahueltori@gmail.com">Nahuel Tori</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

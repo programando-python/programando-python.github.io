@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>14- HTML, CSS, Javascript. ¿Cómo funciona la web? | Programando Python</title>
+<title>14- HTML, CSS, Javascript. ¿Cómo funciona la web? | Learning programming</title>
 <link href="../../../assets/css/all.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
 <link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../../../rss.xml">
 <link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../rss.xml">
 <link rel="canonical" href="https://programando-python.github.io/en/pages/14-html-css-javascript-como-funciona-la-web/">
 <!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Nahuel Tori">
-<meta property="og:site_name" content="Programando Python">
+<meta property="og:site_name" content="Learning programming">
 <meta property="og:title" content="14- HTML, CSS, Javascript. ¿Cómo funciona la web?">
 <meta property="og:url" content="https://programando-python.github.io/en/pages/14-html-css-javascript-como-funciona-la-web/">
 <meta property="og:description" content="Unidad 14
@@ -42,7 +42,7 @@ Es un lenguaje de marcado de texto, que sirve para que los navegadores entiendan
         <div class="container">
           
     <h3 id="brand" class="masthead-title">
-      <a href="https://programando-python.github.io/en/" title="Programando Python" rel="home">Programando Python</a>
+      <a href="https://programando-python.github.io/en/" title="Learning programming" rel="home">Learning programming</a>
     </h3>
 
         </div>
@@ -55,13 +55,12 @@ Es un lenguaje de marcado de texto, que sirve para que los navegadores entiendan
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
-<h2>Unidad 14</h2>
+    <h2>Unidad 14</h2>
 <h3>HTML, CSS, Javascript. ¿Cómo funciona la web?</h3>
 <h4>HTML</h4>
 <p>Es un lenguaje de marcado de texto, que sirve para que los navegadores entiendan cómo deben mostrar la información en pantalla. Se basa en etiquetas, que le indican cómo se debe mostrar y tratar cada pieza de información.<br>
 Este es un esqueleto básico de una página web:</p>
-<pre class="code literal-block"><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<div class="code"><pre class="code literal-block"><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
@@ -71,7 +70,7 @@ Este es un esqueleto básico de una página web:</p>
     <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Texto en un párrafo<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre>
+</pre></div>
 
 <p>Una etiqueta se identifica con los signos &lt;&gt; y se cierra con ; por ejemplo </p>
 <p> y </p> en el ejemplo anterior, que sirven para delimitar un párrafo.<br><em> <code>&lt;!DOCTYPE html&gt;</code> sirve para indicar que el documento es de tipo HTML, y el navegador pueda mostrarlo apropiadamente.<br></em> <code>&lt;html&gt;</code> es la etiqueta principal que contiene todo el código de la página web.<br>
@@ -83,40 +82,39 @@ Este es un esqueleto básico de una página web:</p>
 <h5>Links o hipervínculos</h5>
 <p>La etiqueta <code>&lt;a&gt;</code> es la que se utiliza para crear un link a otra página. Se hace completando el atributo <code>href</code> con la dirección web de la página que queremos linkear.<br>
 Por ejemplo:</p>
-<pre class="code literal-block"><span></span><code><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"https://www.w3schools.com/html"</span><span class="p">&gt;</span>Link al sitio W3Schools sobre HTML<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-</code></pre>
+<div class="code"><pre class="code literal-block"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"https://www.w3schools.com/html"</span><span class="p">&gt;</span>Link al sitio W3Schools sobre HTML<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</pre></div>
 
 <h5>Imágenes</h5>
 <p>Las imágenes se pueden incorporar en un sitio usando la etiqueta <code>&lt;img&gt;</code>. En el atributo <code>src</code> ponemos el nombre de la imagen, y ya funciona:</p>
-<pre class="code literal-block"><span></span><code><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"w3schools.jpg"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"W3Schools.com"</span> <span class="na">width</span><span class="o">=</span><span class="s">"104"</span> <span class="na">height</span><span class="o">=</span><span class="s">"142"</span><span class="p">&gt;</span>
-</code></pre>
+<div class="code"><pre class="code literal-block"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"w3schools.jpg"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"W3Schools.com"</span> <span class="na">width</span><span class="o">=</span><span class="s">"104"</span> <span class="na">height</span><span class="o">=</span><span class="s">"142"</span><span class="p">&gt;</span>
+</pre></div>
 
 <p>Pueden ver otros atributos ahí. ¿Para qué se imaginan que deben servir?</p>
 <h4>CSS</h4>
 <p>Las Cascading Style Sheets u hojas de estilo en cascada, se utilizan para describir cómo se deben mostrar los elementos HTML. Sirven para desacoplar de los datos HTML, la forma, color, fuente, estilo y demás ajustes en que los datos deben formatearse.<br>
 Un gran beneficio es que puede escribirse en un archivo aparte, y éste ser referenciado por muchas páginas web, de esta forma dándole estilo a todas ellas al mismo tiempo. Estos archivos tienen extensión .css</p>
 <h5>Sintaxis: Ejemplo</h5>
-<pre class="code literal-block"><span></span><code><span class="nt">p</span> <span class="p">{</span>
-  <span class="k">color</span><span class="p">:</span> <span class="kc">red</span><span class="p">;</span>
-  <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre>
+<div class="code"><pre class="code literal-block"><span class="nt">p</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">text-align</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
 
 <p>En CSS, primero se escribre el selector de la etiqueta, en este caso <code>p</code>. Luego, se indica cada propiedad que se quiere cambiar, y su valor.</p>
 <h4>Javascript</h4>
 <p>Javascript es un lenguaje de programación que sirve para agregarle funcionalidad a las páginas web.<br>
 Es ejecutado directamente por los navegadores web; no require instalación ni otro tipo de configuración.<br>
 Es el lenguaje de programación más utilizado en Internet: la gran mayoría de las páginas web lo usan.</p>
-<pre class="code literal-block"><span></span><code><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'demo'</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nb">Date</span><span class="p">()</span>
-</code></pre>
+<div class="code"><pre class="code literal-block"><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'demo'</span><span class="p">).</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Date</span><span class="p">()</span><span class="w"></span>
+</pre></div>
 
 <h4>Ejercicio:</h4>
 <p>1- Crear una página HTML utilizando la estructura básica antes descirpta. Agregarle un título con tu nombre, un párrafo explicando lo que hiciste ayer, y una imagen. También agregar un link a un sitio web.</p>
-</div>
     </div>
     
 
-</article><footer id="footer"><p>Contenido © 2020         <a href="mailto:nahueltori@gmail.com">Nahuel Tori</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+</article><footer id="footer"><p>Contenido © 2022         <a href="mailto:nahueltori@gmail.com">Nahuel Tori</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>
