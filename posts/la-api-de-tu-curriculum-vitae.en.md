@@ -1,16 +1,16 @@
 <!--
-.. title: La API de tu currículum vitae
-.. slug: la-api-de-tu-curriculum-vitae
-.. date: 2020-11-16 16:05:51 UTC-03:00
+.. title: The API of your resume
+.. slug: the-api-of-your-resume
+.. date: 2022-05-19 09:10:51 UTC-03:00
 .. tags: tutorial,python,api,flask,github,heroku
 .. category: Tutorial
 .. link: 
-.. description: Cómo crear una API para que sea tu currículum
+.. description: How to create an API and use it as your resume
 .. type: text
 -->
 
-# La API de tu currículum vitae
-## Cómo crear una API para que sea tu currículum
+# The API of your resume
+## How to create an API and use it as your resume
 
 En este post vamos a escribir nuestra propia API mediante Flask, usando como datos nuestro currículum vitae. Luego vamos a publicar el código en GitHub y finalmente usando Heroku la implementaremos online. Al final tendrás tu propia API funcionando.
 

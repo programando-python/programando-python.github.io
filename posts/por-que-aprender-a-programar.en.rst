@@ -1,5 +1,5 @@
-.. title: ¿Por qué aprender a programar?
-.. slug: por-que-aprender-a-programar
+.. title: Why learn programming?
+.. slug: why-learn-programming
 .. date: 2020-08-09 18:55:11 UTC-03:00
 .. tags: 
 .. category: 
@@ -19,9 +19,9 @@ Es motivador todo lo que nos cuenta, y cómo lo hace.
 
 Entonces podemos decir que:
 
-* La informática está alrededor nuestro cotidianamente, en la mayoría de los objetos que nos rodean, y en cada vez más.
-* Tu próximo trabajo estará digitalizado de alguna manera: usando algún software, o éste será el soporte de tu trabajo, o controlando y/o supervisando algún proceso automatizado, ya sea con un software o hardware.
-* Te brinda herramientas para resolver problemas en todos los ámbitos, no sólo en lo que refiere a la informática, sino también en cualquier otra área de conocimiento.
+* La informática está alrededor nuestro cotidianamente, en la mayoría de los objetos que nos rodean, y en cada vez más.
+* Tu próximo trabajo estará digitalizado de alguna manera: usando algún software, o éste será el soporte de tu trabajo, o controlando y/o supervisando algún proceso automatizado, ya sea con un software o hardware.
+* Te brinda herramientas para resolver problemas en todos los ámbitos, no sólo en lo que refiere a la informática, sino también en cualquier otra área de conocimiento.
 
 En resumen, las razones que nos deja Santiago las podemos resumir en estas:
 

@@ -17,7 +17,7 @@ import time
 
 # Data about this site
 BLOG_AUTHOR = "Nahuel Tori"  # (translatable)
-BLOG_TITLE = "Programando Python"  # (translatable)
+BLOG_TITLE = {"en": "Learning programming", "es": "Aprende programando"}  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
 SITE_URL = "https://programando-python.github.io/"
@@ -25,7 +25,7 @@ SITE_URL = "https://programando-python.github.io/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://example.com/"
 BLOG_EMAIL = "nahueltori@gmail.com"
-BLOG_DESCRIPTION = "Aprendiendo a programar"  # (translatable)
+BLOG_DESCRIPTION = {"en": "Learning to program by doing, programming a new thing and learn it.", "es": "Aprendiendo a programar haciendo, en cada programa un escalón más."}  # (translatable)
 
 # Nikola is multilingual!
 #

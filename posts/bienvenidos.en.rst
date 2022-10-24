@@ -1,5 +1,5 @@
-.. title: Bienvenidos
-.. slug: bienvenidos
+.. title: Welcome
+.. slug: welcome
 .. date: 2020-07-18 11:54:57 UTC-03:00
 .. tags: 
 .. category: 
@@ -7,8 +7,8 @@
 .. description: 
 .. type: text
 
-¡Bienvenidos a Aprende Programando!
-====================================
+Welcome to Learning Programming!
+=================================
 
 Si estás leyendo estas líneas, entonces quiere decir que vas a aprender a programar, utilizando un lenguaje simple y fácil de aprender.
 
@@ -21,7 +21,7 @@ Qué necesitás para empezar:
 ------------------------------
 
 - Una computadora, cualquiera sirve, mientras tenga conexión a internet.
-- Instalar el software necesario, :doc:`acá<../instalando-lo-necesario/>` lo tenés bien explicado.
+- Instalar el software necesario, :doc:`acá<../setting-up-your-environment/>` lo tenés bien explicado.
 - Practicar y estudiar regularmente. Ya sea un rato todos los días o 2-3 horas todas las semanas, hacerte una rutina te ayudará a ir ganando conocimiento y cimentarlo con la práctica.
 
 ¡Suerte!
