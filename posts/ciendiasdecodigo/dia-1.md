@@ -1,7 +1,7 @@
 <!--
 .. title: 100 días de código: Día 1
 .. slug: dia-1
-.. date: 2022-10-06 09:09:41 UTC-03:00
+.. date: 2022-10-24 09:09:41 UTC-03:00
 .. tags: 100daysofcode
 .. category: 
 .. link: 
@@ -135,7 +135,7 @@ También, podés leer [esta guía de ayuda](../../como-encontrar-ayuda.md) sobre
 <br>
 
 ¡Muy bien!  
-En breve, aparecerá publicado el día 2. ¡Nos vemos!
+Avancemos con el siguiente: [Día 2](../dia-2).
 
 <br>
 
