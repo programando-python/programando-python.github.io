@@ -1,5 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Learning programming</title><link>https://programando-python.github.io/</link><description>Learning to program by doing, programming a new thing and learn it.</description><atom:link href="https://programando-python.github.io/en/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2022 &lt;a href="mailto:nahueltori@gmail.com"&gt;Nahuel Tori&lt;/a&gt; </copyright><lastBuildDate>Mon, 24 Oct 2022 12:17:59 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>100 días de código: Día 1</title><link>https://programando-python.github.io/en/posts/ciendiasdecodigo/dia-1/</link><dc:creator>Nahuel Tori</dc:creator><description>&lt;h2&gt;100 días de código&lt;/h2&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Learning programming</title><link>https://programando-python.github.io/</link><description>Learning to program by doing, programming a new thing and learn it.</description><atom:link href="https://programando-python.github.io/en/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2022 &lt;a href="mailto:nahueltori@gmail.com"&gt;Nahuel Tori&lt;/a&gt; </copyright><lastBuildDate>Thu, 27 Oct 2022 13:47:11 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>100 días de código: Día 2</title><link>https://programando-python.github.io/en/posts/ciendiasdecodigo/dia-2/</link><dc:creator>Nahuel Tori</dc:creator><description>&lt;h2&gt;100 días de código&lt;/h2&gt;
+&lt;h3&gt;Input y Variables&lt;/h3&gt;
+&lt;h3&gt;Día 2&lt;/h3&gt;
+&lt;h4&gt;Leyendo la entrada del usuario&lt;/h4&gt;
+&lt;p&gt;Vamos a ver cómo funciona el comando &lt;code&gt;input&lt;/code&gt;. Se utiliza cuando el usuario debe ingresar información en la computadora. Es muy parecido al &lt;code&gt;print&lt;/code&gt;, excepto que muestra un mensaje en la consola y luego &lt;em&gt;espera&lt;/em&gt; al usuario hasta que escriba algo en el teclado y aprete Enter.&lt;/p&gt;
+&lt;p&gt;Copia el siguiente código en el editor y apretá &lt;code&gt;run&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="nb"&gt;input&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"¿Cuál es tu nombre?: "&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4&gt;Variables&lt;/h4&gt;
+&lt;p&gt;Bien, &lt;code&gt;input&lt;/code&gt; solicita algo al usuario, lo toma pero no tiene dónde ponerlo. Podemos cambiar eso con una &lt;code&gt;variable&lt;/code&gt;, que es un valor que podemos usar para ponerle nombre y guardar datos.&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="n"&gt;nombreDeVariable&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;input&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"Nombre: "&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Aquí, &lt;code&gt;nombreDeVariable&lt;/code&gt; es el nombre que le damos a nuestra variable, el cual crea un espacio en la memoria y donde podemos asignarle valores usando el símbolo &lt;code&gt;=&lt;/code&gt;.&lt;/p&gt;
+&lt;h4&gt;Nombrando variables&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Las variable pueden tener cualquier nombre que desees, pero &lt;strong&gt;no se pueden usar espacios&lt;/strong&gt;. Puedes usar:&lt;/li&gt;
+&lt;li&gt;guiones_bajos_entre_palabras&lt;/li&gt;
+&lt;li&gt;camelCaseParaFacilLectura&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;👉 Borrá todo el código de tu editor y copiá esto en el archivo &lt;code&gt;main.py&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="n"&gt;miNombre&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;input&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"¿Cuál es tu nombre?: "&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;miEdad&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;input&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"¿Cuántos años tienes?: "&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"Uh, ¡sos muy viejo!"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;replit&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;input&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"¿Te gusta Replit? "&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"¡Claro que te gusta!"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;¡Bien! Ahora tenemos 3 variables:
+- &lt;code&gt;miNombre&lt;/code&gt; tiene el nombre del usuario guardado.
+- &lt;code&gt;miEdad&lt;/code&gt; guarda su edad.
+- &lt;code&gt;replit&lt;/code&gt; guarda qué siente el usuario sobre este sitio.&lt;/p&gt;
+&lt;h4&gt;Mostrando variables&lt;/h4&gt;
+&lt;p&gt;Podemos ver el contenido de una variable imprimiendo su valor por la consola. Para eso, debemos usar la instrucción &lt;code&gt;print&lt;/code&gt; y el nombre de la variable que usamos al otro lado del &lt;code&gt;=&lt;/code&gt; en el comando &lt;code&gt;input&lt;/code&gt;.&lt;br&gt;
+En el código, ahora podemos conocer el nombre usando &lt;code&gt;print(miNombre)&lt;/code&gt; o la edad usando &lt;code&gt;print(miEdad)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;👉 Vamos a probarlo! Agrega este código al final y apreta&lt;code&gt;run&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"Entonces, tu eres"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;miNombre&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"y con la asombrosa edad de"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;miEdad&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"y Replit para ti claramente es"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;replit&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;¿Pudiste ver lo que hizo &lt;code&gt;print()&lt;/code&gt;?
+* Si hay texto literal (con comillas dobles &lt;code&gt;" "&lt;/code&gt; o simples &lt;code&gt;' '&lt;/code&gt;) dentro de los &lt;code&gt;( )&lt;/code&gt;, el texto es mostrado.
+* Si hay un nombre de variable dentro de los &lt;code&gt;( )&lt;/code&gt;, entonces se muetra el contenido de esa variable.
+* Si no hay nada, entonces se muestra una línea en blanco.&lt;/p&gt;
+&lt;p&gt;Esta código se ve un poco raro, pero en breve ya lo vamos a mejorar.&lt;/p&gt;
+&lt;h4&gt;Posibles errores&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;Primero, borra el código que haya en tu &lt;code&gt;main.py&lt;/code&gt;. Luego, copia el bloque de código de ejemplo, aprieta &lt;code&gt;run&lt;/code&gt; y mira qué errores aparecen. Arregla los errores y corre &lt;code&gt;run&lt;/code&gt; de nuevo hasta que todo funcione.&lt;/em&gt;
+&lt;em&gt;Al final podrás encontrar las soluciones.&lt;/em&gt;&lt;/p&gt;
+&lt;h5&gt;Syntax Error&lt;/h5&gt;
+&lt;p&gt;👉 Prueba el siguiente código en el editor. Luego, arreglalo hasta que funcione:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="n"&gt;mi&lt;/span&gt; &lt;span class="n"&gt;variable&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;input&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"¿Quién está ahí?"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;mi&lt;/span&gt; &lt;span class="n"&gt;variable&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;¿Encontraste este error? ¿Qué podés arreglar?&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;File&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"main.py"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;mi&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;variable&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;input&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"¿Quién está ahí?"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="o"&gt;^&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;SyntaxError&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;invalid&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;syntax&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h5&gt;Name Error&lt;/h5&gt;
+&lt;p&gt;👉 Prueba y arregla el siguiente trozo de código:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="n"&gt;laAbuela&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;input&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"¿Cómo está la abuela? 😘"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;laabuela&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;¿Cómo está la abuela? 😘 bien
+Traceback (most recent call last):
+  File "main.py", line 2, in &amp;lt;module&amp;gt;
+    print(laabuela)
+NameError: name 'laabuela' is not defined
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h5&gt;Respuestas&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Syntax Error: Hay un espacio en el nombre de la variable, lo viste? No usamos espacios en los nombres de variables.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Name Error: La variable que intentamos mostrar &lt;strong&gt;no&lt;/strong&gt; es la misma que creamos en primer lugar. La capitalización no es la misma. También sucederá lo mismo cuando queramos mostrar una variable que no creamos aun. &lt;strong&gt;Siempre&lt;/strong&gt; hay que crear la variable antes de mostrarla.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;Este sólo será raro...&lt;/h5&gt;
+&lt;p&gt;👉 Prueba este código para ver qué pasa:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="n"&gt;miAlmuerzo&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;input&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"¿Qué querés para almorzar? "&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"Tu orden es la siguiente: "&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"miAlmuerzo"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"Lo antes posible!!"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;¿Qué querés para almorzar? Sándwich
+Tu orden es la siguiente: 
+miAlmuerzo
+Lo antes posible!!
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Respuesta:&lt;/li&gt;
+&lt;li&gt;Quisimos mostrar una variable, pero quedó entre comillas!&lt;/li&gt;
+&lt;li&gt;Recuerda: Las comillas imprimen literalmente lo que hay dentro.&lt;/li&gt;
+&lt;li&gt;Si deseas mostrar el &lt;strong&gt;contenido&lt;/strong&gt; de una variable, &lt;em&gt;no hay que usar&lt;/em&gt; comillas.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Desafío del Día 2&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Pregunta por el nombre del usuario, su comida favorita, música favorita y dónde vive. Puedes inventar algunas otras preguntas.&lt;/li&gt;
+&lt;li&gt;Guarda todas las respuestas en diferentes variables.&lt;/li&gt;
+&lt;li&gt;Imprime una oración completa que incluya todas las respuestas del usuario.&lt;/li&gt;
+&lt;li&gt;Agrega una línea al final con una afirmación positiva. Dile que es muy bueno en alguna de esas cosas!.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h3&gt;Si pudiste resolverlo o necesitás ayuda:&lt;/h3&gt;
+&lt;p&gt;¡Escribilo en los comentarios!&lt;br&gt;
+Tu aporte, tanto sea de la solución como de cualquier pregunta, es bienvenido y le sirve a todos los que lean esto.&lt;br&gt;
+También, podés leer &lt;a href="https://programando-python.github.io/en/posts/como-encontrar-ayuda.md"&gt;esta guía de ayuda&lt;/a&gt; sobre cómo encontrar la información necesaria para resolverlo.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;## ¿Qué aprendiste?&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Tomate un minuto para pensar qué aprendiste con este ejercicio.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;¿Alguna nueva instrucción?&lt;/li&gt;
+&lt;li&gt;¿Por qué Python nos da funciones ya listas para usar?&lt;/li&gt;
+&lt;li&gt;¿Qué es el código fuente y qué es la ejecución de un programa?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;¡Muy bien!&lt;br&gt;
+En breve, aparecerá publicado el día 3. ¡Nos vemos!&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;</description><guid>https://programando-python.github.io/en/posts/ciendiasdecodigo/dia-2/</guid><pubDate>Thu, 27 Oct 2022 13:42:41 GMT</pubDate></item><item><title>100 días de código: Día 1</title><link>https://programando-python.github.io/en/posts/ciendiasdecodigo/dia-1/</link><dc:creator>Nahuel Tori</dc:creator><description>&lt;h2&gt;100 días de código&lt;/h2&gt;
 &lt;h3&gt;¡Hola, programador!&lt;/h3&gt;
 &lt;p&gt;Vamos a comenzar nuestro propio desafío para aprender a programar. Y lo haremos utilizando un método que probó ser muy efectivo. 100 días de código surgió con un chico de secundaria que quería aprender a programar. Acá podés leer toda su historia -&amp;gt; &lt;a href="https://www.freecodecamp.org/espanol/news/el-desafio-100daysofcode-su-historia-y-por-que-debes-probarlo-para-2022/"&gt;link&lt;/a&gt;.
 Otros desafío muy conocido es &lt;a href="https://hourofcode.com/es"&gt;La Hora del código&lt;/a&gt;, te invito a explorar el sitio y participar de alguna actividad.&lt;/p&gt;
@@ -86,8 +221,8 @@ También, podés leer &lt;a href="https://programando-python.github.io/en/posts/
 &lt;/ul&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;¡Muy bien!&lt;br&gt;
-En breve, aparecerá publicado el día 2. ¡Nos vemos!&lt;/p&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;</description><guid>https://programando-python.github.io/en/posts/ciendiasdecodigo/dia-1/</guid><pubDate>Thu, 06 Oct 2022 12:09:41 GMT</pubDate></item><item><title>Cómo encontrar ayuda en Internet</title><link>https://programando-python.github.io/en/posts/como-encontrar-ayuda/</link><dc:creator>Nahuel Tori</dc:creator><description>&lt;h2&gt;¡Hola, programador!&lt;/h2&gt;
+Avancemos con el siguiente: &lt;a href="https://programando-python.github.io/en/posts/ciendiasdecodigo/dia-2"&gt;Día 2&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;</description><guid>https://programando-python.github.io/en/posts/ciendiasdecodigo/dia-1/</guid><pubDate>Mon, 24 Oct 2022 12:09:41 GMT</pubDate></item><item><title>Cómo encontrar ayuda en Internet</title><link>https://programando-python.github.io/en/posts/como-encontrar-ayuda/</link><dc:creator>Nahuel Tori</dc:creator><description>&lt;h2&gt;¡Hola, programador!&lt;/h2&gt;
 &lt;h3&gt;¿Estás trabado con un problema o ejercicio? ¿Necesitás ayuda?&lt;/h3&gt;
 &lt;p&gt;En el camino de aprender a programar, muchas veces vamos a necesitar una respuesta que no tenemos. &lt;strong&gt;Todos&lt;/strong&gt; los programadores nos encontramos &lt;em&gt;continuamente&lt;/em&gt; con cosas que no sabemos resolver. Pero la gran mayoría de las veces, lo mismo ya le pasó a otra persona que generosamente compartie su solución en línea.&lt;br&gt;
 ¿Cómo hacemos para encontrarlo entonces?&lt;/p&gt;

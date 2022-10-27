@@ -43,10 +43,159 @@
         
 
 <div class="posts">
-    <article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="posts/ciendiasdecodigo/dia-1/" class="u-url">100 días de código: Día 1</a></h1>
+    <article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="posts/ciendiasdecodigo/dia-2/" class="u-url">100 días de código: Día 2</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Nahuel Tori</span></p>
-            <p class="dateline"><a href="posts/ciendiasdecodigo/dia-1/" rel="bookmark"><time class="post-date published dt-published" datetime="2022-10-06T09:09:41-03:00" title="2022-10-06 09:09">2022-10-06 09:09</time></a></p>
+            <p class="dateline"><a href="posts/ciendiasdecodigo/dia-2/" rel="bookmark"><time class="post-date published dt-published" datetime="2022-10-27T10:42:41-03:00" title="2022-10-27 10:42">2022-10-27 10:42</time></a></p>
+                <p class="commentline">
+    
+    <a href="posts/ciendiasdecodigo/dia-2/#disqus_thread" data-disqus-identifier="cache/posts/ciendiasdecodigo/dia-2.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="p-summary entry-summary">
+    <h2>100 días de código</h2>
+<h3>Input y Variables</h3>
+<h3>Día 2</h3>
+<h4>Leyendo la entrada del usuario</h4>
+<p>Vamos a ver cómo funciona el comando <code>input</code>. Se utiliza cuando el usuario debe ingresar información en la computadora. Es muy parecido al <code>print</code>, excepto que muestra un mensaje en la consola y luego <em>espera</em> al usuario hasta que escriba algo en el teclado y aprete Enter.</p>
+<p>Copia el siguiente código en el editor y apretá <code>run</code>:</p>
+<div class="code"><pre class="code literal-block"><span class="nb">input</span><span class="p">(</span><span class="s2">"¿Cuál es tu nombre?: "</span><span class="p">)</span>
+</pre></div>
+
+<h4>Variables</h4>
+<p>Bien, <code>input</code> solicita algo al usuario, lo toma pero no tiene dónde ponerlo. Podemos cambiar eso con una <code>variable</code>, que es un valor que podemos usar para ponerle nombre y guardar datos.</p>
+<div class="code"><pre class="code literal-block"><span class="n">nombreDeVariable</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Nombre: "</span><span class="p">)</span>
+</pre></div>
+
+<p>Aquí, <code>nombreDeVariable</code> es el nombre que le damos a nuestra variable, el cual crea un espacio en la memoria y donde podemos asignarle valores usando el símbolo <code>=</code>.</p>
+<h4>Nombrando variables</h4>
+<ul>
+<li>Las variable pueden tener cualquier nombre que desees, pero <strong>no se pueden usar espacios</strong>. Puedes usar:</li>
+<li>guiones_bajos_entre_palabras</li>
+<li>camelCaseParaFacilLectura</li>
+</ul>
+<p>👉 Borrá todo el código de tu editor y copiá esto en el archivo <code>main.py</code>:</p>
+<div class="code"><pre class="code literal-block"><span class="n">miNombre</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"¿Cuál es tu nombre?: "</span><span class="p">)</span>
+<span class="n">miEdad</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"¿Cuántos años tienes?: "</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Uh, ¡sos muy viejo!"</span><span class="p">)</span>
+<span class="n">replit</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"¿Te gusta Replit? "</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"¡Claro que te gusta!"</span><span class="p">)</span>
+</pre></div>
+
+<p>¡Bien! Ahora tenemos 3 variables:
+- <code>miNombre</code> tiene el nombre del usuario guardado.
+- <code>miEdad</code> guarda su edad.
+- <code>replit</code> guarda qué siente el usuario sobre este sitio.</p>
+<h4>Mostrando variables</h4>
+<p>Podemos ver el contenido de una variable imprimiendo su valor por la consola. Para eso, debemos usar la instrucción <code>print</code> y el nombre de la variable que usamos al otro lado del <code>=</code> en el comando <code>input</code>.<br>
+En el código, ahora podemos conocer el nombre usando <code>print(miNombre)</code> o la edad usando <code>print(miEdad)</code>.</p>
+<p>👉 Vamos a probarlo! Agrega este código al final y apreta<code>run</code>:</p>
+<div class="code"><pre class="code literal-block"><span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Entonces, tu eres"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">miNombre</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"y con la asombrosa edad de"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">miEdad</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"y Replit para ti claramente es"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">replit</span><span class="p">)</span>
+</pre></div>
+
+<p>¿Pudiste ver lo que hizo <code>print()</code>?
+* Si hay texto literal (con comillas dobles <code>" "</code> o simples <code>' '</code>) dentro de los <code>( )</code>, el texto es mostrado.
+* Si hay un nombre de variable dentro de los <code>( )</code>, entonces se muetra el contenido de esa variable.
+* Si no hay nada, entonces se muestra una línea en blanco.</p>
+<p>Esta código se ve un poco raro, pero en breve ya lo vamos a mejorar.</p>
+<h4>Posibles errores</h4>
+<p><em>Primero, borra el código que haya en tu <code>main.py</code>. Luego, copia el bloque de código de ejemplo, aprieta <code>run</code> y mira qué errores aparecen. Arregla los errores y corre <code>run</code> de nuevo hasta que todo funcione.</em>
+<em>Al final podrás encontrar las soluciones.</em></p>
+<h5>Syntax Error</h5>
+<p>👉 Prueba el siguiente código en el editor. Luego, arreglalo hasta que funcione:</p>
+<div class="code"><pre class="code literal-block"><span class="n">mi</span> <span class="n">variable</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"¿Quién está ahí?"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mi</span> <span class="n">variable</span><span class="p">)</span>
+</pre></div>
+
+<p>¿Encontraste este error? ¿Qué podés arreglar?</p>
+<div class="code"><pre class="code literal-block"><span class="w">  </span><span class="n">File</span><span class="w"> </span><span class="s2">"main.py"</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
+<span class="w">    </span><span class="n">mi</span><span class="w"> </span><span class="n">variable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">input</span><span class="p">(</span><span class="s2">"¿Quién está ahí?"</span><span class="p">)</span><span class="w"></span>
+<span class="w">       </span><span class="o">^</span><span class="w"></span>
+<span class="n">SyntaxError</span><span class="p">:</span><span class="w"> </span><span class="n">invalid</span><span class="w"> </span><span class="n">syntax</span><span class="w"></span>
+</pre></div>
+
+<h5>Name Error</h5>
+<p>👉 Prueba y arregla el siguiente trozo de código:</p>
+<div class="code"><pre class="code literal-block"><span class="n">laAbuela</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"¿Cómo está la abuela? 😘"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">laabuela</span><span class="p">)</span>
+</pre></div>
+
+<div class="code"><pre class="code literal-block">¿Cómo está la abuela? 😘 bien
+Traceback (most recent call last):
+  File "main.py", line 2, in &lt;module&gt;
+    print(laabuela)
+NameError: name 'laabuela' is not defined
+</pre></div>
+
+<h5>Respuestas</h5>
+<ul>
+<li>
+<p>Syntax Error: Hay un espacio en el nombre de la variable, lo viste? No usamos espacios en los nombres de variables.</p>
+</li>
+<li>
+<p>Name Error: La variable que intentamos mostrar <strong>no</strong> es la misma que creamos en primer lugar. La capitalización no es la misma. También sucederá lo mismo cuando queramos mostrar una variable que no creamos aun. <strong>Siempre</strong> hay que crear la variable antes de mostrarla.</p>
+</li>
+</ul>
+<h5>Este sólo será raro...</h5>
+<p>👉 Prueba este código para ver qué pasa:</p>
+<div class="code"><pre class="code literal-block"><span class="n">miAlmuerzo</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"¿Qué querés para almorzar? "</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Tu orden es la siguiente: "</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"miAlmuerzo"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Lo antes posible!!"</span><span class="p">)</span>
+</pre></div>
+
+<div class="code"><pre class="code literal-block">¿Qué querés para almorzar? Sándwich
+Tu orden es la siguiente: 
+miAlmuerzo
+Lo antes posible!!
+</pre></div>
+
+<ul>
+<li>Respuesta:</li>
+<li>Quisimos mostrar una variable, pero quedó entre comillas!</li>
+<li>Recuerda: Las comillas imprimen literalmente lo que hay dentro.</li>
+<li>Si deseas mostrar el <strong>contenido</strong> de una variable, <em>no hay que usar</em> comillas.</li>
+</ul>
+<h4>Desafío del Día 2</h4>
+<ol>
+<li>Pregunta por el nombre del usuario, su comida favorita, música favorita y dónde vive. Puedes inventar algunas otras preguntas.</li>
+<li>Guarda todas las respuestas en diferentes variables.</li>
+<li>Imprime una oración completa que incluya todas las respuestas del usuario.</li>
+<li>Agrega una línea al final con una afirmación positiva. Dile que es muy bueno en alguna de esas cosas!.</li>
+</ol>
+<hr>
+<p><br></p>
+<h3>Si pudiste resolverlo o necesitás ayuda:</h3>
+<p>¡Escribilo en los comentarios!<br>
+Tu aporte, tanto sea de la solución como de cualquier pregunta, es bienvenido y le sirve a todos los que lean esto.<br>
+También, podés leer <a href="posts/como-encontrar-ayuda.md">esta guía de ayuda</a> sobre cómo encontrar la información necesaria para resolverlo.</p>
+<p><br></p>
+<p>## ¿Qué aprendiste?</p>
+<blockquote>
+<p>Tomate un minuto para pensar qué aprendiste con este ejercicio.</p>
+</blockquote>
+<ul>
+<li>¿Alguna nueva instrucción?</li>
+<li>¿Por qué Python nos da funciones ya listas para usar?</li>
+<li>¿Qué es el código fuente y qué es la ejecución de un programa?</li>
+</ul>
+<p><br></p>
+<p>¡Muy bien!<br>
+En breve, aparecerá publicado el día 3. ¡Nos vemos!</p>
+<p><br></p>
+    </div>
+    </article><article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="posts/ciendiasdecodigo/dia-1/" class="u-url">100 días de código: Día 1</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Nahuel Tori</span></p>
+            <p class="dateline"><a href="posts/ciendiasdecodigo/dia-1/" rel="bookmark"><time class="post-date published dt-published" datetime="2022-10-24T09:09:41-03:00" title="2022-10-24 09:09">2022-10-24 09:09</time></a></p>
                 <p class="commentline">
     
     <a href="posts/ciendiasdecodigo/dia-1/#disqus_thread" data-disqus-identifier="cache/posts/ciendiasdecodigo/dia-1.html">Comments</a>
@@ -142,7 +291,7 @@ También, podés leer <a href="posts/como-encontrar-ayuda.md">esta guía de ayud
 </ul>
 <p><br></p>
 <p>¡Muy bien!<br>
-En breve, aparecerá publicado el día 2. ¡Nos vemos!</p>
+Avancemos con el siguiente: <a href="posts/ciendiasdecodigo/dia-2">Día 2</a>.</p>
 <p><br></p>
     </div>
     </article><article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="posts/como-encontrar-ayuda/" class="u-url">Cómo encontrar ayuda en Internet</a></h1>

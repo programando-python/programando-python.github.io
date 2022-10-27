@@ -1,13 +1,12 @@
 <!--
 .. title: 100 días de código: Día 2
 .. slug: dia-2
-.. date: 2022-10-15 09:09:41 UTC-03:00
+.. date: 2022-10-27 10:42:41 UTC-03:00
 .. tags: 100daysofcode
 .. category: 
 .. link: 
 .. description: 100 días de código en Python: Input y variables
 .. type: text
-.. status: draft
 .. author: Nahuel Tori
 -->
 
@@ -191,7 +190,7 @@ También, podés leer [esta guía de ayuda](../../como-encontrar-ayuda.md) sobre
 <br>
 
 ¡Muy bien!  
-Avancemos con el siguiente día: [Día 3](../dia-3).
+En breve, aparecerá publicado el día 3. ¡Nos vemos!
 
 <br>
 

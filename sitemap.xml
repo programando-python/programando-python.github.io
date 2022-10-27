@@ -7,361 +7,370 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://programando-python.github.io/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/2020/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/2022/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/archive.html</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/categories/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/categories/100daysofcode/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/categories/api/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/categories/ayuda/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/categories/cat_tutorial/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/categories/flask/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/categories/github/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/categories/heroku/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/categories/python/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/categories/tutorial/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/en/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/en/2020/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/en/2022/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/en/archive.html</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/en/categories/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/en/categories/100daysofcode/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/en/categories/api/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/en/categories/ayuda/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/en/categories/cat_tutorial/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/en/categories/flask/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/en/categories/github/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/en/categories/heroku/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/en/categories/python/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/en/categories/tutorial/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/en/pages/1-por-que-aprender-a-programar/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="es" href="https://programando-python.github.io/pages/1-por-que-aprender-a-programar/" />
  </url>
  <url>
   <loc>https://programando-python.github.io/en/pages/10-estructuras-de-datos-diccionarios/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="es" href="https://programando-python.github.io/pages/10-estructuras-de-datos-diccionarios/" />
  </url>
  <url>
   <loc>https://programando-python.github.io/en/pages/11-manejo-de-archivos-de-texto/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="es" href="https://programando-python.github.io/pages/11-manejo-de-archivos-de-texto/" />
  </url>
  <url>
   <loc>https://programando-python.github.io/en/pages/12-librerias-externas-e-internas-import/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="es" href="https://programando-python.github.io/pages/12-librerias-externas-e-internas-import/" />
  </url>
  <url>
   <loc>https://programando-python.github.io/en/pages/13-uso-de-apis-que-son-para-que-nos-sirven-buscamos-datos-del-clima/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="es" href="https://programando-python.github.io/pages/13-uso-de-apis-que-son-para-que-nos-sirven-buscamos-datos-del-clima/" />
  </url>
  <url>
   <loc>https://programando-python.github.io/en/pages/14-html-css-javascript-como-funciona-la-web/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="es" href="https://programando-python.github.io/pages/14-html-css-javascript-como-funciona-la-web/" />
  </url>
  <url>
   <loc>https://programando-python.github.io/en/pages/15-creando-paginas-web-basicas-con-flask/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="es" href="https://programando-python.github.io/pages/15-creando-paginas-web-basicas-con-flask/" />
  </url>
  <url>
   <loc>https://programando-python.github.io/en/pages/2-instrucciones-basicas-y-variables/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="es" href="https://programando-python.github.io/pages/2-instrucciones-basicas-y-variables/" />
  </url>
  <url>
   <loc>https://programando-python.github.io/en/pages/3-tipos-de-datos-y-expresiones/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="es" href="https://programando-python.github.io/pages/3-tipos-de-datos-y-expresiones/" />
  </url>
  <url>
   <loc>https://programando-python.github.io/en/pages/4-alternativa-condicional-if/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="es" href="https://programando-python.github.io/pages/4-alternativa-condicional-if/" />
  </url>
  <url>
   <loc>https://programando-python.github.io/en/pages/5-repeticion-simple-for/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="es" href="https://programando-python.github.io/pages/5-repeticion-simple-for/" />
  </url>
  <url>
   <loc>https://programando-python.github.io/en/pages/6-ejercicios-practicos/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="es" href="https://programando-python.github.io/pages/6-ejercicios-practicos/" />
  </url>
  <url>
   <loc>https://programando-python.github.io/en/pages/6-funciones-reutilizacion-de-codigo/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="es" href="https://programando-python.github.io/pages/6-funciones-reutilizacion-de-codigo/" />
  </url>
  <url>
   <loc>https://programando-python.github.io/en/pages/7-estructuras-de-datos-listas/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="es" href="https://programando-python.github.io/pages/7-estructuras-de-datos-listas/" />
  </url>
  <url>
   <loc>https://programando-python.github.io/en/pages/8-repeticion-condicional-while/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="es" href="https://programando-python.github.io/pages/8-repeticion-condicional-while/" />
  </url>
  <url>
   <loc>https://programando-python.github.io/en/pages/9-proyecto-juego-ahorcado/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="es" href="https://programando-python.github.io/pages/9-proyecto-juego-ahorcado/" />
  </url>
  <url>
   <loc>https://programando-python.github.io/en/pages/curso/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="es" href="https://programando-python.github.io/pages/curso/" />
  </url>
  <url>
   <loc>https://programando-python.github.io/en/pages/curso/1.0-hola/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="es" href="https://programando-python.github.io/pages/curso/1.0-hola/" />
  </url>
  <url>
   <loc>https://programando-python.github.io/en/pages/curso/1.1-variables/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="es" href="https://programando-python.github.io/pages/curso/1.1-variables/" />
  </url>
  <url>
   <loc>https://programando-python.github.io/en/pages/curso/1.2-tipos-datos/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="es" href="https://programando-python.github.io/pages/curso/1.2-tipos-datos/" />
  </url>
  <url>
   <loc>https://programando-python.github.io/en/pages/curso/1.3-texto-literal/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="es" href="https://programando-python.github.io/pages/curso/1.3-texto-literal/" />
  </url>
  <url>
   <loc>https://programando-python.github.io/en/posts/ciendiasdecodigo/dia-1/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="es" href="https://programando-python.github.io/posts/ciendiasdecodigo/dia-1/" />
  </url>
  <url>
+  <loc>https://programando-python.github.io/en/posts/ciendiasdecodigo/dia-2/</loc>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="es" href="https://programando-python.github.io/posts/ciendiasdecodigo/dia-2/" />
+ </url>
+ <url>
   <loc>https://programando-python.github.io/en/posts/como-encontrar-ayuda/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="es" href="https://programando-python.github.io/posts/como-encontrar-ayuda/" />
  </url>
  <url>
   <loc>https://programando-python.github.io/en/posts/setting-up-your-environment/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="es" href="https://programando-python.github.io/posts/instalando-lo-necesario/" />
  </url>
  <url>
   <loc>https://programando-python.github.io/en/posts/the-api-of-your-resume/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="es" href="https://programando-python.github.io/posts/la-api-de-tu-curriculum-vitae/" />
  </url>
  <url>
   <loc>https://programando-python.github.io/en/posts/welcome/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="es" href="https://programando-python.github.io/posts/bienvenidos/" />
  </url>
  <url>
   <loc>https://programando-python.github.io/en/posts/why-learn-programming/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="es" href="https://programando-python.github.io/posts/por-que-aprender-a-programar/" />
  </url>
  <url>
   <loc>https://programando-python.github.io/pages/1-por-que-aprender-a-programar/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/pages/10-estructuras-de-datos-diccionarios/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/pages/11-manejo-de-archivos-de-texto/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/pages/12-librerias-externas-e-internas-import/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/pages/13-uso-de-apis-que-son-para-que-nos-sirven-buscamos-datos-del-clima/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/pages/14-html-css-javascript-como-funciona-la-web/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/pages/15-creando-paginas-web-basicas-con-flask/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/pages/2-instrucciones-basicas-y-variables/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/pages/3-tipos-de-datos-y-expresiones/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/pages/4-alternativa-condicional-if/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/pages/5-repeticion-simple-for/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/pages/6-ejercicios-practicos/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/pages/6-funciones-reutilizacion-de-codigo/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/pages/7-estructuras-de-datos-listas/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/pages/8-repeticion-condicional-while/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/pages/9-proyecto-juego-ahorcado/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/pages/curso/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/pages/curso/1.0-hola/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/pages/curso/1.1-variables/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/pages/curso/1.2-tipos-datos/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/pages/curso/1.3-texto-literal/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/posts/bienvenidos/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://programando-python.github.io/en/posts/welcome/" />
  </url>
  <url>
   <loc>https://programando-python.github.io/posts/ciendiasdecodigo/dia-1/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://programando-python.github.io/posts/ciendiasdecodigo/dia-2/</loc>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/posts/como-encontrar-ayuda/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://programando-python.github.io/posts/instalando-lo-necesario/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://programando-python.github.io/en/posts/setting-up-your-environment/" />
  </url>
  <url>
   <loc>https://programando-python.github.io/posts/la-api-de-tu-curriculum-vitae/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://programando-python.github.io/en/posts/the-api-of-your-resume/" />
  </url>
  <url>
   <loc>https://programando-python.github.io/posts/por-que-aprender-a-programar/</loc>
-  <lastmod>2022-10-24T12:17:00Z</lastmod>
+  <lastmod>2022-10-27T13:47:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://programando-python.github.io/en/posts/why-learn-programming/" />
  </url>
 </urlset>
